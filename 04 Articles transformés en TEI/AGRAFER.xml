@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../03-Odd/out/GPSR-TEI-FCA.rnc" 
+       	type="application/relax-ng-compact-syntax"
+		?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Projet Unige-DH-Edition-GPSR-TEI : Encodage des articles du Glossaire</title>
+            <author xml:id="FCA">
+               <name>Fabrice Camus</name>
+            </author>
+            <author xml:id="JIR">
+               <name>Jordan Irrera</name>
+            </author>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Université de Genève</publisher>
+            <availability status="restricted" n="cc-by">
+               <licence target="https://creativecommons.org/licenses/by/4.0"/>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note>Projet dans le cadre du cours Edition numérique DH-UniGe 2021</note>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>
+               <author>Glossaire des patois de la Suisse Romande</author>
+               <title>Glossaire des patois de la Suisse Romande</title>
+               <pubPlace>Genève</pubPlace>
+               <publisher>Librairie Droz</publisher>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <entry xml:id="GPSR.1.0018606E8">
+            <form type="lemma" subtype="français">AGRAFER,</form>
+            <form type="typePatois">
+               <pron>agraf,</pron>
+            </form>
+            <form type="variant">
+               <pron> ‑, ‑ò</pron>
+            </form>
+            <usg type="geo">
+               <bibl>V</bibl>
+            </usg>
+            <usg type="geo">
+               <bibl>Ba.,</bibl>
+            </usg>
+            <form type="variant">
+               <pron>‑é</pron>
+            </form>
+            <form type="variant">
+               <pron>ègrafè</pron>
+            </form>
+            <form type="variant">
+               <pron>ègrèfè</pron>
+            </form>
+            <form type="typePatois">
+               <pron>agraf</pron>
+            </form>
+            <usg type="geo">
+               <bibl>Br.,</bibl>
+            </usg>
+            <lbl>Fr.</lbl>
+            <form type="variant">
+               <pron>agrafer</pron>
+            </form>
+            <usg type="geo">
+               <bibl>N Bon., Pier.</bibl>
+            </usg>
+            <form type="variant">
+               <pron>Dict.</pron>
+            </form>
+            <form type="variant">
+               <pron>Suppl.</pron>
+            </form>
+         </entry>
+      </body>
+   </text>
+</TEI>

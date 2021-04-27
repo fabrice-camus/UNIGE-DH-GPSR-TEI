@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ODD Projet Unige-DH-Edition-GPSR-TEI</title>
+        <author xml:id="FCA">
+          <name>Fabrice Camus</name>
+        </author>
+        <author xml:id="JIR">
+          <name>Jordan Irrera</name>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Université de Genève</publisher>
+        <availability status="restricted" n="cc-by">
+          <licence target="https://creativecommons.org/licenses/by/4.0"/>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>Projet sommatif dans le cadre du cours Edition numérique DH-UniGe 2021</note>
+      </notesStmt>
+      <sourceDesc>
+        <p>Created <date when="2021-04-25">25.04.2021</date> by <name ref="#FCA">F. Camus</name></p>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <change when="2021-04-25">
+        <name ref="#FCA">F. Camus</name>
+        Version initiale
+      </change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div1>
+        <head>Projet GPSR - TEI : Encodage selon Fabrice Camus - 2021</head>
+        <div2>
+          <head>Le Glossaire des patois de la Suisse romande</head>
+        <p>« Le Glossaire des patois de la Suisse romande (GSPR) est, depuis 1899, un acteur essentiel dans la mise en valeur du patrimoine linguistique romand. Etabli à Neuchâtel, il est l'un des quatre Vocabulaires nationaux de la Confédération helvétique. 
+          Tout comme ses confrères alémanique, grison et tessinois, il a pour mission de documenter le plus complètement possible les patois de son domaine linguistique, d'en faire l'analyse lexicologique et de rendre celle-ci accessible au public et au monde scientifique sous la forme d'un dictionnaire dialectal de grande ampleur. »
+          (Source : <ref target="http://www.unine.ch/gpsr">site web du GPSR</ref>)         
+        </p>
+        <p>Les articles des tomes 1 à 8 (en partie) Glossaire ont été numérisé en 2017 par l'Université de Trèves. Cela représente plus de 7'200 pages et 37'000 articles. Les articles ont été encodés au format XML et le balisage appliqué est principalement axé sur la typographie des articles. Il n'y a que très peu de balises de portée sémantique.</p>
+        </div2>          
+        <div2>
+          <head>Projet GPSR - TEI - 2021</head>
+          <p>Le projet GPSR - TEI a pour ambition d'évaluer la faisabilité de transformation des articles du Glossaire au format TEI. Plusieurs travaux exploratoires ont déjà été entrepris: 1. Travail de Bachelor de G. Durand en 2018 à la Haute école de gestion Arc et 2. Travail de stage de <name ref="#JIR">J. Irrera</name> en 2020.</p>      
+          <p>Ce présent travail s'inscrit dans la continuité des travaux précédents. Il s'intéresse plus particulièrement à l'automatisation de la transformation des articles au format TEI. Les articles de références sont ceux retenus par <name ref="#JIR">J. Irrera</name>. Il n'y a pas la volonté dans ce travail d'élargir à l'ensemble des articles, la complexité du travail et et la variété rédactionnelle et structure des quelques 40'000 articles ne le permet pas. Les articles sources sont les articles au format XML, qui ont été transformés par mes soins afin de gommer les imperfections issues du processus de numérisation que nous n'évoquerons pas ici. Le processus de transformation se déroule en 3 étapes consécutives : une pré-traitement des articles, la transformation XSL, un traitement post-transformation..</p>
+        </div2>
+      </div1>
+      <div1>
+        <head>Processus d'automatisation</head>
+        <div2>
+          <head>Fichiers sources</head>
+            <p>Les fichiers sources sont ceux fournis par Trèves et retravaillés par <name ref="#FCA">F. Camus</name> (nom/step interne : step4). Une version pretty-print est fournie pour aider la lecture des articles. Les articles sources sont dépourvus de retour à la ligne et doivent rester ainsi pour ne pas dénaturer la mise en page future.</p>
+        </div2>
+        <div2>
+          <head>Pré-traitement</head>
+          <p>Manuel</p>
+          <list>
+            <item>Ajout de l'attribut @tome dans chaque article source</item>
+          </list>
+          <p>Implémenté dans un programme java</p>          
+          <list>
+            <item>to be continued...</item>
+          </list>
+        </div2>
+        <div2>
+          <head>Transformation XSL</head>
+          <p>Une feuille de style XSL est utilisé pour transformer les articles XML en articles TEI. Cette transformation n'est pas suffisante, des post-traitements sont nécessaires.</p>          
+        </div2>
+        <div2>
+          <head>Pré-traitement</head>
+          <p>Implémenté dans un programme java</p>          
+          <list>
+            <item>to be continued...</item>
+          </list>
+        </div2>
+        
+      </div1>
+      <div1>
+        <head>Principes d'encodage des articles</head>
+        <p>L'encodage retenu pour les articles du Glossaire a été défini par <name ref="#JIR">J. Irrera</name>. Nous y avons apporté les modifications suivantes : </p>
+        <list>
+          <item>Elément <gi>entry</gi> : ajout de l'attribut @xml:id</item>
+          <item>Elément <gi>form</gi> : ajout de l'attribut @subtype pour indiquer le type du lemme </item>
+          <item>Odd créé manuellement dans Oxygen Editor, puis génération du rnc correspondant</item>
+        </list>
+        <div2>
+          <head>Encodage général des articles</head>
+          <p>Les articles sont encodés avec les éléments suivants :
+            <specList>
+              <specDesc key="entry"/>
+              <specDesc key="form"/>
+              <specDesc key="usg"/>
+              
+              <!--              
+              <specDesc key="sense"/>
+              <specDesc key="g"/>
+              <specDesc key="gramGrp"/>
+              <specDesc key="def"/>
+              <specDesc key="cit"/>
+              <specDesc key="quote"/>
+              <specDesc key="xr"/>
+              <specDesc key="etym"/>
+              <specDesc key="note"/>
+              <specDesc key="dictScrap"/>
+              <specDesc key="name"/>
+              -->
+            </specList>
+          </p>
+        </div2>   
+      </div1>
+      <div1>
+        <schemaSpec ident="oddex1" start="TEI">
+          <moduleRef key="header"
+            include="teiHeader fileDesc titleStmt publicationStmt notesStmt sourceDesc revisionDesc availability change licence "/>
+          <moduleRef key="core" include="p date title author publisher name bibl pubPlace note  "/>
+          <moduleRef key="tei" />
+          <moduleRef key="textstructure" include="TEI text body div"/>
+          <moduleRef key="dictionaries"
+            include="entry form pron orth usg lbl"/>
+          
+          <elementSpec ident="entry" mode="change">
+            <gloss>entrée</gloss>
+            <desc>contient une entrée du Glossaire (un article). Une entrée est identifié par xml:id, et la valeur est construire ainsi : GPSR.tome.pageLigneEntrée</desc>
+            <attList>
+              <!-- Comment faire pour que xml:id soit obligatoire ? est-ce contraire aux principes TEI ? -->
+              <attDef ident="xml:lang" mode="delete"/>
+              <attDef ident="n" mode="delete"/>
+              <attDef ident="xml:base" mode="delete"/>
+              <attDef ident="xml:space" mode="delete"/>
+              
+              <!-- Pourquoi cet attribut ne peut-il pas être supprimé alors que je ne l'utilise pas ?
+                  Dans la même lignée, pour les elementSpec ci-dessous, pourquoi ne peut-on pas supprimer tous les attributs non-utilisés ? y-a-t-il des dépendances/héritages ?
+                  tels que type, opt
+               -->
+              <!--<attDef ident="type" mode="delete"/>-->
+              <attDef ident="sortKey" mode="delete"/>
+              <attDef ident="rend" mode="delete"/>
+              <attDef ident="style" mode="delete"/>
+              <attDef ident="rendition" mode="delete"/>
+              <attDef ident="cert" mode="delete"/>
+              <attDef ident="resp" mode="delete"/>
+              <attDef ident="source" mode="delete"/>
+            </attList>
+          </elementSpec>
+          <elementSpec ident="form" mode="change">
+            <gloss>groupe d'informations sur une forme dans une entrée</gloss>
+            <desc> regroupe toutes les informations relatives à la morphologie et à la prononciation d'une entrée. 
+              Dans le <title>GPSR</title>, <gi>form</gi> est utilisé pour encoder, dans la partie des variantes phonétiques, des séries de formes
+              distinguées par groupes selon certains critères (p.ex. les caractéristiques phonétiques des types patois ou les localisations). 
+              <gi>form</gi> contient notamment un ou plusieurs <gi>pron</gi> OU <gi>orth</gi>, ainsi que <gi>usg</gi> pour les localisations. 
+            </desc>
+            <attList>
+              <attDef ident="type" mode="change">
+                <valList mode="add" type="closed">
+                  <valItem ident="lemma">
+                    <desc> cet attribut est associé aux formes françaises qui par convention sont utilisées (en lettres capitales dans le glossaire),
+                      si possible, comme lemmes pour regrouper un ensemble de formes, et en faciliter la recherche dans le GPSR. 
+                    </desc>
+                  </valItem>
+                  <valItem ident="typePatois">
+                    <desc> cet attribut est associé aux formes patoises qui fonctionnent comme des types (marqués par une écriture grasse penchée dans le glossaire)
+                      et qui sont structurants pour la partie des variantes phonétiques. Les types patois sont déterminés en fonction de critères phonétiques ou
+                      selon la variété dialectale. Le Patois Vaudois central détermine des types, s'il y a des attestations correspondantes dans cette variété.
+                    </desc>
+                  </valItem>
+                  <valItem ident="variant">
+                    <desc> cet attribut est associé aux variantes patoises (en italique dans la partie des variantes phonétiques), qu'elles soient transcrites
+                      phonétiquement, ou non.
+                    </desc>
+                  </valItem>
+                </valList>
+              </attDef>
+              <attDef ident="subtype" mode="change">
+                <valList mode="add" type="closed">
+                  <valItem ident="français"/>
+                  <valItem ident="patois"/>
+                  <valItem ident="français régional/ancien français"/>
+                </valList>
+              </attDef>
+              <!-- 
+              <attDef ident="xml:id" mode="delete"/>
+              <attDef ident="xml:lang" mode="delete"/>
+              <attDef ident="xml:base" mode="delete"/>
+              <attDef ident="n" mode="delete"/>
+              <attDef ident="xml:space" mode="delete"/>
+              <attDef ident="rend" mode="delete"/>
+              <attDef ident="style" mode="delete"/>
+              <attDef ident="rendition" mode="delete"/>
+              <attDef ident="cert" mode="delete"/>
+              <attDef ident="resp" mode="delete"/>
+              <attDef ident="source" mode="delete"/>
+              <attDef ident="expand" mode="delete"/>
+              <attDef ident="split" mode="delete"/>
+              <attDef ident="value" mode="delete"/>
+              <attDef ident="location" mode="delete"/>
+              <attDef ident="mergedIn" mode="delete"/>
+              <attDef ident="opt" mode="delete"/>
+              <attDef ident="datcat" mode="delete"/>
+              <attDef ident="valueDatcat" mode="delete"/>
+              -->
+            </attList>
+          </elementSpec>
+          <elementSpec ident="usg" mode="change">
+            <gloss>usage</gloss>
+            <desc> contient, dans une entrée de dictionnaire, les informations sur son usage. Dans le <title>GPSR</title>, 
+              <gi>usg</gi> est utilisé pour encoder les groupes de localisations, qu'ils soient dans la partie des variantes phonétiques,
+              dans le corps de l'article, voire dans la partie du commentaire linguistique. Il est utilisé avec <gi>placeName</gi> et <gi>bibl</gi>.
+              Son attribut <att>geo</att> est prédéfini dans les TEI guidelines. 
+            </desc>
+            <attList>
+              <!--
+              <attDef ident="xml:id" mode="delete"/>
+              <attDef ident="xml:lang" mode="delete"/>
+              <attDef ident="xml:base" mode="delete"/>
+              <attDef ident="n" mode="delete"/>
+              <attDef ident="xml:space" mode="delete"/>
+              <attDef ident="rend" mode="delete"/>
+              <attDef ident="style" mode="delete"/>
+              <attDef ident="rendition" mode="delete"/>
+              <attDef ident="cert" mode="delete"/>
+              <attDef ident="resp" mode="delete"/>
+              <attDef ident="source" mode="delete"/>
+              <attDef ident="expand" mode="delete"/>
+              <attDef ident="split" mode="delete"/>
+              <attDef ident="value" mode="delete"/>
+              <attDef ident="location" mode="delete"/>
+              <attDef ident="mergedIn" mode="delete"/>
+              <attDef ident="opt" mode="delete"/>
+              <attDef ident="datcat" mode="delete"/>
+              <attDef ident="valueDatcat" mode="delete"/>  
+              -->
+              <attDef ident="type" mode="change">
+                <valList mode="add" type="closed">
+                  <valItem ident="geographic">
+                    <!-- POURQUOI cela ne s'affiche pas dans le fichier HTML??? -->
+                    <desc>La valeur geographic remplace la valeur geo. Lex0 préconise la valeur geographic (<ref target="https://dariah-eric.github.io/lexicalresources/pages/TEILex0/TEILex0.html#index.xml-body.1_div.7_div.2">source</ref>)
+                    </desc>
+                  </valItem>
+                </valList>
+              </attDef>
+              
+            </attList>
+          </elementSpec>
+          <elementSpec ident="lbl" mode="change">
+            <gloss>étiquette</gloss>
+            <desc> étiquette pour la forme d’un mot, pour un exemple, pour une traduction, ou pour tout autre type d’information,
+              par exemple "abréviation pour", "contraction de", "littéralement", "approximativement", "synonymes", etc.
+              Dans le <title>GPSR</title>, <gi>lbl</gi> est utilisé pour encoder les sous-titres dans les articles, ainsi que des abréviations techniques
+              telles que "Fr." "Anc." "Loc." "Dicton" "synon.", dont certaines peuvent également être balisées comme renvois <gi>xr</gi>
+            </desc>
+            <!--
+              <attList>              
+                <attDef ident="xml:id" mode="delete"/>
+                <attDef ident="xml:lang" mode="delete"/>
+                <attDef ident="xml:base" mode="delete"/>
+                <attDef ident="n" mode="delete"/>
+                <attDef ident="xml:space" mode="delete"/>
+                <attDef ident="rend" mode="delete"/>
+                <attDef ident="style" mode="delete"/>
+                <attDef ident="rendition" mode="delete"/>
+                <attDef ident="cert" mode="delete"/>
+                <attDef ident="resp" mode="delete"/>
+                <attDef ident="source" mode="delete"/>
+                <attDef ident="expand" mode="delete"/>
+                <attDef ident="split" mode="delete"/>
+                <attDef ident="value" mode="delete"/>
+                <attDef ident="location" mode="delete"/>
+                <attDef ident="mergedIn" mode="delete"/>
+                <attDef ident="opt" mode="delete"/>
+                <attDef ident="datcat" mode="delete"/>
+                <attDef ident="valueDatcat" mode="delete"/>
+                <attDef ident="subtype" mode="delete"/>
+            </attList>
+            -->
+          </elementSpec>
+          <elementSpec ident="pron" mode="change">
+            <gloss>prononciation</gloss>
+            <desc> contient la/les prononciation(s) du mot. Dans le <title>GPSR</title>, <gi>pron</gi> n'est pas à entendre 
+              comme une information complémentaire à <gi>orth</gi>. En d'autres termes, ce n'est pas la prononciation correspondante d'une forme
+              écrite ailleurs dans l'article. Il s'agit plutôt d'une transcription phonétique, selon le système de transcription phonétique du GPSR,
+              d'une forme <att>type</att>="typePatois" ou <att>type</att>="variant", sous <gi>form</gi>.
+            </desc>
+            <!--
+            <attList>
+              <attDef ident="xml:id" mode="delete"/>
+              <attDef ident="xml:lang" mode="delete"/>
+              <attDef ident="xml:base" mode="delete"/>
+              <attDef ident="n" mode="delete"/>
+              <attDef ident="xml:space" mode="delete"/>
+              <attDef ident="rend" mode="delete"/>
+              <attDef ident="style" mode="delete"/>
+              <attDef ident="rendition" mode="delete"/>
+              <attDef ident="cert" mode="delete"/>
+              <attDef ident="resp" mode="delete"/>
+              <attDef ident="source" mode="delete"/>
+              <attDef ident="expand" mode="delete"/>
+              <attDef ident="split" mode="delete"/>
+              <attDef ident="value" mode="delete"/>
+              <attDef ident="location" mode="delete"/>
+              <attDef ident="mergedIn" mode="delete"/>
+              <attDef ident="opt" mode="delete"/>
+              <attDef ident="datcat" mode="delete"/>
+              <attDef ident="valueDatcat" mode="delete"/>
+              <attDef ident="notation" mode="delete"/>
+              <attDef ident="extent" mode="delete"/>
+              <attDef ident="type" mode="delete"/>
+              <attDef ident="subtype" mode="delete"/>
+             
+            </attList>
+            -->
+          </elementSpec>
+          <elementSpec ident="orth" mode="change">
+            <gloss>forme orthographique</gloss>
+            <desc> donne l’orthographe d'un mot-vedette de dictionnaire. Dans le <title>GPSR</title>, <gi>orth</gi> n'est pas à entendre 
+              comme une information complémentaire à <gi>pron</gi>. En d'autres termes, ce n'est pas l'orthographe correspondante d'une forme
+              phonétique notée ailleurs dans l'article. <gi>orth</gi> correspond à une transcription littérale motivée par la volonté
+              de ne pas transcrire phonétiquement sous certaines conditions dans le GPSR, p.ex. en présence d'attestations anciennes et/ou du français régional,
+              groupées sous <gi>lbl</gi> "Anc." et "Fr."
+            </desc>
+            <!--
+            <attList>              
+              <attDef ident="xml:id" mode="delete"/>
+              <attDef ident="xml:lang" mode="delete"/>
+              <attDef ident="xml:base" mode="delete"/>
+              <attDef ident="n" mode="delete"/>
+              <attDef ident="xml:space" mode="delete"/>
+              <attDef ident="rend" mode="delete"/>
+              <attDef ident="style" mode="delete"/>
+              <attDef ident="rendition" mode="delete"/>
+              <attDef ident="corresp" mode="delete"/>
+              <attDef ident="synch" mode="delete"/>
+              <attDef ident="sameAs" mode="delete"/>
+              <attDef ident="copyOf" mode="delete"/>
+              <attDef ident="next" mode="delete"/>
+              <attDef ident="previous" mode="delete"/>
+              <attDef ident="exlude" mode="delete"/>
+              <attDef ident="select" mode="delete"/>
+              <attDef ident="ana" mode="delete"/>
+              <attDef ident="facs" mode="delete"/>
+              <attDef ident="change" mode="delete"/>
+              <attDef ident="cert" mode="delete"/>
+              <attDef ident="resp" mode="delete"/>
+              <attDef ident="source" mode="delete"/>
+              <attDef ident="expand" mode="delete"/>
+              <attDef ident="split" mode="delete"/>
+              <attDef ident="value" mode="delete"/>
+              <attDef ident="location" mode="delete"/>
+              <attDef ident="mergedIn" mode="delete"/>
+              <attDef ident="opt" mode="delete"/>
+              <attDef ident="datcat" mode="delete"/>
+              <attDef ident="valueDatcat" mode="delete"/>
+              <attDef ident="norm" mode="delete"/>
+              <attDef ident="orig" mode="delete"/>
+              <attDef ident="rendition" mode="delete"/>              
+              <attDef ident="notation" mode="delete"/>
+              <attDef ident="extent" mode="delete"/>
+              <attDef ident="type" mode="delete"/>
+              <attDef ident="subtype" mode="delete"/>
+            </attList>
+            -->
+          </elementSpec>
+        </schemaSpec>
+      </div1>
+    </body>
+  </text>
+</TEI>

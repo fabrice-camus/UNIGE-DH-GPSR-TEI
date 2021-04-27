@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../regles/out/GPSR.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <entry>
+            
+         <form type="lemma">FAUTE,</form>
+         
+            <form type="typePatois"><pron>fta</pron>, <form type="variant"><pron>‑(ə)</pron></form>, <form type="variant"><pron>fó‑</pron></form> <usg type="geo">Vd, V 13, 18 Duraffour, 2‑4, 50, 50
+            a, 51 (sens II), 55, 60, 71 Alm. du Valais, 72, 73 (sens II), 74, 75, 76, 82 a,
+            84 (sens II), Ba., G (‑òó‑ 10, ‑ 17, ‑o 18), F, N 1, 3‑6
+             (‑è 30), B 1, 22, 32, J 60 (sens II, 3o fin),</usg></form> 
+            <form type="variant"><pron>fou‑</pron> <usg type="geo">V 12 <name type="sourceHumaine">Gabbud</name>,</usg></form>
+            <form type="variant"><pron>fṑ‑</pron>, <pron>fò‑</pron> <usg type="geo">12 <name type="sourceHumaine">Planchamp,</name> 18, 83, 85, 88, 89, B 21, 2 Romont <name type="sourceHumaine">Ke.,</name></usg></form>
+               <form type="variant"><orth>«fouo‑»</orth> <usg type="geo">N 41 Bibl. 855</usg>,</form> 
+            <form type="variant"><pron>fā‑</pron> <usg type="geo">V 51 (sens I), 62, 71, 73 (sens I), 74 a, 75 <name type="sourceHumaine">Bodmer,</name> 80, 81, 82, 84 (sens I), N 2, B 34, J.</usg></form> 
+            <lbl>Anc.</lbl>
+            <form type="variant"><orth>falte</orth> <usg type="geo">G 1547</usg>,</form> 
+            <form type="variant"><orth>fauta</orth> <usg type="geo">F 1413, 1480</usg>;</form> 
+            <lbl>patois</lbl> 
+            <form type="variant"><orth>faulta</orth> <usg type="geo">Vd 33 vers 1520,</usg></form>
+               <form type="variant"><orth>fauta</orth>, <orth>‑e</orth> <usg type="geo">Vd XVIIe s. Bibl. 374, XVIIIe s.,</usg></form>
+               <form type="variant"><orth>fo‑</orth> <usg type="geo">XVIIIe s. Craizu, G 1696 Compesières, fâte J 4 XVIIIe s.</usg> <name type="sourceHumaine">Ra.</name> </form>
+            <pc>—</pc>
+            <xr>Tabl. Suppl. 7 (G 13).</xr>
+     
+         <sense level="1">
+            <gramGrp><g>‖</g> S. f. I. Fait de manquer de qch.</gramGrp>
+            <sense level="2">
+               A. Emplois non locutionnels (rare). <sense level="4">1o <def>Indigence,
+                     dénuement</def> <usg type="geo">(spor.)</usg>. 
+                  <cit>
+                     <quote>Ètrə dè la fta, être dans le besoin</quote> <usg type="geo">(Vd Vall.).</usg>
+                  </cit>
+                  <cit>
+                     <quote>S’ā po l kō k’èl èkmansé d santr <gloss>[sentir]</gloss></quote> <quote>lè
+                     fāt,</quote> <quote>c’est alors qu’il commença à souffrir de la pauvreté</quote> <usg type="geo">(J St‑Br.).</usg>
+                  </cit>
+                     <lbl>Prov.</lbl> 
+                  <cit><quote>Lè fāt n’ètan p lə bé tan,</quote> <quote>le besoin n’attend pas le beau temps</quote> <usg type="geo">(J Épauv.).</usg></cit> 
+               </sense>
+               <sense level="4">2o <def>Absence, carence</def> <usg type="geo">(J Charm.)</usg>: <cit><quote>Fāt də
+                        fin,</quote> <quote>disette de foin.</quote> <quote>Fāt də tyzin,</quote> <quote>absence de soin.</quote> <quote>Fāt d
+                        rpō,</quote> <quote>manque de repos.</quote></cit> 
+               </sense>
+               <sense level="4">3o <def>Besoin organique</def>:
+                        <cit><quote>Indərā <gloss>[<ref>cf. endurer 1o 2</ref>]</gloss> la fta dè pəsi, avoir besoin de pisser</quote> <usg type="geo">(Vd Orm., var. V Champ.).</usg></cit> <lbl>Prov.</lbl> <cit><quote>L’anviə də s
+                        mèryḕ</quote></cit>
+                     <cit><quote>vïn kman lè fāt də tchiə, l’envie de se marier vient comme le besoin de
+                     chier</quote> <usg type="geo">(J St‑Br., var. Aj.).</usg></cit> 
+                  <cit><quote>I marydo vën tòt a kou, kòm i fta dè kaka, le mariage vient tout à coup,
+                     comme le besoin de chier</quote> <usg type="geo">(V Isér. Cah. folkl. XV, 6).</usg></cit>
+               </sense>
+            </sense>
+            <sense level="2">
+               B. <gramGrp>Loc. verbales</gramGrp>. <sense level="4">1o
+                     <def>Avoir faute (de):</def> <sense level="5">1. <def>Être dans l’indigence, manquer du
+                        nécessaire</def> <usg type="geo">(spor. Vd, N, J)</usg>. <cit><quote>È n’é p fāt,</quote> <quote>il est financièrt à l’aise</quote>
+                        <usg type="geo">(J Charm.)</usg></cit>. 
+                        <cit> <quote>Èl é èvu fāt an sé véy djo,</quote> <quote>il a souffert de la misère dans sa vieillesse</quote>
+                        <usg type="geo">(ib.)</usg></cit>. 
+                        
+                        <cit>
+                           <quote>«On bravo vilhîo qu’avâi fauta
+                        vegnai démanda cauquiès centimes po atseta dâo lacé»,</quote> <quote>un brave vieux qui était dans le besoin venait demander
+                        quelques centimes pour acheter du lait</quote> <usg type="geo">(Vd Cont. 1912, 3)</usg>
+                        </cit>. 
+                        <cit>
+                           <quote>«I vegnia ana grossa famena da cetu paï‑lès, et il aquemaça d’avoit fauta»,</quote> <quote>il vint une grande famine
+                        dans ce pays et il tomba dans l’indigence</quote> <usg type="geo">(N Brév. Rec. Corbaz, 108)</usg>
+                        </cit>.
+                           <cit><quote>Fó p sé lési avéi fta,</quote> <quote>il ne faut pas se laisser manquer du nécessaire</quote> <usg type="geo">(Vd Blon.)</usg>
+                           </cit>; 
+                        <xr>cf. ci‑dessous 3 a fin.</xr> <g>‖</g>
+                        <cit>
+                           <quote>S’ā ïn tchvā k’é èvu <gloss>[qui a eu]</gloss> fāt,</quote>
+                        <quote>c’est un cheval qui a été mal nourri</quote> <usg type="geo">(J Charm.)</usg>
+                        </cit>. </sense>
+                  <sense level="5">2. <def>Éprouver
+                        un besoin organique</def> <usg type="geo">(Vd passim, V‑G spor., F passim, N‑B spor., J passim;
+                        fr. rég. V Vouv., G spor.)</usg>. 
+                     <cit>
+                        <quote>Av fta dè pèsi <gloss>[pisser]</gloss>, dè
+                        kakā <gloss>[chier]</gloss>, dè tchi <gloss>[id.]</gloss></quote> <usg type="geo">(Vd Vaug.)</usg>
+                     </cit>. 
+                     <cit>
+                        <quote>Avè fta dè pét <gloss>[péter]</gloss></quote> <usg type="geo">(F Gr.‑de‑V.)</usg>
+                     </cit>. 
+                     <cit>
+                        <quote>Avai fta dè frè sè bəzin <gloss>[faire
+                           ses besoins]</gloss></quote> <usg type="geo">(Vd Pailly)</usg>
+                     </cit>. 
+                     <cit>
+                        <quote>Y’é fta dè pəsi, nə pai pā mé indərā, </quote> 
+                           <quote>j’ai besoin de pisser, je n’y tiens plus</quote> <usg type="geo">(Vd
+                        Orm.)</usg>
+                     </cit>. 
+                     <cit>
+                        <quote>D’é ft də psi, d nə p p mé mə rətni,</quote> <quote>... je ne peux plus me retenir</quote> <usg type="geo">(G Bern.)</usg>
+                     </cit>. 
+                     
+                     <cit>
+                        <quote>A tə fta dé pəché kə t’i tan prèsó pó parti?</quote> <lbl>litt.</lbl> <quote>as‑tu besoin de pisser que
+                        tu es si pressé de partir?</quote> <usg type="geo">(V Véross.)</usg>
+                     </cit>. 
+                     
+                     <cit>
+                        <quote> D’avḕ na fto də pəsi kə mə fasḕ maṑ u vḕtr,</quote> <quote>j’avais un besoin de pisser
+                        qui me faisait mal au ventre</quote> <usg type="geo">(G Aire‑la‑V.)</usg>
+                     </cit>. 
+                     
+                     <cit>
+                        <quote>Ly é ouna fta də pichi kə
+                           lèj òrlyè mè brnon,</quote> <quote>j’ai un besoin de pisser tel que les oreilles
+                        me branlent</quote> <usg type="geo">(F Gru.)</usg>
+                     </cit>. 
+                     
+                     <cit><quote>Y’avé fta də farə sin kə bin on pinsə, ma k’on nə di pa,</quote> <lbl>litt.</lbl> <quote>j’avais besoin de faire ce que bien on pense, mais
+                        qu’on ne dit pas</quote> <usg type="geo">(N Montal.)</usg>
+                     </cit>. 
+                     
+                     <cit>
+                        <quote>L a fta d’alā yó nyon nə pao lo frè pòr li,</quote> <lbl>litt.</lbl> <quote>il a besoin d’aller où
+                        personne ne peut le faire pour lui</quote> <usg type="geo">(Vd Penth.)</usg>
+                     </cit>. 
+                     
+                     <cit>
+                        <lbl>Absolt.</lbl> <quote>Va kəri o pò, é
+                           dòyin a fta,</quote> <quote>va chercher le pot, le petit a besoin</quote> <usg type="geo">(V Châble)</usg>
+                     </cit>.
+                     
+                     
+                           <cit>
+                              <quote>Avè tò pyin <gloss>[bcp, litt. tout plein]</gloss> fta,</quote> <quote>avoir besoin de chier </quote>
+                              <usg type="geo">(F Domp.)</usg>
+                           </cit>. 
+                     
+                     <cit>
+                        <quote>Avè pā tan [pas tant] fta,</quote> <quote>avoir besoin de pisser</quote>
+                        <usg type="geo">(ib.)</usg>
+                     </cit>. 
+                        
+                        <cit>
+                           <quote>«M’sieu, j’peux t’y sortir? J’ai faute»</quote> <usg type="geo">(fr. rég. G
+                           Snell)</usg>
+                        </cit>. <g>‖</g> 
+                     
+                     <cit>
+                        <quote>Y’é fta dè mədzi óty,</quote> <quote>j’ai besoin de manger qch.</quote>
+                        <usg type="geo">(Vd Pan.)</usg>
+                     </cit>. 
+                     
+                     
+                     <cit>
+                        <quote>«Quand t’arai fauta de t’mouotchie â bouna sôciétâ, n’le fâ pas âvoué les dets»,</quote> 
+                           <quote>quand tu auras besoin de te moucher en bonne société, ne le
+                        fais pas avec les doigts</quote> 
+                        <usg type="geo">(N Planch. Hirschy, Lampadut, 6 a)</usg>
+                     </cit>.
+                      
+                        <def>Avec pour compl. un inf. de forme active et de sens
+                           passif</def> (<xr>cf. ci‑dessous 3 b spécialt</xr>): 
+                     <cit>
+                        <lbl>Prov.</lbl> 
+                        <quote>«Lè felhè son tot dè mémo
+                           quand l’on fauta dè mariâ»,</quote> <quote>les filles sont toutes pareilles quand elles ont
+                        besoin de se marier</quote> <usg type="geo">(Vd Br. 533)</usg></cit>. 
+                     
+                     <xr>Autre <lbl>prov.</lbl> sous cul 1, 2o 5. Cf. loc. sous faim 3o.</xr>
+                           </sense>
+                  
+                  <sense level="5">3. <def>Ressentir comme nécessaire, plus rart comme
+                        obligatoire</def> <usg type="geo">(Vd passim, Bas‑V et G spor., F‑J passim; anc.; fr. rég. V St‑Ging.)</usg>. 
+                     <sense level="6">a) <def>Avec un compl. nominal.</def> 
+                        
+                        <cit>
+                           <quote>«Lou z’artizan, don no z’in torzo fota | ... qu’étai que no derion?»,</quote> 
+                        <quote>les artisans, dont nous avons toujours besoin, que nous diraient‑ils?</quote> 
+                        <usg type="geo">(G 1696. <name type="sourceHumaine">Mussard,</name> Compesières, str. 81)</usg>
+                        </cit>. 
+                        
+                        <cit>
+                           <quote>«Ce n’é pâ cleu que son en sentâ qu’en faute de mîdje»,</quote> 
+                        <quote>ce n’est pas ceux qui sont en bonne santé qui ont besoin de médecins</quote> 
+                        <usg type="geo">(B Nods. <name type="sourceHumaine">Rollier,</name> Év. Matth. IX, 12)</usg>
+                        </cit>. 
+                        
+                        <cit>
+                           <quote>L é bin fta d’on dyèrṣon <gloss>[cf. garçon]</gloss>,</quote> <quote>j’ai bien besoin d’un domestique</quote> 
+                           <usg type="geo">(F Vill.‑s.‑M.)</usg>
+                        </cit>. 
+                        <cit>
+                           <quote>«Ora su tranquillo, n’è pas fauta dè prèïre»,</quote> 
+                           <quote>maintenant je suis tranquille, je n’ai pas besoin de
+                           prières</quote> <usg type="geo">(Vd Sav. Cont. 1906, 26)</usg>
+                        </cit>. 
+                        <cit>
+                           <quote>L ar bin fta d’on kou dè man,</quote> <quote>il aurait bien besoin d’un coup de main</quote> <usg type="geo">(Vd Sottens)</usg>
+                        </cit>. 
+                        
+                        <cit>
+                           <quote>Y’ḗ fót d’ardjè, è·n èrá t a m prétā?</quote>
+                           <quote>j’ai besoin d’argent, en aurais‑tu à me prêter?</quote> <usg type="geo">(N Lign.)</usg>
+                        </cit>.
+                        
+                        
+                              <cit><quote> n’avè p lé sou tch’ <gloss>[qu’]</gloss> l vè ft,</quote> <quote>il n’avait pas
+                           les sous dont il avait besoin</quote> <usg type="geo">(J Vermes. <name type="sourceHumaine">Butz,</name> 92)</usg></cit>. 
+                        
+                        <cit>
+                           <quote>Pòrtèri chin, oun chat i <gloss>[on sait‑il]</gloss> chi n’in·nd an pa fta,</quote> <quote>je leur porterai ça (des vivres), p.‑ê. en
+                           manquent‑ils</quote> <usg type="geo">(V Lens. <name type="sourceHumaine">Studer,</name> 30)</usg>
+                        </cit>. 
+                        
+                        <cit>
+                           <quote>T’ara d’abor fta dè btè novè,</quote> <quote>tu auras bientôt besoin de nouveaux
+                           souliers</quote> <usg type="geo">(Vd Orm.)</usg>
+                        </cit>. 
+                        
+                        <cit>
+                           <quote>Hou kə l avan lə pyə fta d’vè l èṣan lè réchya,</quote> <quote>ceux qui avaient le plus besoin
+                           d’eau étaient les scieurs</quote> <usg type="geo">(F Roche. <quote>Novi botyè,</quote> 61)</usg>
+                        </cit>. 
+                        
+                        <cit>
+                           <quote>N’in fta dè fèmé pòr pantā dé tsou è də lè trè,</quote> 
+                           <quote>nous avons besoin de fumier pour planter des choux et des pommes de terre</quote> <usg type="geo">(Vd Orm.)</usg>
+                        </cit>.
+                        <cit>
+                           <quote>«Diu voille qu’on n’ein ésse jamé fauta»,</quote> <quote>Dieu veuille qu’on n’en ait jamais besoin,
+                           d’une pompe à incendie</quote> 
+                           <usg type="geo">(Vd Forclaz. <name type="sourceHumaine">Nicolier,</name> Lettre, I, 18)</usg>
+                        </cit>.
+                        
+                        <cit>
+                           <quote>«Veute Pêre sâ bei cen que vos aî faute»,</quote> <quote>votre Père sait bien ce dont vous avez besoin</quote> 
+                           <usg type="geo">(B Nods. <name type="sourceHumaine">Rollier,</name>Év. Matth. VI, 8)</usg>
+                        </cit>. 
+                        <cit>
+                           <quote>Èt ə tò sin kə vòz èi fta?</quote> <quote>est‑ce tout ce dont vous avez besoin?</quote> <usg type="geo">(Vd Vill.‑M.)</usg>
+                        </cit>. 
+                        <cit>
+                           <quote>«N’ai vo ret faute?»,</quote> <quote>n’avez‑vous besoin de rien?</quote> 
+                        <usg type="geo">(N Val. <name type="sourceHumaine">Quinche,</name> Tin d’on viâdge, éd. <name type="sourceHumaine">Greuter,</name> 102)</usg>
+                        </cit>. 
+                        <cit>
+                           <lbl>Dans des loc. et prov.</lbl> <quote>Èl an·n é èch fāt k’ïn lou d’in·n tyinpin·n,</quote> <quote>il en a autant besoin
+                           qu’un loup d’une clochette</quote> <usg type="geo">(J Ocourt. A. tr. p. XLVI, 8)</usg>
+                        </cit>. 
+                        <cit>
+                           <quote>Ai dè tò pru è dè tò fta,</quote> <lbl>litt.</lbl> <quote>avoir de tout assez et de tout besoin,
+                           il y a abondance de tout, mais c’est la distribution rationnelle qui fait
+                           défaut</quote> <usg type="geo">(V Lourt.)</usg>
+                        </cit>. 
+                        
+                        <cit>
+                           <quote>An pru fta dë tò sin k’an,</quote> 
+                           <quote>ils ont bien besoin de tout ce qu’ils ont, se dit de nécessiteux, et aussi de riches
+                           avares jamais satisfaits</quote> <usg type="geo">(V Châble <name type="sourceHumaine">Cas.</name>)</usg>
+                        </cit>. 
+                        
+                        <cit><quote>Lə boulyon n’a p fta dé krda pò lə məna,</quote> <quote>le bouillon gras n’a pas besoin de
+                           corde pour le mener, à cause de ses yeux</quote> <usg type="geo">(Vd Blon.)</usg></cit>. 
+                        
+                       <cit><quote>Tyin k’an n’on fāt də ran, an l’on bïntō trovḕ,</quote> <quote>quand on n’a besoin de rien,
+                           on l’a bientôt trouvé</quote><usg type="geo">(J Aj. <name type="sourceHumaine">Va.</name> 173)</usg></cit>. 
+                        
+                        <cit><quote>Èl ā sèrvéjāl tyin k’an·n on fāt də ran,</quote> <quote>il est serviable quand on n’a besoin de rien</quote>
+                           <usg type="geo">(ib.)</usg></cit>. 
+                        
+                        <cit><quote>Ch’on n’a fta dè rin, l a tchyè a ch’adrèchyi a chi,</quote> <quote>si on n’a besoin de rien, il
+                           n’y a qu’à s’adresser à celui‑ci</quote> <usg type="geo">(F Roche)</usg></cit>. 
+                        
+                        <cit>
+                           <quote>On·n a sòvin fòt d’on pṣə pnyo k sə,</quote> <quote>on a souvent besoin d’un plus
+                           petit que soi</quote> <usg type="geo">(V Champ., var. spor.)</usg>
+                        </cit>. 
+                        <cit><quote>Nyon pou drə kə n’a p fta dij tro,</quote> <quote>personne ne peut dire qu’il n’a
+                           pas besoin des autres</quote> <usg type="geo">(F Roche)</usg></cit>. 
+                        <cit>
+                           <quote>Vindra lə tin yó la vatsə ara fta dè sa ka,</quote> <quote>il n’y a rien d’inutile,
+                           litt. viendra le temps où la vache aura besoin de sa queue</quote> <usg type="geo">(Vd Orm.)</usg>
+                        </cit>.
+                              <cit><quote>Ïn tchvā bèyiə n’é fāt nə d dyid nə d brid,</quote> <quote>un cheval donné n’a besoin ni de guides ni de
+                                 bride</quote> <usg type="geo">(J Ocourt. A. tr. p. XLVI, 7)</usg></cit>. 
+                        <def>Avec ellipse de l’élément
+                           verbal</def>: 
+                        <cit>
+                              <quote>A bon vin, pa fta d’ansènyə,</quote> <quote>à bon vin, pas besoin
+                           d’enseigne</quote> <usg type="geo">(Vd Orm.)</usg>
+                        </cit>. 
+                        <g>‖</g> <def>Le compl. est un nom d’action</def> (<xr>cf. ci‑dessous b
+                           spécialt</xr>): 
+                        <cit>
+                           <quote>Y’é fta d’öna bna byāyə,</quote> <quote>j’ai besoin de me laver à
+                           fond</quote> <usg type="geo">(V Lourt. <name type="sourceHumaine">Bjerrome,</name> 167)</usg>
+                        </cit>. 
+                        
+                        <cit>
+                           <quote>La méjon l a galéjamin fta dè rèfkturə,</quote> <quote>la maison a bien besoin d’être
+                           réparée</quote> <usg type="geo">(F Roche)</usg>
+                        </cit>. 
+                        
+                        <cit><quote>T’a fta d’ó·n èbrulṓ,</quote> <quote>tu as besoin d’une
+                           correction</quote> <usg type="geo">(V Finh.)</usg></cit>.
+                           
+                           <g>‖</g> <gramGrp>Loc.</gramGrp> 
+                        <cit>
+                           <quote>Ché léchi avi fta dè,</quote> <quote>se priver de,</quote> <lbl>litt.</lbl> <quote>se laisser avoir besoin de</quote> 
+                        <usg type="geo">(F Roche; var. B Prêles, Plagne)</usg>
+                        </cit>. 
+                        
+                        <cit><quote>É s lās avè fót də tò pòr léz ótr,</quote> <quote>il se prive de tout pour les autres</quote> <usg type="geo">(B Prêles)</usg></cit>. 
+                        
+                        <cit><quote>Lə bon Djyu ch’in léchchè p avi fta!</quote> <quote>vivement qu’il crève!</quote> <lbl>litt.</lbl>
+                           <quote>(que) le bon Dieu ne s’en prive pas!</quote> 
+                           <usg type="geo">(F Roche. Folkl. suisse, XXXV, 48*)</usg></cit>; 
+                        <xr>cf. ci‑dessus 1 fin et ci‑dessous 3o 3.</xr>
+                              </sense>
+                     
+                     <sense level="6">b) <gramGrp>Avec un compl. verbal (de + inf., plus rart
+                        que + subj.)</gramGrp>. 
+                       <cit> 
+                          <quote>Òrindrai k’on·n a la libèrta də la prsa [cf. presse], k’on
+                              n’a pyœ fta də pasa pèr lo dimyarə, vò fatə kòmin vò vòlai,</quote> 
+                        <quote>maintenant qu’on peut enlever librement ses récoltes, qu’on n’a plus besoin de passer par le dîmeur, vous faites comme vous voulez </quote>
+                        <usg type="geo">(N Montal.)</usg>
+                       </cit>. 
+                        <cit>
+                           <quote>Lè mija n’on p fta dè sènyi lə vèrbal, ran tyè lè kóchon,</quote> 
+                        <quote>les adjudicataires ne sont pas tenus de signer le procès‑verbal, seuls les fidéjusseurs doivent le faire</quote> 
+                        <usg type="geo">(F Gr.‑de‑V.)</usg>
+                        </cit>.
+                              <cit>
+                                 <quote>I n’è p fāt də vouər ḥḕ, i konya lè snéd,</quote> <quote>je n’ai pas besoin de
+                           voir clair, je connais les aîtres</quote> <usg type="geo">(J Aj. <name type="sourceHumaine">Va.</name> 174)</usg>
+                              </cit>. 
+                        
+                        <cit>
+                           <quote>«Quand faillâi payî, l’ètâi su que vo tsertsîve onna niéze po pas avâi fauta de vo montrâ la couleu de son erdzeint»,</quote>
+                        <quote>quand il fallait payer, il était sûr qu’il vous cherchait querelle pour ne pas avoir à vous montrer la couleur
+                           de son argent</quote> <usg type="geo">(Vd Sav. Cont. 1912, 31)</usg>
+                        </cit>. 
+                        
+                        <cit>
+                           <quote>L a tèrminā in satin k’on n’éy pa fta də sə djò·i <gloss>[<ref>cf. jouir</ref>]</gloss> trò sòvin də sla pnpa, </quote> 
+                        <quote>il a terminé en souhaitant qu’on n’ait pas à se servir trop souvent de cette
+                           pompe à incendie</quote> <usg type="geo">(N Gorg.)</usg>
+                        </cit>. 
+                        <cit>
+                           <quote>«Lou boutsî n’a pa z‑eu fâta de la saîgni»,</quote> <quote>le boucher n’a pas eu besoin de la
+                           saigner, une vache météorisée</quote> <usg type="geo">(N Verr. Pat. neuch. 290)</usg>
+                        </cit>. 
+                        <cit>
+                           <quote>«Vo n’arâ pas fauta de mettrè lè tchou dein lè bouî po fére la sâocesse, lo caïon lè met lî‑mîmo»,</quote> 
+                        <quote>vous n’aurez pas besoin de mettre les choux dans les boyaux pour faire la saucisse, le cochon les met lui‑même</quote> 
+                        <usg type="geo">(Vd Sav. Cont. 1907, 6)</usg>
+                        </cit>. 
+                        <cit>
+                           <quote>Vò fudrè rè vini, nòj an fta dè rè férə la bya,</quote>
+                        <quote>il vous faudra revenir, nous avons à nouveau besoin de faire la lessive</quote> 
+                        <usg type="geo">(F Villarg.)</usg>
+                        </cit>. 
+                        
+                        <cit>
+                           <quote>Kan è zu tsyka inó, a zu fta dè s’arèta,</quote> <quote>quand elle fut montée un bout de chemin, elle
+                           dut s’arrêter</quote> <usg type="geo">(V Lourt.)</usg>
+                        </cit>. 
+                            
+                        <cit><quote>«I‑allâ dâ lés bouotchas m’exercie â çà qu’dés dgeas qma nos autrés ant fauta d’savet»,</quote> 
+                           <quote>j’allai dans les buissons m’exercer à ce que des gens comme nous ont besoin de savoir</quote> 
+                        <usg type="geo">(N Planch. <name type="sourceHumaine">Hirschy,</name> Lampadut, 6 b)</usg></cit>.
+                        
+                        <cit>
+                           <quote>N’a pā fta dé kontā, il est riche,</quote> <lbl>litt.</lbl> <quote>il n’a pas besoin de compter</quote> 
+                        <usg type="geo">(Vd Long.)</usg>
+                        </cit>. 
+                        
+                        <cit>
+                           <quote>Nə fódr pā avai fta dè kaltyulā din la viə,</quote> <quote>il faudrait ne pas avoir à calculer dans la vie</quote> 
+                           <usg type="geo">(Vd Orm.)</usg>
+                        </cit>.
+                              <cit>
+                                 <quote>N’a p jou fta dè gug grantin Rózə pò la tròv a cha pta,</quote> 
+                        <quote>il n’a pas eu besoin de regarder longtemps R. pour la trouver à son goût </quote>
+                        <usg type="geo">(F Treyvaux. Novi botyè, 27)</usg>
+                              </cit>. 
+                        <g>‖</g> <cit>
+                           <quote>L an tan fta k’on lòouz éidyāi!</quote> <quote>ils ont tellt besoin qu’on les aide!</quote>
+                           <usg type="geo">(Vd Blon.)</usg>
+                        </cit>.
+                        
+                        <g>‖</g> <def>Avec un inf. passif.</def> 
+                        <cit>
+                           <quote>«C’é më qu’ai faute d’êter batchîe par të»,</quote> 
+                        <quote>c’est moi qui ai besoin d’être baptisé par toi</quote> 
+                        <usg type="geo">(B Nods. <name type="sourceHumaine">Rollier,</name> Év. Matth. III, 14)</usg>
+                        </cit>.
+                        <cit>
+                           <quote>«Ana poura véva ... qu’à gros fouôta d’être assistée»,</quote> <quote>une pauvre veuve qui a
+                           grand besoin d’être assistée</quote> 
+                           <usg type="geo">(N Ch.‑de‑F. Bibl. 855)</usg>
+                        </cit>. 
+                        
+                        <cit>
+                           <lbl>Prov.</lbl>
+                        <quote>Tsəvó dènó n’a pa fta d’étr vəzitó,</quote> <quote>cheval donné n’a pas
+                           besoin d’être examiné</quote> <usg type="geo">(Vd Leys.)</usg>
+                        </cit>. 
+                        <lbl>Spécialt.</lbl> <def>Avec un inf. de forme active et de sens passif</def> 
+                        <usg type="geo">(Vd passim, V Champ., G Vand., F passim, N Ch.‑du‑M., J spor.)</usg>. 
+                        <cit>
+                           <quote>L a fta dè nètyi,</quote> 
+                        <quote>il a besoin d’être nettoyé</quote> <usg type="geo">(Vd Sassel)</usg>
+                        </cit>. 
+                        <cit>
+                           <quote>Stè fntrè son bin dè, èl an fta d lavā,</quote> 
+                        <quote>ces fenêtres sont bien sales, il faut les
+                           laver</quote> <usg type="geo">(N Ch.‑du‑M.)</usg>
+                        </cit>. 
+                        <cit>
+                           <quote>Tè btè l an fta dè dèkròtṑ,</quote> <quote>tes chaussures doivent être décrottées</quote> <usg type="geo">(F Ch.‑St‑D.)</usg>
+                        </cit>.
+                              <cit>
+                                 <quote>L a fta d ramòna,</quote> <quote>elle a besoin d’être ramonée</quote> <usg type="geo">(V Champ.)</usg>
+                                 </cit>.
+                              <cit><quote>Si lndzou a fta dè rèpètasi,</quote> <quote>il faut raccommoder ce linge</quote> <usg type="geo">(Vd Vill.‑M.)</usg></cit>. 
+                        
+                        <cit>
+                           <quote>Sè pṣtè bndè on fta dè sèrṣ,</quote> 
+                           <quote>ces plates‑bandes ont besoin d’être sarclées</quote> 
+                           <usg type="geo">(Vd Fen.)</usg>
+                        </cit>. 
+                        
+                        <cit>
+                           <quote>Lè fā è fāt d’antchèpyḕ,</quote> <quote>la faux n’a plus de
+                           fil, litt. a besoin d’être remartelée</quote> <usg type="geo">(J Rouges‑T. ALFC 253 lég.)</usg>
+                        </cit>.
+                        
+                              <cit>
+                                 <quote>Prè k’inkontrə Pon·navla l avi min fta dè vèrd,</quote> 
+                        <quote>il semble que du côté de Pont‑la‑Ville, il (un pont) avait moins besoin d’être
+                           gardé</quote> <usg type="geo">(F Roche. Alm. cathol. SR, 1949, 75)</usg>
+                              </cit>. 
+                        <cit>
+                           <quote>T’ fta dè konfèch,</quote> <quote>tu as besoin de te confesser, dit‑on à qqn qui
+                           pose le pain sur la table sens dessus dessous</quote> <usg type="geo">(ib. Folkl. suisse,
+                           XLI, 24* n. 1)</usg>
+                        </cit>. <g>‖</g> 
+                        <cit>
+                           <quote>F ranṣaply la dalyə kan an·n a fṓtə,</quote> 
+                        <quote>il faut remarteler la faux quand elle a besoin de l’être</quote> 
+                        <usg type="geo">(G Vand.)</usg>
+                        </cit>.
+                        <cit>
+                           <quote>An n brag kə sé k’an·n in fāt,</quote> <quote>on ne vante que ceux qui ont besoin de l’être</quote> 
+                        <usg type="geo">(J Aj. <name type="sourceHumaine">Va.</name> 109)</usg>
+                        </cit>. 
+                        <lbl>Impersonnellt.</lbl> 
+                        <cit>
+                           <quote>«On iadzo que lè lois sant féte, lâi a pas fauta de lè doutâ»,</quote> 
+                        <quote>une fois que les lois sont faites, il ne faut pas les supprimer</quote> 
+                        <usg type="geo">(Vd Sav. Cont. 1914, 2)</usg>
+                        </cit>. 
+                        <cit>
+                           <quote>Tè dèvzo dè vèrdzə. Tsi nò n’avḕ pā fta dè min [pas] in·n apòrtā,</quote> 
+                        <quote>je te parle de verges. Chez nous, il n’y avait pas besoin d’en apporter</quote> 
+                        <usg type="geo">(Vd Rovr.)</usg>
+                        </cit>. 
+                        <cit>
+                           <quote>N’a p fta dé tan bél,</quote> <quote>il n’est pas nécessaire de tant crier</quote> 
+                        <usg type="geo">(Vd Blon.)</usg>
+                        </cit>. 
+                        <cit>
+                           <quote>Lay a pā fta də laè baẓi lə daè <gloss>[<ref>cf. doigt 2o 3, Gl. V, 823a</ref>]</gloss>,</quote>
+                           <quote>c’est un grand buveur,</quote> <lbl>litt.</lbl> 
+                        <quote>il n’y a pas besoin de lui donner le doigt</quote> <usg type="geo">(V Vouv.)</usg>
+                        </cit>. 
+                        
+                        <cit>
+                           <quote>N’a pā fta d’trè sorsyé,</quote> <quote>c’est facile, litt. il
+                           n’y a pas besoin d’être sorcier</quote> <usg type="geo">(Vd Rovr.; <ref>cf. Cont. 1907, 15</ref>)</usg>
+                        </cit>.
+                              
+                        
+                        <cit><quote>Ly a p fta dè li férə chnyo avu on van,</quote> <quote>il n’est pas
+                           nécessaire de lui faire signe avec un van, il comprend vite</quote> <usg type="geo">(F Roche)</usg></cit>.
+                           
+                              <cit>
+                                 <quote>N’a p fta d’al a Brna pò vḕr dij a,</quote> 
+                                 <quote>il n’y a pas besoin d’aller à Berne pour voir des ours</quote> 
+                                 <usg type="geo">(F Gru.)</usg>
+                              </cit>. 
+                           
+                           <g>‖</g> <cit>
+                              <quote>Aréi‑ṣ‑ə fta kə tə léiy li?</quote> 
+                        <quote>serait‑il nécessaire que tu y ailles?</quote> <usg type="geo">(Vd Blon.)</usg>
+                           </cit>.
+                        
+                        <cit><quote>«E nia pè fâta qué l’i âlet; baillie‑li vo mêmo à maindgie»,</quote> 
+                        <quote>il n’y a pas besoin qu’il y aille; donnez‑lui vous‑mêmes à manger</quote> 
+                        <usg type="geo">(N Fleur. <name type="sourceHumaine">Jéquier,</name>Év. Matth. XIV, 16, dans Festschr. Tappolet, 147)</usg></cit>. 
+                        <g>‖</g> <lbl>Avec atténuation de sens.</lbl> E<def>mployé à la forme négative ou interrogative, ou par
+                           antiphrase, marque une critique, un reproche ou, au prés., fonctionne
+                           comme un impér. négatif atténué.</def> 
+                        <cit>
+                           <quote>T n’é p fāt də t’an·n alḕ,</quote> 
+                        <quote>il ne faut pas t’en aller</quote> 
+                        <usg type="geo">(J Charm.)</usg> 
+                        </cit>.
+                        
+                        <cit>
+                           <quote>T n’é p fāt də dïnch fèr,</quote>
+                        <quote>ne procède pas ainsi</quote> <usg type="geo">(ib.)</usg>
+                        </cit>. 
+                        
+                        <cit>
+                           <quote>Tə n’a pā fta d’apòrtā tan dè pakò a l’òtó,</quote> <quote>tu n’as pas besoin d’apporter autant de boue dans la maison</quote>
+                           <usg type="geo">(Vd Suchy)</usg>
+                        </cit>. 
+                        
+                        <cit><quote>T n’é p fāt d lə dir an no djan,</quote> <quote>ne le dis pas à mes parents</quote> <usg type="geo">(J St‑Br.)</usg></cit>. 
+                        <cit>
+                           <quote>S n’ā p po ton nḕ, t n’é p fāt d’èvè tchā <gloss>[<ref>cf. chaud III, 3o fin</ref>]</gloss>,</quote> 
+                       <quote> tu ne l’obtiendras pas, sois sans inquiétude,</quote>
+                           <lbl>litt.</lbl> <quote>ce n’est pas pour ton nez, ...</quote> <usg type="geo">(ib.)</usg>
+                        </cit>. 
+                        <cit>
+                           <quote>T n’é p fāt d’èv tyœzin [avoir souci], èl sə vlan dj bïn rtrovḕ,</quote> 
+                        <quote>n’aie pas peur, on les retrouvera certainement</quote> <usg type="geo">(ib.)</usg>
+                        </cit>. 
+                        <cit>
+                           <quote>Də ton minyon bardjiə | t n’è p fāt d’an·n ḗtr an pè·n,</quote> <lbl>litt.</lbl> 
+                        <quote>de ton mignon berger, tu n’as pas besoin d’être en peine</quote> 
+                           <usg type="geo">(J Pleujouse. A. tr. p. V, 92)</usg>
+                        </cit>. 
+                        
+                        <cit>
+                           <quote>Bous lè pōətch, sé d l’at san <gloss>[ceux de l’autre côté]</gloss> n’in p fāt d noz oyu, </quote>
+                           <quote>pousse la porte, les voisins n’ont pas besoin de nous entendre</quote> 
+                        <usg type="geo">(J St‑Br.)</usg>
+                        </cit>. 
+                        <cit>
+                           <quote>L a pa fta də tan chə para, vó pa dèplə kə lij ātrə,</quote> 
+                        <quote>il n’a pas besoin de tant faire le malin, il ne vaut pas plus que les autres</quote> 
+                        <usg type="geo">(V Maréc. <name type="sourceHumaine">Müller,</name> 42)</usg>
+                        </cit>. 
+                        <cit>
+                           <quote>È n’a dza [déjà] pā fta dè lə drè; on lə vai prao,</quote> 
+                        <quote>il n’a pas besoin de le dire, on le voit assez</quote> 
+                        <usg type="geo">(Vd Orm.)</usg>
+                        </cit>. 
+                        <cit>
+                           <quote>«Qu’as‑tou fauta dè mè bailli on coup dè poeing?»,</quote> 
+                        <quote>qu’est‑ce qu’il te prend de me donner un coup de poing?</quote>
+                           <usg type="geo">(Vd <quote>Cont.</quote> 1887, 1)</usg>
+                        </cit>. 
+                        <cit><quote>A tə fta dè trétò rèdrè?</quote> <quote>as‑tu besoin de tout redire?</quote> <usg type="geo">(Vd Orm.)</usg></cit>. 
+                        <cit><quote>Tyè avé ṣò fta dè ród avi chi bchko?</quote> 
+                        <quote>qu’avais‑tu besoin de rôder avec ce bâtard?</quote> 
+                        <usg type="geo">(F Treyvaux. Novi botyè, 26)</usg></cit>. 
+                        <cit><quote>vè tə fta dè mè krè apré, pèrtò yó yə vézə?</quote> <quote>avais‑tu besoin de courir après moi, partout où je vais?</quote> 
+                        <usg type="geo">(Vd Orm.)</usg></cit>. 
+                        <cit><quote>T’vè fta d’alā vitə lə lai rèdrè!</quote> <quote>il fallait que tu
+                           ailles vite le lui redire!</quote> <usg type="geo">(ib.)</usg></cit>. 
+                        <g>‖</g> <lbl>Rhétoriqt.</lbl> 
+                        <cit><quote>N’é p fta dè vò drə tyè ti hou chólichtrə chon jou tap di man a chubré,</quote> 
+                        <quote>je n’ai pas besoin de vous dire que tous ces solistes ont été très applaudis</quote> 
+                        <usg type="geo">(F Crés. <name type="sourceHumaine">Tobi,</name> Mèhlyon, 52)</usg></cit>. 
+                        <cit><quote>«N’é pas fauta de vo z’esplliquâ que l’è qu’onna tombola»,</quote>
+                           <quote>je n’ai pas besoin de vous expliquer ce qu’est une tombola</quote> 
+                           <usg type="geo">(Vd Sav. <name type="sourceHumaine">Cordey,</name> Por la Veillâ, 119)</usg></cit>. 
+                           
+                           <cit><quote>Ouna dè chtou fèmlè chó pòr al a ... Apri tò vòj i rin fta dè chavi yó,</quote> 
+                        <quote>une de ces femmes sort pour aller à ... Après tout vous n’avez pas besoin de savoir où </quote>
+                        <usg type="geo">(F Roche. Alm. cathol. SR, 1953, 51)</usg></cit>. 
+                        <def>Avec ellipse de l’élément verbal:</def> <cit>
+                           <quote>Pa fṓt də vò dir kə s’ir a sé véyḕy kə sə fòrmvan lə pyè sòvan dé maryādj,</quote> <quote>inutile de vous dire que c’était à ces
+                           veillées que se formaient le plus souvent des mariages</quote> 
+                        <usg type="geo">(B Lamb. <name type="sourceHumaine">Ke.</name> undarttexte, 1)</usg>
+                        </cit>.
+                     </sense>
+                  </sense>
+               </sense>
+               
+                  <sense level="4">2o <gramGrp>Impersonnellt.</gramGrp> <def>Il n’est pas faute de, il n’y a pas
+                     besoin de</def>: 
+                     <cit>
+                        <quote>Pour avoir la main de ma fille, <quote>«i
+                     n’sarait ra <gloss>[rien]</gloss> fauta, mon bél afant, qu’te feussais
+                     ne comte ne marquis»,</quote> il n’y aurait pas besoin, mon bel enfant que tu
+                     fusses comte ou marquis</quote> 
+                        <usg type="geo">(N Planch. <name type="sourceHumaine">Hirschy,</name> Lampadut, 11 a)</usg>
+                     </cit>. 
+                     <lbl>Prov.</lbl> <cit>
+                        <quote>«Quand lè pronmè san bin mâurè, tsisan sans que sei fauta de lè grulâ»,</quote> <quote>quand les prunes
+                     sont bien mûres, elles tombent sans qu’il y ait besoin de secouer l’arbre</quote> 
+                     <usg type="geo">(Vd <name type="sourceHumaine">Br.</name> 533)</usg></cit>.
+                  </sense>
+               
+              
+              
+                  <sense level="4">3o <def>Faire faute</def>: <sense level="5">1. <def>Manquer, faire défaut</def> <usg type="geo">(Vd passim, V Vouv., F
+                        passim, N Cern.‑Péq., B Plagne)</usg>. 
+                        <cit><quote>St uti m’è djə bïn fā ftè,</quote> <quote>cet outil‑ci m’a déjà souvent fait défaut</quote> <usg type="geo">(N Cern.‑Péq.)</usg></cit>. 
+                        <cit><quote>Rəbalyə mè ma pla,lə mè fā fta,</quote> <quote>rends‑moi ma pelle, j’en ai besoin</quote> <usg type="geo">(Vd Bière)</usg></cit>. 
+                        <cit><quote>L’uti kə vòz é prétā m’a fé fta,</quote> <quote>l’outil que je vous ai prêté m’a manqué</quote> <usg type="geo">(Vd Orm.)</usg></cit>. 
+                        <cit><quote>Nṣon tsè no f fta,</quote> <quote>nous avons besoin de notre char</quote> <usg type="geo">(F Gr.‑de‑V.)</usg></cit>. 
+                     <cit><quote>«Mé fara fauta la senanna qué vint po fére la buya»,</quote> <quote>j’en aurai besoin
+                        (de mon baquet) la semaine prochaine pour faire la lessive</quote> <usg type="geo">(Vd Cont.1902, 26)</usg></cit>.
+                     <cit><quote>«Volliâvo vo démandâ se vo n’ein arâi pas per hazâ onna vîlhie qu’aussè dza servi et que ne vo fasse pequa fauta»,</quote> 
+                     <quote>je voulais vous demander si vous n’en auriez pas une vieille (de lettre) qui ait déjà servi
+                        et qui ne vous soit plus utile</quote> <usg type="geo">(ib. 1886, 21)</usg></cit>. 
+                     <g>‖</g> 
+                     <cit><quote>«Se ti lè meti que y’a ... n’existâvont pas, lè foudrâi einveintâ, kâ font ti fauta»,</quote> 
+                     <quote>si tous les métiers qu’il y a n’existaient pas, il faudrait les inventer, car ils sont tous nécessaires</quote> 
+                        <usg type="geo">(Vd Cont. 1896, 15)</usg></cit>.
+                           </sense><sense level="5">2.
+                        <def><cit><quote>Pa firə fta dè,</quote> <quote>ne pas oublier de</quote></cit></def> <usg type="geo">(V Ardon. <name type="sourceHumaine">Delaloye,</name> 59)</usg>.
+                           </sense>
+                     <sense level="5">3. <def>Priver de</def> <usg type="geo">(J Pleigne)</usg>: <def><cit><quote>I vō n’an vorō pə fḕr
+                           fāt,</quote> <quote>je ne voudrais pas vous en priver</quote></cit></def>. 
+                        <g>‖</g> <gramGrp>Au réfl.</gramGrp> <def>Se priver de</def> <usg type="geo">(spor. Vd, V, F‑J)</usg>. 
+                        <gramGrp>Suivi d’un compl. nominal.</gramGrp> 
+                        <cit><quote>S fḕr fāt d’āty,</quote> <quote>se priver de qch.</quote> <usg type="geo">(J Vicques)</usg></cit>. 
+                        <cit><quote>É s fa fót də séz ayon pòr lé bayiə a séz infin,</quote> <quote>il se prive de ses habits pour les donner à ses enfants</quote> <usg type="geo">(B Prêles)</usg></cit>. 
+                        <cit><quote>Kə lə dyblyo nə ch’in fchè p fta!</quote> <quote>vivement qu’il crève! litt. que le diable ne s’en prive pas</quote> <usg type="geo">(F Gru.)</usg></cit>; 
+                        
+                        <xr>loc. analogue sous Dieu I, 2o 2 fin et ci‑dessus
+                           1o 3 a fin.</xr> 
+                        <g>‖</g> <gramGrp>Avec un compl. verbal.</gramGrp> 
+                        <cit>
+                           <quote>Si on est trop orgueilleux, <quote>«lè dzeins ne sè font passfauta de vo z’eimbétâ»,</quote> les gens ne se font pas f. de vous embêter</quote>
+                        <usg type="geo">(Vd Cont. 1887, 32)</usg>
+                        </cit>. 
+                        <cit>
+                           <quote>«I’aëc inco dèsplache po danchieu. E chè fajan pa fauta!»,</quote> <quote>il y avait encore de la
+                        place pour danser. Ils ne s’en privaient pas!</quote> <usg type="geo">(V Hérém. Alm. du Valais, 1959, 141)</usg>
+                        </cit>. 
+                        <cit><quote>«S’on pâoslè remotsi bin adrâi quand niaffont dinse, faut passs’ein férè fauta»,</quote> <quote>si on peut les remettre à leur place de la belle
+                        façon quand ils bavardent comme ça (les vantards), il ne faut pas s’en faire
+                        f.</quote> <usg type="geo">(Vd Cont. 1899, 43)</usg></cit>.</sense></sense>
+              
+            </sense>
+            <sense level="2">
+               <gramGrp>C. Loc. prép.</gramGrp> <def>Faute de, par manque de, en l’absence de</def> <usg type="geo">(SR spor.; anc. Vd)</usg>; 
+               <xr>cf. ci‑dessous II, 6o.</xr> 
+               <cit>
+                  <quote>Fātsd’èrdjan, i n sèrō fḕr st antrəprij,</quote> <quote>f. d’argent, je ne saurais mener à
+                  bien cette entreprise</quote> <usg type="geo">(J Mett.)</usg>
+               </cit>. 
+               <cit>
+                  <quote>Də n’ésjamē pu aṣet la bòrjazəri də Karòẓə, fótə d’arẓan,</quote> <quote>je n’ai jamais pu
+                  acheter la «bourgeoisie» de Carouge, f. d’argent</quote> <usg type="geo">(G Troin.)</usg>
+               </cit>. 
+               <cit>
+                  <quote>Fāt də mœ,</quote>
+                  <quote>f. de mieux</quote> <usg type="geo">(J Pleigne)</usg>
+               </cit>. 
+                  <lbl>Attesté surtout dans des prov.</lbl> 
+               <cit>
+                  <quote>Fta dè grvèson mdzè dé mèrlə,</quote> <quote>f. de grives on mange des merles</quote> <usg type="geo">(Vd Orm., var. spor.)</usg>
+               </cit>.
+                     <cit><quote>Fta də tchvā on prè è·n no,</quote>
+                        <quote>f. de cheval on prend un âne</quote> <usg type="geo">(N Couvet, var. Vd Penth.)</usg></cit>. 
+               
+               <cit><quote>Fta dè vin on bḕ dè l’vè,</quote> <quote>f. de vin on boit de l’eau</quote> <usg type="geo">(F Gruy. <name type="sourceHumaine">Bor.</name>)</usg></cit>. 
+               
+               
+               <cit><quote>Fta du <gloss>[du]</gloss> bro oun mètsdè grisə,</quote> <quote>f. de beurre on met de la graisse</quote> <usg type="geo">(V Isér.)</usg></cit>. 
+               <cit><quote>Fāt də drè on potch di midjlin·n,</quote> <quote>f. de drap on porte du droguet</quote> <usg type="geo">(J Charm.)</usg></cit>. 
+               
+               <cit><quote>Fta dè pò on fa dun sè tssè,</quote> <quote>f. de pot on fait dans sa culotte</quote> <usg type="geo">(Vd Penth.)</usg></cit>. 
+               <g>‖</g>
+               <cit><quote>Fót dəsfèr kom i y è daə ...,</quote> <quote>f. de faire comme je lui ai dit ...</quote> <usg type="geo">(B Plagne)</usg></cit>.
+                     <cit><quote>«Ç n été pas fauta de lli smondre | mad!sél avan pru mau d’avondre»,</quote> <quote> ce n’était pas faute de les encourager; ma foi,
+                  ils avaient de la peine à tout manger</quote> 
+               <usg type="geo">(N Val. <name type="sourceHumaine">Quinche.</name>Tin d’on viâdge, éd. <name type="sourceHumaine">Greuter,</name> 78)</usg></cit>. 
+               <cit><quote>N’é pā fta d’avai étā avèrti,</quote> <quote>ce n’est pas f. d’avoir été averti</quote> <usg type="geo">(Vd Month.)</usg></cit>. 
+               <lbl>Prov.</lbl> <cit><quote>Fta dèssavèi, sòvè·n l è·ngrāvə,</quote> <quote>f. de savoir, souvent on regrette</quote> <usg type="geo">(V Isér.)</usg></cit>.
+            </sense>
+            <sense level="2">
+               <gramGrp>D. Loc. adv.</gramGrp> <cit><quote>Sans faute,</quote> <quote>à coup sûr, sans y manquer</quote> <usg type="geo">(SR spor.)</usg></cit>.
+                     <cit><quote>Vindrè chin fta,</quote> <quote>il viendra sans f.</quote> <usg type="geo">(F Roche)</usg></cit>. 
+               <cit><quote>Tə léiy òoudréi sin fta,</quote> <quote>tu y iras sans f.</quote> <usg type="geo">(Vd Blon.)</usg></cit>. 
+               <cit><quote>Èduə, èduə Karimantra | ... rəvïn sin fātl’an kə vïn,</quote> <quote>adieu, adieu Carnaval, reviens sans f. l’année prochaine</quote> 
+               <usg type="geo">(J St‑Urs. <name type="sourceHumaine">Surdez</name>)</usg></cit>.
+            </sense>
+         </sense>
+         <sense level="1">
+            II. <def>Fait de manquer à qch.</def> <sense level="4">1o <def>Manquement à une règle
+                  morale, à un précepte religieux, à un devoir; action répréhensible</def> <usg type="geo">(SR passim;
+                  anc.)</usg>. <cit><quote>«Requérant en l’honneur de Dieu le fere moryr pour les <quote>faltes</quote> par
+                  luy commises»</quote> <usg type="geo">(G 1547. <name type="sourceHumaine">Fazy,</name>
+                  Proc. et doc. 98)</usg></cit>. 
+               
+               <cit><quote>Ptét <gloss>[petite]</gloss> fāt,</quote> <quote>peccadille</quote> <usg type="geo">(J Mett.)</usg></cit>.
+                     <cit><quote>Fta mòrtla,</quote> <quote>péché mortel</quote> <usg type="geo">(V Cham.)</usg></cit>.
+               <cit><quote>È sə rpan d sé fāt,</quote> <quote>il se repent de ses f.</quote> <usg type="geo">(J Épauv.)</usg></cit>.
+               
+               <cit><quote>Rètchtḕ <gloss>[racheter]</gloss> sé fāt</quote> <usg type="geo">(J Aj. <name type="sourceHumaine">Va.</name>)</usg></cit>. 
+               <cit><quote>T’ètyuzré <gloss>[tu accuseras]</gloss> tè fāt,</quote> <quote>tu te dénonceras</quote> <usg type="geo">(J Pleigne)</usg></cit>. 
+               <cit><quote>L a bin rékònyu sa fta,</quote> <quote>il a bien reconnu sa f.</quote> <usg type="geo">(F Gr.‑de‑V.)</usg></cit>.
+                     <cit><quote>Djétyi sè fāt,</quote> <lbl>même sens</lbl> <usg type="geo">(J Aj. <name type="sourceHumaine">Va.</name> 56)</usg></cit>. 
+               <cit><quote>Lə bon Dyu y a pardònó si fté,</quote> <quote>le bon Dieu lui a pardonné ses f., il est mort</quote> <usg type="geo">(V Praz‑de‑F.)</usg></cit>. 
+               <cit>
+                  <quote>«Pardëne‑no neuté faûté quemen no pardenaî assebè à cleu que nos en offeîçâ»,</quote> <quote>pardonne‑nous nos péchés comme nous pardonnons à
+                  ceux qui nous ont offensés</quote> 
+                  <usg type="geo">(B Nods. <name type="sourceHumaine">Rollier,</name> Év. Matth. VI, 12)</usg>
+               </cit>. 
+               <cit><quote>I vī lo dybłosdèri lo m dè l’ilyjè ky’èḣrigjyvè ttè lè ftè èsdistraksyon dou mn·ndo lo tinṅ dé la mcha,</quote>
+               <quote>il vit le diable derrière le mur de l’église qui notait toutes les fautes et distractions des gens pendant la messe</quote> <usg type="geo">(V Grim.)</usg></cit>. 
+               <g>‖</g> 
+               <def><quote>Étr an fāt,</quote> <quote>être en f.</quote></def> <usg type="geo">(J Bonc., var. spor.)</usg>.
+               <cit><quote>È pac hörəmin yi ma tchit insnblo kyə chon ënsfta,</quote> <quote>ce n’est pas seult lui, mais tous ensemble qui sont coupables</quote> <usg type="geo">(V Nend.)</usg></cit>. 
+               <cit><quote>Tsəzi <gloss>[tomber]</gloss> in fta </quote> <usg type="geo">(Vd Pailly)</usg></cit>. 
+               <cit><quote>Férə <gloss>[faire]</gloss> fta,</quote> <quote>pécher</quote> <usg type="geo">(V Isér., var. <name type="sourceHumaine">G Stalder</name>)</usg></cit>. 
+               <cit><quote>«Mon pâre, dé fé <gloss>[j’ai fait]</gloss> faute contre lesbon Dieu é contre vô»,</quote> <quote>mon père, j’ai péché contre le bon Dieu et contre vous</quote> 
+                  <usg type="geo">(<name type="sourceHumaine">G Stalder,</name> Landessprachen 403)</usg></cit>. 
+               <cit><quote>Sët ky’oun ydo  a fé fta è·n ydo sè akòrpā,</quote> <quote>celui qui a péché une fois est accusé cent fois</quote> <usg type="geo">(V Isér.)</usg></cit>. 
+               <g>‖</g> <gramGrp>Loc.</gramGrp>
+                     <def><quote>Paye la fta,</quote> <quote>payer l’amende pour la faute qu’on a commise</quote></def> <usg type="geo">(V Hérém.)</usg>:
+                     <cit><quote>Y a pa lontin kəsḣloou kə vajan pa a ḣlé prosechyooun loou falye payesla fta,</quote>
+               <quote>il n’y pas si longtemps, ceux qui n’allaient pas à ces processions devaient payer l’amende</quote> 
+               <usg type="geo">(<name type="sourceHumaine">Lav.</name> 353)</usg></cit>. 
+               
+               <lbl>Prov.</lbl> <cit><quote>L é la proumirə fta kə kté,</quote> <quote>c’est la première f. qui coûte</quote> <usg type="geo">(Vd Oron)</usg></cit>. 
+               <cit><quote>On·na fta in·nsintrn·nè on·n tra,</quote> <quote>une f. en entraîne une autre</quote> <usg type="geo">(Vd Orm.)</usg></cit>. 
+               <cit><quote>Fta avou·āyə èt a mḕtyé pèrdounāyə,</quote> <quote>f. avouée est à moitié pardonnée</quote> <usg type="geo">(Vd Chenit)</usg></cit>. </sense>
+            <sense level="4">2o <def>Manquement au savoir‑faire; action regrettable, maladresse</def> <usg type="geo">(SR spor.)</usg>. 
+               <cit><quote>Dè la grimchè k’il a fé, Ribòré ly [lui] èḣpèsl rgrè. Ḥlì fta fé kè lì chòlèk lchè tsḕr chon manṅté,</quote> <quote>en voyant la
+                  grimace du diable, R. ne peut retenir son rire. Cette f. fait que le soleil laisse
+                  tomber son manteau</quote> <usg type="geo">(V Grim.)</usg></cit>. <lbl>Attesté surtout dans la loc.</lbl> <def><quote>faire
+                     (une) faute,</quote> <quote>se tromper</quote>, <quote>agir maladroitement</quote></def>: 
+               <cit><quote>Il a fisla fta li mmo,</quote> <quote>c’est lui qui s’est trompé</quote> <usg type="geo">(V Leytr.)</usg></cit>. 
+               <cit><quote>L a fi ftè su ftè,</quote> <quote>il a accumulé les f.</quote> <usg type="geo">(V Praz‑de‑F.)</usg></cit>. 
+               <cit><quote>Piskə t’a fé la fta, l ə jsto kə tə nè payya ləskonsékansə,</quote> <quote>puisque c’est toi qui as fait la f., il est juste que tu en
+                  paies les conséquences</quote> <usg type="geo">(V Véross.)</usg></cit>. 
+               <lbl>Prov.</lbl> 
+               <cit><quote>Kə fò la fto baḕ la sso,</quote> <quote>qui fait la f. boit la sauce</quote> <usg type="geo">(G Aire‑la‑V., var. <name type="sourceHumaine">Dur.</name>)</usg></cit>. 
+               <cit><quote>Sé kə fā la fta la bai <gloss>[la boit]</gloss></quote> <usg type="geo">(Vd Orm.)</usg></cit>. 
+               <cit><quote>Së kyè fé fta ā supórtə <gloss>[la supporte]</gloss> </quote> <usg type="geo">(V Isér.)</usg></cit>. </sense>
+           
+            
+            <sense level="4">3o<def> Manquement aux règles d’une discipline
+                  intellectuelle, d’une technique, erreur</def> <usg type="geo">(SR)</usg>. <cit><quote>Fér dè fót oou dja,</quote> <quote>se tromper au jeu</quote> <usg type="geo">(V Nax)</usg></cit>. 
+               <cit><quote>Férson·na fta in trikòtin [en tricotant]</quote> <usg type="geo">(Vd Nov.)</usg></cit>. 
+               <cit><quote>Ftasd’atinchon,</quote> <quote>f. d’inattention</quote> <usg type="geo">(V Praz‑de‑F.)</usg></cit>. 
+               <cit><quote>«Quantsl’ant vu çosse ..., l’ant peinsâ que lâi avâi onna fautaset l’ant reinvouyî lo papâ âo syndico ein deseint quescein se pouâve pas»,</quote> 
+               <quote>quand ils ont vu ça, ils ont pensé que c’était une erreur et ils ont renvoyé le papier au maire en disant que c’était impossible</quote> 
+               <usg type="geo">(Vd <quote>Cont.</quote> 1919, 42)</usg></cit>. 
+               <cit><quote>Yə fā tò pyin dé fte in dévəzan,</quote> <quote>il fait de nombreuses f. en parlant</quote> <usg type="geo">(F Domp.)</usg></cit>.
+               
+               <g>‖</g> <note>En parlant de fautes d’orthographe</note>: <cit><quote>È·n diktḕ <gloss>[dictée]</gloss> sin fāt</quote> <usg type="geo">(J Vermes)</usg></cit>. 
+               <cit><quote>I pā tan fé dé fótə si kou a ma dikté,</quote> <quote>je n’ai pas fait bcp de f. cette fois dans ma dictée</quote> <usg type="geo">(V Véross.)</usg></cit>.
+               <cit><quote>A y a mant dé fót dan son tém <gloss><ref>[cf. thème]</ref></gloss>,</quote> <quote>il y a bcp de f. dans sa dictée</quote> <usg type="geo">(B Plagne)</usg></cit>. 
+               <cit><quote>Lè fṓtəsfrəmyon <gloss>[fourmillent]</gloss></quote> <usg type="geo">(V Ardon. <name type="sourceHumaine">Delaloye,</name> 59)</usg></cit>. 
+               <cit><quote>Fré atan dé fté ké dé mò,</quote> <quote>faire autant de f. qu’il y a de mots</quote> <usg type="geo">(Vd Month.)</usg></cit>. 
+               
+               <cit><quote>S’an mnkè on·na virgla sbin on pan, san kntè pèr on·na fta,</quote> <quote>si on oublie une virgule ou un point, ça compte pour une f.</quote> <usg type="geo">(F Gr.‑de‑V.)</usg></cit>. 
+               De là: <cit><quote>Y’ro bon pò lè fótə,</quote> <quote>j’étais bon en orthographe</quote> <usg type="geo">(Vd Sav.)</usg></cit>.</sense>
+            
+               <sense level="4">4o <def>Résultat d’un manquement; imperfection, défaut</def> <usg type="geo">(SR spor.;
+                  anc. F)</usg>. <cit><quote>«Dos deis maistre forneir esliet porront allar regardar lo pain chascon
+                  jor en la semanne, et quant lour troveront fauta, que la fauta lour
+                  monstrant ou banderet»</quote> <usg type="geo">(F 1413. Rec. dipl. VI, 181)</usg></cit>. <cit><quote>Ton pyin l é plyin
+                     dé fté,</quote> <quote>ton bas est plein d’imperfections</quote> <usg type="geo">(F Grandv.)</usg></cit>. 
+                  <cit><quote>Si bō é dé fāt,</quote> <quote>ce bois a des défauts</quote> <usg type="geo">(J Charm.)</usg></cit>.</sense>
+            
+            
+               <sense level="4">5o <def>Responsabilité d’une action répréhensible ou regrettable,
+                  attesté presque exclusivt dans les loc. c’est la faute à, c’est (de)
+                  ma, etc., faute</def> <usg type="geo">(SR; anc.)</usg>. 
+                  <cit><quote>Aki ət ə i fta?</quote> <quote>à qui la f.?</quote> <usg type="geo">(V Sav.)</usg></cit>. 
+                  <cit><quote>A kā la fta?</quote> <lbl>id.</lbl> <usg type="geo">(Vd Orm.)</usg></cit>.
+                     <cit>
+                        <quote>L è la fta i tsərəzè,</quote> <quote>c’est la f. à l’insecte appelé ts.,
+                  dit‑on à qqn qui a mal aux yeux</quote> <usg type="geo">(V Ardon. <name type="sourceHumaine">Delaloye,</name> 116)</usg>
+                     </cit>. 
+                  <cit><quote>Y è sa pra <gloss>[pure]</gloss> fta,</quote> <quote>c’est entièrt sa f.</quote> <usg type="geo">(Vd Orm.)</usg></cit>. 
+                  <cit><quote>L è bin ton dan paskə l è tafta,</quote> <quote>c’est bien fait pour toi parce que c’est ta f.</quote> <usg type="geo">(F Gr.‑de‑V.)</usg></cit>.
+                  <cit><quote>Sə ḥ kə l indyzvè rèḥamvan, l dəzḕ kən’rè pā dè sa fta, kə l avḕ ètā indyzā dèvan l,</quote> 
+                  <quote>si ceux qu’il roulait réclamaient, il leur disait que ce n’était pas de sa f., qu’il avait été roulé avant eux</quote> 
+                  <usg type="geo">(Vd Rovr.; cf. Cont. 1905, 41)</usg></cit>. 
+                  <cit><quote>«C’est sa fauta portant,ce y’é to cén perdu»,</quote> <quote>c’est sa f. pourtant si j’ai perdu tout ça</quote> 
+                     <usg type="geo">(Vd XVIIIe s. Craizu. Bull. Gl. V, 28)</usg></cit>. 
+                  <cit><quote>T  dma ft si t n’ p rusi?</quote> <quote>est‑ce ma f. si tu n’as pas réussi?</quote> <usg type="geo">(G Bern.)</usg></cit>.
+                     <cit><quote>Sə lə tsouzə l an pā myó aló kyé sè,él ə sa fta,</quote> <quote>si les choses n’ont pas mieux tourné que ça, c’est sa f.</quote> 
+                  <usg type="geo">(V Véross.)</usg></cit>. 
+                  <cit><quote>L è ta fta sə t’ vès, tən’alvè p pr [pas assez] rdou,</quote> <quote>c’est ta f. si tu as versé avec
+                  ton char, tu allais bcp trop vite</quote> <usg type="geo">(F Gr.‑de‑V.)</usg></cit>. 
+                  <note>Sans idée de culpabilité</note>: <cit><quote>D’é
+                     konprè tò pari kə sébal brə ..., lé bonbon, lé pakè, tò san, y étè la fót al’anfan Jézu,</quote> <quote>j’ai quand même compris que ce bel arbre de Noël, les
+                  bonbons, les paquets, tout ça c’était grâce à l’enfant J.</quote> <usg type="geo">(G Troin.)</usg></cit>. 
+                  <g>‖</g> <cit><quote>N’i achyadèròtyé on·na ats dè ma fta,</quote> <quote>j’ai laissé dérocher une vache par ma f.</quote> <usg type="geo">(V Daillon)</usg></cit>. 
+                  <g>‖</g> <cit><quote>Y è pè <gloss>[par]</gloss> sa fta kədə n’é p ai la rsta du préṣə,</quote> <quote>c’est de sa f. si je n’ai pas entendu le
+                  reste du discours</quote> <usg type="geo">(G Troin.)</usg></cit>. 
+                  <g>‖</g> <cit><quote>L alachya firè chè·n pè cha fta,</quote> <quote>il a laissé faire cela par sa f.</quote> <usg type="geo">(V Chal.)</usg></cit>.
+                     <lbl>Composé.</lbl> <cit><quote>«Par ma faute»,</quote><lbl>s. m.,</lbl> <note>dans la loc. <quote>drə chon
+                  [dire son] «par ma faute»,</quote></note></cit> <def>faire son mea‑culpa, reconnaître sa faute</def> 
+                  <usg type="geo">(F Grandv.)</usg>. </sense>
+               <sense level="4">6o <lbl>Loc. prép.</lbl> <def><quote>Fta dé,</quote> <quote>à cause de</quote></def> <usg type="geo">(V Miège <name type="sourceHumaine">Gch.</name>)</usg>:
+                  <cit><quote>Fta déchèṅ <gloss>[ça]</gloss></quote></cit>.</sense>
+            
+            
+               <sense level="4">7o <gramGrp>Loc. adj.</gramGrp> <cit><quote>Dè <gloss>[de]</gloss> fta,</quote> <note>dans <quote>vatsə dè
+                     fta</quote></note> <usg type="geo">(Vd Leys.)</usg></cit>, <cit><quote>biṣə [bête] dè fta</quote> <usg type="geo">(F Prez‑v.‑S.,
+                  Gr.‑de‑V.)</usg></cit>, <def>vache destinée à la boucherie, soit qu’elle ne donne pas de lait ni de
+                  veau, soit qu’elle ait été accidentée</def>.</sense>
+            
+         </sense>
+
+      
+         
+            <etym>Du bas‑lat. *fallĭta;
+               FEW, III, 389 b.</etym> <note>Les formes en fó‑, fò‑ de V Est et J Charm. (sens II)
+               sont empruntées. La constr. mentionnée sous I, B, 1o 3 b spécialt se
+               retrouve en fr. rég. de SR dans la loc. verbale avoir besoin: <quote>«la faux a
+               besoin d’aiguiser»</quote>.</note> <pc>—</pc> <xr>Cf. le suiv., afót 1 et 2, defauta et le synon.
+               (au sens I) mnka.</xr>
+               <note><name type="redacteur">Li.</name></note>
+         
+      
+   </entry>
+      </body>
+   </text>
+   
+</TEI>
