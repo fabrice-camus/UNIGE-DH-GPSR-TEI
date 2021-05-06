@@ -61,11 +61,13 @@
           <p>Manuel</p>
           <list>
             <item>Ajout de l'attribut @tome dans chaque article source</item>
-          </list>
-          <p>Implémenté dans un programme java</p>          
-          <list>
-            <item>to be continued...</item>
-          </list>
+            <item>&lt;b&gt;&lt;i&gt;agraf&lt;/i&gt;&lt;/b&gt; remplacé par &lt;i&gt;&lt;b&gt;agraf&lt;/b&gt;&lt;/i&gt; : Il faut pouvoir identifier correctement les variantes phonétiques, grâce à la balise &lt;i&gt; </item>
+            <item>&lt;i&gt;Dict.&lt;/i&gt; et &lt;i&gt;Suppl.&lt;/i&gt; remplacés par &lt;bibl&gt;Dict.&lt;/bibl&gt; et &lt;bibl&gt;Suppl.&lt;/bibl&gt; : Les références biblio sont en italique, tout comme les variantes phonétiques. Il faut donc les baliser différement</item>            
+            <item>&lt;c&gt;V&lt;/c&gt; &lt;c&gt;Ba.,&lt;/c&gt; remplacé par &lt;c&gt;V Ba.,&lt;/c&gt; : fusionner pour reconstruire la référence bibl. complète</item>
+            <item>Le tiret cadratin — est balisé &lt;pc&gt;—&lt;/pc&gt; : facilite les traitements XSL</item>
+            <item>Mo. est remplacé par &lt;c&gt;Mo.&lt;/c&gt; : Erreur de balisage dans la source, balisage absent</item>            
+          </list>            
+          <p>Les traitements sont implémentés dans un programme Java (dossier 01 Articles XML - Preprocess / preprocess</p>
         </div2>
         <div2>
           <head>Transformation XSL</head>
@@ -73,7 +75,7 @@
         </div2>
         <div2>
           <head>Pré-traitement</head>
-          <p>Implémenté dans un programme java</p>          
+          <p>TODO : Implémenté dans un programme java</p>          
           <list>
             <item>to be continued...</item>
           </list>
@@ -117,11 +119,12 @@
         <schemaSpec ident="oddex1" start="TEI">
           <moduleRef key="header"
             include="teiHeader fileDesc titleStmt publicationStmt notesStmt sourceDesc revisionDesc availability change licence "/>
-          <moduleRef key="core" include="p date title author publisher name bibl pubPlace note  "/>
+          <moduleRef key="core" include="p date title author publisher name bibl pubPlace note "/>
           <moduleRef key="tei" />
           <moduleRef key="textstructure" include="TEI text body div"/>
           <moduleRef key="dictionaries"
             include="entry form pron orth usg lbl"/>
+          <moduleRef key="analysis" include="pc"/>
           
           <elementSpec ident="entry" mode="change">
             <gloss>entrée</gloss>

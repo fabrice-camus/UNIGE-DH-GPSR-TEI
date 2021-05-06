@@ -72,25 +72,79 @@
 	<xsl:template match="//lem1/AN/b/text()">
 		<form type="lemma" subtype="français"><xsl:value-of select="."/></form>
 	</xsl:template>
+
 	
-	<xsl:template match="//varpho/i/text()">
-		<form type="variant"><pron><xsl:value-of select="."/></pron></form>
+	<xsl:template name="usg" >
+		<xsl:param name="node" />
+		<usg type="geographic">	
+				<xsl:choose>
+					<!-- Beurk. A améliorer pour factoriser le traitement du foreach -->
+					<xsl:when test="count($node/following-sibling::i)>0">
+						<xsl:for-each select="$node/following-sibling::node()  intersect $node/following-sibling::i[1]/preceding-sibling::node()">
+							<xsl:choose>
+								<xsl:when test="self::c|self::bibl"><bibl><xsl:value-of select="."/></bibl></xsl:when>
+								<xsl:when test="self::b|self::pc"></xsl:when>
+								<xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
+							</xsl:choose>
+						</xsl:for-each>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:for-each select="$node/following-sibling::node()">
+							<xsl:choose>
+								<xsl:when test="self::c|self::bibl"><bibl><xsl:value-of select="."/></bibl></xsl:when>
+								<xsl:when test="self::b|self::pc"></xsl:when>
+								<xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
+							</xsl:choose>
+						</xsl:for-each>			
+					</xsl:otherwise>
+				</xsl:choose>
+		</usg>				
 	</xsl:template>
-	<xsl:template match="//varpho/text()">
-		<usg type="geo"><xsl:value-of select="."/></usg>
-	</xsl:template>	
-	<xsl:template match="//varpho/c">
-		<usg type="geographic"><bibl><xsl:value-of select="."/></bibl></usg>
-	</xsl:template>	
-	<xsl:template match="//varpho/i/b/text()|//varpho/b/i/text()">
-		<form type="typePatois"><pron><xsl:value-of select="."/></pron></form>
+
+
+	<xsl:template match="//varpho/i">
+		<xsl:if test="count(./b)>0">	
+			<form type="typePatois">
+				<xsl:choose>
+					<xsl:when test="count(./preceding-sibling::b[text()='Fr.'])>0"><orth><xsl:value-of select="./b"/></orth></xsl:when>
+					<xsl:otherwise><pron><xsl:value-of select="./b"/></pron></xsl:otherwise>
+				</xsl:choose>
+			
+				<xsl:if test="count(./text())=0">		
+					<xsl:call-template name="usg">
+						<xsl:with-param name="node" select = "." />
+					</xsl:call-template>
+				</xsl:if>
+			</form>
+		</xsl:if>
+		<xsl:if test="count(./text())>0">
+			<form type="variant">
+				<xsl:choose>
+					<xsl:when test="count(./preceding-sibling::b[text()='Fr.'])>0"><orth><xsl:value-of select="text()"/></orth></xsl:when>
+					<xsl:otherwise><pron><xsl:value-of select="text()"/></pron></xsl:otherwise>
+				</xsl:choose>
+				
+				<xsl:call-template name="usg">
+					<xsl:with-param name="node" select = "." />
+				</xsl:call-template>
+			</form>
+		</xsl:if>
 	</xsl:template>
+	
+
 	<xsl:template match="//varpho/b/text()">
 		<lbl><xsl:value-of select="."/></lbl>
 	</xsl:template>	
-
-	<!-- A traiter. Pour l'instant exclu du résultat -->
+	
+	<!-- on court-circuite ces types de noeuds car ils sont traités dans le traitement du //varpho/i -->
 	<xsl:template match="//varpho/text()"/>
+	<xsl:template match="//varpho/c"/>
+	<xsl:template match="//varpho/bibl"/>
+	<xsl:template match="//pc">
+		<pc><xsl:value-of select="."/></pc>
+	</xsl:template>
+	
+	<!-- A traiter. Pour l'instant exclu du résultat -->
 	<xsl:template match="//semx"/>
 	<xsl:template match="//hist"/>
 	<xsl:template match="//sup"/>

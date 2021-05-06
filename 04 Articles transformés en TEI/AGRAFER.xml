@@ -42,40 +42,34 @@
             </form>
             <form type="variant">
                <pron> ‑, ‑ò</pron>
+               <usg type="geographic"> Vd Broye, 80, <bibl>V Ba.,</bibl> 8, F 1, 51, N 1, 4, 5, </usg>
             </form>
-            <usg type="geo">
-               <bibl>V</bibl>
-            </usg>
-            <usg type="geo">
-               <bibl>Ba.,</bibl>
-            </usg>
             <form type="variant">
                <pron>‑é</pron>
+               <usg type="geographic"> 20, </usg>
             </form>
             <form type="variant">
                <pron>ègrafè</pron>
+               <usg type="geographic"> (seult sens 3o) B 60, </usg>
             </form>
             <form type="variant">
                <pron>ègrèfè</pron>
+               <usg type="geographic"> 60 var.;  </usg>
             </form>
+            <pc>—</pc>
             <form type="typePatois">
                <pron>agraf</pron>
+               <usg type="geographic"> Vd <bibl>Br.,</bibl>
+                  <bibl>Mo.</bibl>
+               </usg>
             </form>
-            <usg type="geo">
-               <bibl>Br.,</bibl>
-            </usg>
             <lbl>Fr.</lbl>
             <form type="variant">
-               <pron>agrafer</pron>
-            </form>
-            <usg type="geo">
-               <bibl>N Bon., Pier.</bibl>
-            </usg>
-            <form type="variant">
-               <pron>Dict.</pron>
-            </form>
-            <form type="variant">
-               <pron>Suppl.</pron>
+               <orth>agrafer</orth>
+               <usg type="geographic">
+                  <bibl>N Bon., Pier.</bibl>
+                  <bibl>Dict.</bibl> et <bibl>Suppl.</bibl>
+               </usg>
             </form>
          </entry>
       </body>
