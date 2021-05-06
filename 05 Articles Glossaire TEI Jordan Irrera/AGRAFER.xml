@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="GPSR.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <entry>
+            <form type="lemma">AGRAFER,</form>
+            <form type="typePatois"><pron>agraf,</pron></form>
+            <form type="variant"> <pron>‑</pron>, <pron>‑ò</pron> <usg type="geo"> Vd Broye, 80, <bibl>V Ba.,</bibl> 8, F 1, 51, N 1, 4, 5, </usg></form>
+            <form type="variant"><pron>‑é</pron><usg type="geo"> 20,</usg></form>
+            <form type="variant"><pron>ègrafè</pron><usg type="geo">(seult sens 3o ) B 60,</usg></form>
+            <form type="variant"><pron>ègrèfè</pron> <usg type="geo">60 var.;</usg></form>
+            <pc>—</pc>
+            <form type="typePatois"><pron>agraf</pron> <usg type="geo">Vd <bibl>Br.</bibl>, <bibl>Mo.</bibl></usg></form>
+            <lbl>Fr.</lbl><form type="variant"><orth>agrafer</orth>
+               <name>N Bon.,</name>
+               <name>Pier.</name>
+               <bibl>Dict.</bibl> et<bibl>Suppl.</bibl></form>
+
+            <sense>
+               <g>‖</g> <gramGrp>V. tr.</gramGrp>
+               <def>1o Saisir vivement, agripper, arracher de force.</def>
+               <cit>
+                  <quote>Agrafā ana motch, ana rta,</quote>
+                  <quote>attraper une mouche, une souris</quote>
+                  <usg type="geo">(N Brév.).</usg>
+               </cit>
+               <cit>
+                  <quote>Lə m’a agraf fro di man kəmin on modzon kə ly è,</quote>
+                  <quote>il me l’a arraché «hors» des mains, comme un rustre [litt. grand veau]
+                     qu’il est</quote>
+                  <usg type="geo">(F Crés.).</usg>
+               </cit>
+               <cit>
+                  <quote>Stu frār a tòt agrafā,</quote>
+                  <quote>ce frère a accaparé tout l’héritage</quote>
+                  <usg type="geo">(N Sav.; sens voisin de 2o).</usg>
+               </cit>
+               <def>Réfl. S’accrocher.</def><cit>
+                  <quote>La rta s’agraf ó mur,</quote>
+                  <quote>la souris s’accroche au mur</quote>
+                  <usg type="geo">(N Brév.).</usg>
+               </cit>
+               <def>En venir aux mains.</def>
+               <cit>
+                  <quote>«Ils se sont agrafés»</quote>
+                  <usg type="geo">(Baillods, Chez nous, 66. Pier.).</usg>
+               </cit>
+               <def>2o Dérober avec adresse, filouter (V, N).</def>
+               <cit>
+                  <quote>«Ces pouettes [vilaines] gens venaient bien nous agrafer des pommes au
+                     travers de la barrière»</quote>
+                  <usg type="geo">(N Pier.).</usg>
+               </cit>
+               <def>Acheter qch. bien au‑dessous de son prix.</def>
+               <cit>
+                  <quote>«Il lui a agrafé sa montre en or pour vingt francs»</quote>
+                  <usg type="geo">(N Bon.).</usg>
+               </cit>
+               <def>3o Attacher au moyen d’une agrafe.</def>
+            </sense>
+
+            
+               <etym>Dans les sens 1o et 2o, connus aussi en France, agrafa appartient au
+                  fonds gallo‑roman ancien; <xr>cf. God. Compl., agrafer et Mistralagrafa.</xr> Dans
+                  le sens 3o, très peu attesté, le mot est un emprunt récent au fr. <xr>B
+                     Charm.</xr> distingue les deux couches du mot par la forme: ègrèfè, sens anc.
+                  et mod., et agrafè, sens mod. exclusivt.</etym>
+               <note>Pour la variante vaud. en ‑i, cf. les doublets agrəpa et agrèpi «agripper»;
+                  adzòka et èdjòki; agrəfa et agrəfi «agriffer»; agrapi, arapi «grimper».</note>
+               <note><name type="redacteur">Tp.</name></note>
+            
+
+         </entry>
+      </body>
+   </text>
+</TEI>
+

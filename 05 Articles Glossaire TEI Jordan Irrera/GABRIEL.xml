@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../regles/out/GPSR.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <entry xml:id="GABRIEL">                     
+               <form type="lemma">
+                 GABRIEL, ‑ELLE.   
+               </form>
+                  <lbl>I. Formes masc.</lbl> <form type="typePatois">gabriyl,
+                     <form type="variant"><pron>gā‑</pron> <usg type="geo">Vd 22, 24, V 72 (‑bréy‑),</usg></form></form> 
+            <form type="variant"><pron>‑èlè</pron>, <pron>‑ə</pron> <usg type="geo">22, 42, 46 Cas., 47(‑brəyḕlə),</usg></form>
+            <form type="variant"><pron>‑alə</pron> <usg type="geo">46 Courthion,</usg></form>
+                  <form type="variant"><pron>‑ə</pron> <usg type="geo">60,</usg></form> <form type="variant"><pron>‑bri</pron>(<pron>y</pron>)
+                     <pron>è,</pron> <pron>‑é</pron> <usg type="geo">Vd 11, 14, 16, 21, 31, 35, 36, 61 (et ‑brayè), 69, 86, G 20, F 20;</usg></form>
+            <form type="variant"><pron>grabiyl</pron>(<pron>ə</pron>) <usg type="geo">V 36,</usg></form> 
+            <form type="variant"><pron>‑byé,</pron> <pron>‑è</pron> <usg type="geo">18, G 18, 20 var.;</usg></form> 
+            <form type="variant"><pron>gabr·è</pron> <usg type="geo">Vd 82.</usg></form> 
+            <lbl>Anc.</lbl>
+                  <form type="variant"><orth>Grabiel</orth> <usg type="geo">Vd 1623,</usg></form> <form type="variant"><pron>Grabie</pron> <usg type="geo">F 1620.</usg></form> 
+            <lbl>Fr.</lbl>
+                  <form type="variant"><orth>Grabiel</orth> <usg type="geo">V spor. Reym.,</usg> <lbl>prononc.</lbl> <pron>gbriyè</pron> <usg type="geo">Vd 51.</usg></form> 
+            <pc>—</pc>
+                  <lbl>Hypocoristiques:</lbl>
+                  <form type="variant"><pron>gabrìyèlt</pron> <usg type="geo">V 80;</usg></form> 
+            <form type="variant"><pron>gabri(y)n</pron> <usg type="geo">Vd 14, 22, 23, 24 (péj.),</usg></form>
+                  <form type="variant"><pron>‑ëyon</pron> <usg type="geo">V 46 vx;</usg></form> 
+            <form type="variant"><pron>gabriy</pron> <usg type="geo">Vd 61;</usg></form> 
+            <form type="variant"><pron>gabəl,</pron> <pron>‑é,</pron> <pron>gā‑</pron> <usg type="geo">Vd 16, 2,</usg></form> 
+            <form type="variant"><pron>əlon,</pron> <pron>‑əlounè</pron> <usg type="geo">21;</usg></form> 
+            <form type="variant"><pron>gab,</pron> <pron>gā‑</pron> <usg type="geo">Vd 51, 61, Po recafâ, G 10,</usg></form> 
+            <form type="variant"><pron>‑byon</pron> <usg type="geo">Vd 16;</usg></form> 
+            <form type="variant"><pron>biyl</pron> <usg type="geo">V 36,</usg></form> 
+            <form type="variant"><pron>byé</pron> <usg type="geo">18.</usg></form>
+            
+                  <lbl>II. Formes fém.</lbl> 
+            <form type="typePatois"><pron>gabriylè,</pron><form type="variant"><pron>‑ə</pron></form> <usg type="geo">Vd 31,</usg></form> 
+            <form type="variant"><pron>‑bri·èl</pron> <usg type="geo">J 64;</usg></form>
+                  <form type="typePatois"><pron>gabri(y)ta</pron> <usg type="geo">Vd 14 (sens 4o 1), 61.</usg></form> 
+            <lbl>Anc.</lbl>
+                  <form type="variant"><orth>Gabrietaz</orth> F 1590 (sens 4o 1).</form> 
+            <pc>—</pc> 
+            <lbl>Hypocoristique:</lbl>
+                  <form type="variant"><pron>gabriyna</pron> <usg type="geo">Vd 14 (id.).</usg></form> <xr>Cf. n. de fam. et de l.</xr>
+            
+            <sense level="0">
+               <g>‖</g> <sense level="4">1o<def> Nom de l’archange de l’Annonciation</def> <usg type="geo">(V Lourt.)</usg>: <cit><quote>l’anjə
+                  Gabrəyḕlə.</quote></cit></sense>
+               <sense level="4">2o <def>Nom du diable</def> <usg type="geo">(Vd et F XVIIe s.)</usg>. <cit><quote>«Retournant à
+                  la mayson, Grabie s’apparut derechef a luy»</quote> <usg type="geo">(<bibl>F 1620. Livre noir, XI.
+                     AC</bibl>).</usg></cit> <def>En composition avec un autre nom</def>: <cit><quote>«... Se nommoit Isaac Gabriel, et
+                  d’autres fois a dit qu’il s’estoit nommé Gabriel Roch; et estoit vestu de
+                  blanc, ayant deux pieds et une grande barbe»</quote> <usg type="geo">(<bibl>Vd Vevey 1661. A.
+                     tr. p. XXXII, 164</bibl>).</usg></cit></sense>
+               
+                  <sense level="4">3o <def>Prénom.</def> <sense level="5">1. <def>Prénom d’homme</def> <usg type="geo">(partout).</usg> <cit><quote>Mə·n
+                     onklyə Grabyè è mór l’an pasṑ,</quote> <quote>mon oncle G. est mort l’an dernier</quote> <usg type="geo">(G
+                     Aire‑la‑V.).</usg></cit> <cit><quote>Lo mmo fā rapṑ onkò
+                     kntrè Gabriyè a No·é,</quote> <quote>le même fait encore un rapport contre G., fils de
+                     Noé</quote> <usg type="geo">(Vd Rovr.; cf. Cont. 1915, 18).</usg></cit> 
+                     <cit><quote>«Gâbi dè Treycovagne | cutsî permi lè moo, pouâvè onco soclliâ»,</quote>
+                     <quote>G. de Treycovagnes, couché parmi les morts, respirait encore</quote>
+                     <usg type="geo">(<bibl>Vd Po recafâ, 87</bibl>).</usg></cit></sense><sense n="5">2. <def>Prénom de femme</def> 
+                        <usg type="geo">(Vd Blon., Penth., J Bonc.).</usg> 
+                        <cit><quote>Gabriyèlə Vəṣin <gloss>[Vincent]</gloss></quote> <usg type="geo">(Vd Blon.).</usg></cit></sense></sense>
+                  <sense n="4">4o <def>Surnom.</def> <sense level="5">1. <def>Donné à la femme ou à la fille d’un homme
+                     appelé Gabriel</def> <usg type="geo">(Vd Leys.)</usg>. Probablement même emploi dans: <cit><quote>«Fene <gloss>[femme]</gloss>
+                     Gabrietaz»</quote> <usg type="geo">(<bibl>F 1590. Comptes Hauterive. AC</bibl>).</usg></cit> </sense><sense level="5">2.
+                        <def>Donné aux membres de la famille d’un homme appelé Gabriel</def> <usg type="geo">(Vd Blon.)</usg>. <cit><quote>La
+                           Gabriyé, lé <gloss>[les]</gloss> Gabriyé.</quote></cit>
+                     </sense></sense>
+                  <sense level="4">5o
+                     <lbl>Nom de fam.</lbl>
+                     <cit><quote>Gabriel</quote> <usg type="geo">F Bossonnens, Granges.</usg></cit></sense>
+                  <sense level="4">6o
+                     <lbl>Noms de lieux</lbl> (choix pour Vd). <def>Le Voirgne à Gabriet</def>
+                     <usg type="geo">Vd Gryon</usg>: <cit><quote>l varny <gloss>[sapin blanc]</gloss> (ou la grda rba) a Gabri·è</quote></cit>; 
+                     <def>aux Champs de vers chez Gabriel</def> <usg type="geo">Vd L’Abbaye</usg>: <cit><quote>è tsan dè ché gābri·è, bâtiments, prés, champs</quote></cit>;
+                     <def>Clos Gabriel</def> <usg type="geo">J Rossemaison.</usg> <g>‖</g> <def>Es Gabrielles</def> <usg type="geo">G Jussy, vigne</usg> ; <def>à la
+                        Gabriettaz</def> <usg type="geo">Vd Chavannes‑le‑Chêne</usg>: <cit><quote>a la gabri·ta, champs.</quote></cit></sense>
+            
+           
+                  <sense level="4">7o Fig. <def>Gabriyè, nom donné à un gros homme à l’esprit obtus</def>
+                     <usg type="geo">(Vd Penth.)</usg>. <def>Gabi, nom donné à un luron décidé</def> <usg type="geo">(ib.)</usg>.</sense>
+            
+            </sense>
+            
+               
+                  <etym>Le type gabri(y)ta est la féminisation de gabriy
+                     d’après le modèle des dérivés en ‑ĭttu/‑a.</etym> <note>La métathèse
+                     (grab‑) semble fréquente dans le Sud de la France,</note> <xr>cf. notamment
+                     <c>Mistral,</c> II, 3 c. Pour le sens 2o, </xr> <xr>cf. diable folkl. 2 et
+                     Aeb. dans A. tr. p. XXXII, 167.</xr> <pc>—</pc> <xr>Cf. grabəly, grab, grəb,
+                     Jean‑.</xr>
+                     <note><name type="redacteur">Chvr.</name></note>
+               
+            
+         </entry>
+      </body>
+   </text>
+</TEI>

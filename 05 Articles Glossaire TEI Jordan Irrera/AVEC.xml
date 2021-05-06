@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../regles/out/GPSR.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+     <entry> 
+        <form type="lemma">AVEC,</form> <lbl>I.</lbl> 
+   <form type="typePatois"><pron>av</pron>, <form
+         type="variant"><pron>aé</pron>
+         <usg type="geo"><placeName>Vd 11</placeName>, <placeName>12</placeName>,
+               <placeName>14‑17</placeName>, <placeName>31</placeName> (ou avē sens comparatif II
+            1o), <placeName>33</placeName>, <placeName>35</placeName>, <placeName>36</placeName>,
+               <placeName>4</placeName>, <placeName>51</placeName>, <placeName>53</placeName>,
+               <placeName>6</placeName>, <placeName>70</placeName>, <placeName>80‑82</placeName>,
+               <placeName>90</placeName>, <name type="sourceHumaine">Br., Dum.,</name> Cont.,
+               <placeName>V 12</placeName>, <placeName>13</placeName>, <placeName>1
+               Bouveret</placeName>, <placeName>2</placeName>, <placeName>31</placeName>,
+               <placeName>36</placeName> (procl. ‑è), <placeName>71</placeName>,
+               <placeName>72</placeName>, <placeName>74</placeName>, <placeName>75</placeName> (ou
+            aè <name type="sourceHumaine">Jj.</name>), <placeName>81</placeName>,
+               <placeName>84</placeName>, <placeName>86</placeName> (ou ‑è),
+               <placeName>88</placeName>, <name type="sourceHumaine">Ba.,</name>
+            <placeName>G 10</placeName>, <placeName>15</placeName> (ou aḗi),
+               <placeName>16</placeName>, <placeName>18</placeName>, <placeName>19</placeName> (ou
+            ‑ḗi, avə), <placeName>21</placeName>, <placeName>Carillon</placeName>, <placeName>N
+               11</placeName> (procl. ‑è), <placeName>22</placeName>, <placeName>31</placeName>
+            <name type="sourceHumaine">Gch.,</name>
+            <placeName>33</placeName> (ou ‑è), <placeName>41</placeName>,
+            <placeName>42</placeName>, <placeName>50</placeName>,
+         <placeName>52</placeName>,</usg></form></form>
+   
+   <form type="variant"><pron>a(v)è</pron>
+     <usg type="geo"> <placeName>Vd 10</placeName>, <placeName>22</placeName>, <placeName>32</placeName>,
+         <placeName>50</placeName>, <placeName>54</placeName>, <placeName>62</placeName> (ou ‑i),
+         <placeName>G 12</placeName>, <placeName>17</placeName>, <placeName>20</placeName>,
+         <placeName>F 32</placeName>,</usg></form>
+   
+   <form type="variant"><pron>a(v)ei</pron> <usg type="geo"><placeName>V 16</placeName>, <placeName>60</placeName> <name type="sourceHumaine">Luyet,</name>
+      <name type="sourceHumaine">Favre</name> (‑é Tabl., corr.), <placeName>6 Grimisuat</placeName> <name
+         type="sourceHumaine">Favre,</name> <placeName>80</placeName> <name type="sourceHumaine">Tp.</name> (procl. ‑é
+      corr.; ‑è <name type="sourceHumaine">Gill.;</name> aì ALF), <placeName>89</placeName> <name type="sourceHumaine"
+         >Gill.,</name> <placeName>F 16</placeName> <name type="sourceHumaine">Gch.</name> (‑è, ‑i, avi, a·i), 1 Co., <placeName>56</placeName>
+      procl. (pause ‑e), <placeName>61</placeName>, <placeName>N 20</placeName>,</usg></form> 
+   
+   <form type="variant"><pron>aì(i)</pron>, <pron>aé</pron> <usg type="geo"><placeName>V 51</placeName> <name type="sourceHumaine">Jj.</name>
+   (procl. a → a; aè ALF),</usg> </form>
+   
+   <form type="variant"><pron>avai</pron> <usg type="geo"><placeName>Vd 21</placeName> <name type="sourceHumaine">Hen.</name> (‑i corr.), <placeName>24</placeName>
+   (ae ALF), <name type="sourceHumaine">Br.;</name></usg></form> 
+   
+   <form type="variant"><pron>a(v)i</pron> <usg type="geo"><placeName>74</placeName>, <placeName>Broye</placeName>, <placeName>92</placeName>, <name type="sourceHumaine">Br.,</name> <placeName>V 17</placeName>, 
+      <placeName>18</placeName>, <placeName>30</placeName>, <placeName>31</placeName>, <placeName>40</placeName>, <placeName>42‑44</placeName>, <placeName>46</placeName>, <placeName>4 Verbier</placeName>, <placeName>50</placeName>, 
+      <placeName>55</placeName>, <placeName>5 Vétroz</placeName> <name type="sourceHumaine">Br.</name> 
+      <placeName>436</placeName> (ou avé), <placeName>87</placeName>, <placeName>F 53</placeName>, <placeName>55</placeName>, <placeName>63</placeName>, 
+      <placeName>N Bér.</placeName>, <placeName>60</placeName>, <placeName>61</placeName>, <placeName>6 St‑Blaise</placeName>,</usg></form> 
+   
+   <form type="variant"><pron>avi</pron> <usg type="geo"><placeName>Vd 93</placeName>,</usg></form> 
+        <form type="variant"><pron>avé</pron> <placeName>N 6</placeName>,</form> 
+        <form type="variant"><pron>avè</pron> <usg type="geo"><placeName>F 14</placeName> (procl. ‑i; avè ALF 345)</usg>,</form>
+        <form type="variant"><pron>‑ei</pron> <usg type="geo"><placeName>Vd Mo.</placeName>, <placeName>F 1</placeName> <name type="sourceHumaine">Gé.,</name></usg></form> 
+        <form type="variant"><pron>‑ai</pron> <usg type="geo"><placeName>Vd 23,</placeName></usg></form> 
+        <form type="variant"><pron>‑in</pron> <usg type="geo"><placeName>33,</placeName></usg></form> 
+        <form type="variant"><pron>‑i</pron> <usg type="geo"><placeName>V 47</placeName>, <placeName>F 1 Vuadens</placeName> <ref>(cf. ‑ei <name type="sourceHumaine">Br.</name> 446)</ref>, <placeName>51</placeName>,</usg></form> 
+        <form type="variant"><pron>‑ā</pron> <usg type="geo"><placeName>34</placeName> <name type="sourceHumaine">Gch.</name> (procl. ‑é, ‑eïn; avā, ‑in <name type="sourceHumaine">Chassot</name>);</usg></form> 
+        <form type="variant"><pron>avé</pron>, <pron>‑è</pron> <usg type="geo"><placeName>43</placeName></usg>;</form> 
+        <form type="variant"><orth>«avuoi»</orth> <usg type="geo"><placeName>F Vully</placeName> <name type="sourceHumaine">Schmutz;</name></usg></form> 
+        <form type="variant"><orth>«arvai, arvi»</orth> <usg type="geo"><placeName>Vd Mo.</placeName> </usg></form> 
+   <lbl>II.</lbl>
+   <form type="typePatois"><pron>av</pron> <usg type="geo"><placeName>B 23</placeName>, <placeName>2 V. St‑Imier</placeName> <name type="sourceHumaine">Stalder</name> <placeName>369</placeName>, <placeName>31</placeName> 
+      <name type="sourceHumaine">Jaquerez</name> <placeName>94</placeName>, <placeName>32</placeName>, <placeName>33</placeName>, <placeName>3 Tav.</placeName>, <placeName>50 ALF</placeName>, <placeName>53</placeName>, <placeName>62</placeName>,</usg></form> 
+   
+   <form type="variant"><pron>avāə</pron> <usg type="geo"><placeName>22</placeName>,</usg></form>
+   <form type="variant"><pron>‑ù</pron> <placeName>21</placeName> <name type="sourceHumaine">Tp.;</name></form> 
+   <form type="variant"><pron>èvo</pron> <usg type="geo"><placeName>35</placeName>, <placeName>3 Bévilard</placeName> <name type="sourceHumaine">Stalder</name> <placeName>374</placeName>, <placeName>4‑6</placeName>, <name type="sourceHumaine">Ra., Qui., Gué., Bié.</name></usg></form>
+   
+   <lbl>III. Composé: </lbl>
+   <form type="typePatois"><pron>dèv</pron> <usg type="geo"><placeName>B 40</placeName>, <placeName>41</placeName>, <placeName>50</placeName>, <placeName>52</placeName>, <placeName>54</placeName>, <placeName>6 spor.</placeName>,</usg></form> 
+   <form type="variant"><pron>dèvou</pron> <usg type="geo"><placeName>N 30</placeName>.</usg></form> 
+   <pc>—</pc> <note>Formes élidées devant voy.</note> 
+   <form type="variant"><pron>av</pron> <usg type="geo"><placeName>V 60</placeName>,</usg></form> 
+   <form type="variant"><pron>a</pron> <usg type="geo"><placeName>51</placeName>,</usg></form> 
+   <form type="variant"><pron>av</pron> <usg type="geo"><placeName>Vd 43</placeName>, <placeName>V 36</placeName>.</usg></form> 
+        <note>Formes réduites</note> <form type="variant"><pron>vṓ</pron> <placeName>B 60</placeName>, <placeName>6 Miécourt</placeName> (devant cons.).</form>
+   <lbl>Fr.</lbl> <form type="variant"><orth>avè</orth> <usg type="geo"><name type="sourceHumaine">N Pier.</name></usg></form> 
+        <lbl>Anc. formes 1.</lbl> <form><orth>avoi</orth> <usg type="geo">G Céquélainô str. 36, <name type="sourceHumaine">Mussard</name> Rocati 6,</usg></form> 
+   <form type="variant"><orth>avoy</orth>, <orth>‑oit</orth>, <orth>awoi</orth>, <orth>‑oy</orth> <usg type="geo"><placeName>Vd</placeName>, <placeName>F XIVe‑XVe s.</placeName>,</usg></form>
+        <form type="variant"><orth>awe</orth> <usg type="geo"><placeName>F 1407</placeName>, <placeName>1423</placeName>, <placeName>1425</placeName>, <placeName>Vd 1520</placeName>,</usg></form> 
+        <form type="variant"><orth>aweiz</orth> <usg type="geo"><placeName>F 1403</placeName>,</usg></form>
+        <form type="variant"><orth>await</orth> <usg type="geo"><placeName>1418</placeName>,</usg></form> 
+        <form type="variant"><orth>avue(z)</orth> <usg type="geo"><placeName>XVe s.</placeName>,</usg></form>
+        <form type="variant"><orth>avue(t)</orth> <usg type="geo"><placeName>Vd 1520</placeName>, <placeName>F 1422</placeName>,</usg></form>
+        <form type="variant"><orth>avique</orth> <usg type="geo"><placeName>1487</placeName>;</usg></form> 
+        <form type="variant"><orth>avoique</orth>, <orth>‑oyque</orth> <usg type="geo"><placeName>1334</placeName>, <placeName>Vd</placeName>, <placeName>F XVe s.</placeName>,</usg></form>
+        <form type="variant"><orth>aweque</orth> <usg type="geo"><placeName>F 1423</placeName>;</usg></form>
+        <form type="variant"><orth>avoesquoy</orth> <usg type="geo"><placeName>Vd 1494</placeName>;</usg></form> 
+        <lbl>   2. </lbl><form type="variant"><orth>avoz</orth> <usg type="geo"><placeName>N Boudry 1367</placeName>,</usg></form> 
+        <form type="variant"><orth>etvos</orth> <usg type="geo"><placeName>B 1750</placeName> A. tr. p. III 47.</usg></form> 
+   <pc>—</pc> 
+   <xr>ALF, cartes énumérées dans la Table; Enf. prod. v. 29‑31.</xr> 
+        
+        
+   <sense level="1"> <g>‖</g> I. <def>Adv. placé à la fin de l’énonciation et marquant une idée
+      d’accompagnement.</def> <sense level="4">1o <def>Joint à un subst. ou pronom. Aussi, en plus;</def> <xr>cf. afr.</xr>
+         <cit><quote>«prenez le jus ... et du miel ovec»</quote></cit> (To. avuec). 
+         <cit>
+            <quote>«Lot
+            sellotet lot czix avue | Ont perdu ... lour clerta»,</quote>
+            <quote>le soleil et le ciel aussi ...</quote> <usg type="geo">(<placeName>Vd Vev.</placeName> vers 1520. Arch.rom. VII, 309)</usg>
+         </cit>. 
+         <cit><quote>Ly an bin mədjī ouna vtsè | Onkra lé
+            krné aéi,</quote> <quote>ils ont bien mangé une vache [et] encore les cornes avec</quote> 
+         <usg type="geo">(F Alb. Rom. IV, 213)</usg></cit>. 
+         <cit><quote>È tchyu è yò aé,</quote> <quote>il est tombé et moi avec</quote> <usg type="geo">(V Nend.)</usg></cit>. 
+      </sense>
+      <sense level="4">2o <def>Joint à un verbe ou à une expr. verbale. Avec.</def>
+            <cit><quote>Prin a ètr aé,</quote> <quote>prends la lettre avec [toi]</quote> <usg type="geo">(ib.)</usg></cit>. 
+         <cit><quote>Də l’é ratrapò su la rto,alór də saè vənu aé,</quote> 
+         <quote>je l’ai rattrapé sur la route, alors je suis venu avec [lui]</quote> <usg type="geo">(G Aire‑la‑V.)</usg></cit>. 
+         <cit>
+            <quote>[Un gaillard, qui reluquait une jolie fille, avait envie] «dè
+            férè on bet d’accordâiron avoué et dèl’avâi po fenna»,</quote> 
+         <quote>de se fiancer avec [elle] et de l’avoir pour femme</quote> 
+         <usg type="geo">(Vd Cont. 1888, 46)</usg>
+         </cit>. 
+         <cit>
+            <quote>T’a itāaé, tə saré prāi aé, è tə saré pindu aé,</quote> 
+         <quote>tu as été avec [lui], tu seras pris avec et tu seras pendu avec</quote> <usg type="geo">(Vd Orm.)</usg>
+         </cit>. 
+         
+         <cit>
+            <quote>irə tò pari ai,</quote> 
+         <quote>il était aussi avec [nous]</quote> <usg type="geo">(V Nend.)</usg>
+         </cit>. 
+         <cit><quote>«Connais‑tu la Louise Benoît? — Si je la connais! on est amie avec»</quote> <usg type="geo">(<name type="sourceHumaine">G Hum.</name>)</usg></cit>. 
+         
+         <cit><quote>«Onna vîlhie amïa ... qu’avâiétâ âo catsimo [au catéchisme] avoué» </quote> <usg type="geo">(Vd Cont. 1894, 19)</usg></cit>. 
+         <g>‖</g> <def>Aller avec, fréquenter.</def> 
+         <cit><quote>Té di rè kyédi mésondzə, va pa mi avé,</quote> 
+         <quote>il ne te dit que des mensonges, ne va plus avec [lui]</quote> <usg type="geo">(V Véross.)</usg></cit>. 
+         
+         <def>Fig. Dictons</def>; <xr>cf. Gl. I, 287 a 5o d.</xr> 
+         <cit><quote>Lə tin mòd,yə fó alā avè,</quote> <quote>le temps marche, il faut aller avec</quote> <usg type="geo">(Vd Cors.)</usg></cit>. 
+         <cit><quote>Lè t son du, mè fò ala avè,</quote> <quote>les temps sont durs, mais ...</quote> <usg type="geo">(Vd Chenit)</usg></cit>. 
+         <g>‖</g> <def>Aussi, de plus, joint à un verbe.</def> 
+         <cit>
+            <quote>[Un vieux garçon dit: je la voudrais capable de me rendre heureux]</quote>
+            <quote>«etavoé que sai aimabla»,</quote> <quote>et en outre [je voudrais] qu’elle soit aimable</quote> 
+         <usg type="geo">(Vd Cont. 1915, 4)</usg>
+         </cit>. 
+         <cit>
+            <quote>Y a kyìrya a l’tré ... k’oulé avéi li balyé kkyétsouja,</quote> 
+         <quote>il a crié à l’autre qu’il voulait aussi lui donner qch.</quote> <usg type="geo">(V Grimisuat. Rom. Forsch. XLII, 444)</usg>
+         </cit>.
+      </sense>
+   </sense>
+   <sense level="1"> II. <gramGrp>Prép.</gramGrp> <def>Avec.</def> <sense level="4">1o <def>Marque une idée d’accompagnement.</def> 
+      <cit>
+         <quote>«Six autres compagnyon qui furant avoyque lez dit priour»</quote> 
+         <usg type="geo">(Vd Laus. 1401. Comptes, D 215. Ac)</usg>
+      </cit>. 
+      <cit><quote>N’é ran avi mè, nə pu ran tèbalyi,</quote> <quote>je n’ai rien sur moi, je ne puis rien te donner</quote> <usg type="geo">(F Gr.‑de‑V.)</usg></cit>.
+            <cit>
+               <quote>Èvè dé sou èvō lu [«lui»] ou chu lu,</quote> 
+      <quote>avoir de l’argent sur soi</quote> <usg type="geo">(B Charm.)</usg>
+            </cit>. 
+      <cit>
+         <quote>I vœbïn alè èvō tè, min i n vœ p alè dèvō lu,</quote> 
+      <quote>je veux bien a. avec toi, mais je ne veux pas a. avec lui</quote> 
+      <usg type="geo">(B Pleigne)</usg>
+      </cit>. 
+      <cit>
+         <quote>Aè sin·n, sə mzon də vyétrədə gró kònāté,</quote> <quote>avec cela [le cigare ou la chique], ils [les jeunes gens]
+         s’imaginent être des lurons</quote> <usg type="geo">(V Isér. Lautbibl. no 58, 7)</usg>
+      </cit>. 
+      
+      <cit><quote>L ra k’ḗtḕ vó lèrḕ·n,</quote> <quote>le roi qui était avec la r.</quote> <usg type="geo">(B Miécourt. A. tr.p. XVI, 127)</usg></cit>. 
+      
+      <cit><quote>Vïn vō mè,</quote> <quote>viens avec moi</quote> <usg type="geo">(B Charm.)</usg></cit>.
+            <cit><quote>Av ó prè,</quote> <quote>avec le père</quote> <usg type="geo">(V Sav.; avéi dev. cons.)</usg></cit>.
+            <cit><quote>Av on garson</quote> <usg type="geo">(Vd Burt.; avé dev. cons.)</usg></cit>. 
+      
+      <note>Dictons et prov.</note> 
+      <cit><quote>L raṣi va binavi la fòrts,</quote> <quote>le râteau va bien avec la fourche, l’économie ... la
+         générosité</quote> <usg type="geo">(F Gru.)</usg></cit>. 
+      <cit><quote>Avi loul fó urlā, avi lou tsin fó dzapā,</quote> <quote>avec les loups il faut h., avec les
+         chiens il faut aboyer</quote> <usg type="geo">(V Champ.)</usg></cit>. 
+      <cit><quote>Fó vivrə avi su kə vvon,</quote> <quote>il faut v. avec ceux qui vivent</quote> <usg type="geo">(V Lourt.)</usg></cit>; 
+      <def>même idée</def>: <cit><quote>O np pè vivr avāə lé mòr,</quote> <quote>on ne peut pas v. avec les morts</quote> <usg type="geo">(B Plagne)</usg></cit>.
+      <g>‖</g> <lbl>Fig.</lbl> 
+      <cit><quote>S botè dèvō l gouvèrnman,</quote> <quote>se mettre du côté du g., appuyer le g.</quote> <usg type="geo">(B Vermes)</usg></cit>. 
+      <cit><quote>Èt vo dèvō Bèrn?</quote> <quote>êtes‑vous avec B.?</quote> <usg type="geo">(B Bonc.)</usg></cit>. 
+      <g>‖</g> <def>En comparaison de.</def>
+            <cit><quote>L é gró ave l’trò,</quote> <quote>il est grand comparé à l’autre</quote> <usg type="geo">(Vd Blon.)</usg></cit>.
+      <g>‖</g> <def>En présence de.</def> <cit><quote>On n’óz rè dir aé lyi, é nòfò pr,</quote> <quote>on n’ose rien dire en sa pr., il nous fait peur</quote> <usg type="geo">(G Aire‑la‑V.)</usg></cit>.
+      <g>‖</g> <def>Par.</def><cit> <quote>«Ils partirent avec le beau temps»,</quote> <note>... proprt accompagnés du b. t.</note> <usg type="geo">(<name type="sourceHumaine">G</name> <name type="sourceHumaine">Hum.</name>)</usg></cit>. 
+      <note>Par ext.</note> <cit><quote>No sé arvé avei la pyœdj,</quote> <quote>nous sommes arrivés en même temps que la pluie</quote> <usg type="geo">(N Noir.)</usg></cit>.
+      <cit><quote>«Rentrer avec des mauvais chemins»</quote> <usg type="geo">(<name type="sourceHumaine">N Pier.</name>)</usg></cit>. 
+   </sense>
+      <sense level="4">2o
+         <def>Marque une idée de moyen. Avec, à l’aide de.</def> 
+         <cit><quote>Fyèr avè on marti,</quote> <quote>frapper avec un marteau</quote> <usg type="geo">(Vd Sassel)</usg></cit>. 
+         <cit><quote>Fri dèvou lou mètché,</quote> <lbl>id.</lbl> <usg type="geo">(N Cern.‑Péq.)</usg></cit>.
+            <cit><quote>Sartéyi av ò marté,</quote> <quote>enfoncer avec le m.</quote> <usg type="geo">(V Isér.)</usg></cit>. 
+         <cit><quote>Prindrə a a man,</quote> <quote>pr. avec la main</quote> <usg type="geo">(V Nend.)</usg></cit>. 
+         <cit><quote>On dzoyvé avè dé kké,</quote> <quote>on jouait avec des noix</quote> <usg type="geo">(Vd Chenit)</usg></cit>. 
+         <cit><quote>Sa pa konta dètta, yə kntè avé lè da,</quote> <quote>il ne sait pas compter «de tête», il compte sur les doigts</quote> <usg type="geo">(V Vulliens; id. fr. pop. SR)</usg></cit>. 
+         <lbl>Loc.</lbl> <cit><quote>Fèr di n èvō di véy,</quote> <quote>f. du neuf avec du vieux</quote> <usg type="geo">(B Charm.)</usg></cit>. 
+         <lbl>Dicton.</lbl> <cit><quote>Avérin [rien] on nə fā rin</quote> <usg type="geo">(Vd Oron)</usg></cit>. 
+         <xr>Pour les nombreux emplois  du fr. romand, voir surtout <name type="sourceHumaine">Pl.,</name><name type="sourceHumaine">Hum., Gr., Pier.</name></xr>
+      </sense>
+      
+      <sense level="4">3o <note>Emplois divers.</note> 
+         <sense level="5">1. <def>Chez.</def> <cit><quote>«Lipetious caïons que y’é adzetô avoué vo»,</quote> <quote>les petits cochons que j’ai
+            achetés chez vous</quote> <usg type="geo">(V Mart. <quote>Val. rom.</quote> 29)</usg></cit>. 
+            <cit><quote>«Le mètre de la vegne avaî a lotau, avouî iu, on boûbe qu’è l’anmâve rudo»,</quote> <quote>le m. de la vigne avait à
+            la maison, chez lui, un fils qu’il aimait beaucoup</quote> <usg type="geo">(St‑Blaise. Pat.neuch. 371)</usg></cit>. </sense>
+         <sense level="5">2. <def>Envers, contre.</def> <cit><quote>L é pədāu aé lé malirāu,</quote> <quote>il est pitoyable envers les malheureux</quote> <usg type="geo">(Vd Blon.)</usg></cit>. 
+            <cit><quote>«Me voilà enfin quitte avec toi»</quote> <usg type="geo">(<name type="sourceHumaine">N Pier.</name> quitte)</usg></cit>. 
+            <cit><quote>Èl a grin·ny èvō mè,</quote> <quote>il est fâché contre moi</quote> <usg type="geo">(B Charm.)</usg></cit>. 
+            <cit><quote>«Què t’as avoui mè?»</quote> <quote>qu’as‑tu contre moi?</quote> <usg type="geo">(Cham. <quote>Val. rom.</quote> 24)</usg></cit>. 
+         </sense>
+         <sense level="5">3. <def>Par rapport à.</def> <cit><quote>«Djean‑Loui r’kmince sa sgneula avouéla fontana»,</quote> 
+            <quote>... recommence sa «scie» à propos de la fontaine</quote> <usg type="geo">(V.‑de‑Tr. Pat. neuch. 302)</usg></cit>. 
+            <cit><quote>«Dépêchez‑vous avec votre tâche»,</quote> <quote>... d’achever votre t.</quote> <usg type="geo">(<name type="sourceHumaine">F Gr.;</name> id. <name
+               type="sourceHumaine">N Pier.</name>)</usg></cit>. 
+            <cit><quote>«Êtes‑vous bientôt quitte avec votre rhume?»</quote> <quote>... débarrassé de votre rh.?</quote> 
+            <usg type="geo">(<name type="sourceHumaine">N Pier.</name> quitte)</usg></cit>. 
+            <cit><quote>ré kontin avéi li,</quote> <quote>il était content de lui</quote> <usg type="geo">(V Grimisuat. Rom. Forsch. XLII, 413)</usg></cit>. 
+            
+            <cit><quote>I su kamrad avei Frédri,</quote> <quote>je suis l’ami de F.</quote> <usg type="geo">(N Noir.)</usg></cit>. 
+            <g>‖</g> <def>Étant donné.</def> <cit><quote>Aé vətr móvézmanīr, i nə mankərò pò də vòz arəvò kòkərè,</quote> 
+            <quote>avec vos vilaines manières, il ne m. pas de vous arriver qch.</quote> <usg type="geo">(G Aire‑la‑V.)</usg></cit>. 
+            <cit><quote>Èvō ïn mā ā piə, i nsərō ritè,</quote> <quote>avec un mal au pied, je ne puis courir</quote> <usg type="geo">(B Bonc.)</usg></cit>.
+            </sense>
+         <sense level="5">4. <def>Suivi d’une indication de temps.</def> <cit><quote>Vosaré lḕk avei la nyu,</quote> <quote>vous serez là à la nuit</quote> <usg type="geo">(N Noir.)</usg></cit>. 
+            <cit><quote>Avèi nou rè l a forni,</quote> <quote>à 9 heures il aura fini</quote> <usg type="geo">(V Sav.)</usg></cit>. 
+            <g>‖</g> <def>Se joint à l’indication des jours de la semaine, avec idée du futur</def> <usg type="geo">(G anc. et mod.)</usg>; <usg type="geo">id. en Sav.
+               (<name type="sourceHumaine">Const.‑Dés.</name> avwé)</usg>. 
+            
+            <cit><quote>«Messieulx ont ordonné que avecque lundi que led.  Maillet doije admené ses testmoings»</quote> <usg type="geo">(G 1528. Reg. Cons. XI, 380)</usg></cit>.
+               <cit><quote>Vindri vò avé dədyu?</quote> <quote>viendrez‑vous jeudi?</quote> <usg type="geo">(Vern.)</usg></cit>, 
+            <note>mais:</note> <cit><quote>t’è vnu dədyu</quote> <usg type="geo">(ib.)</usg></cit>. 
+            <cit><quote>«Ipréjèra avoë deminjo»,</quote> <quote>il prêchera dimanche</quote> <usg type="geo">(<name type="sourceHumaine">Dur.</name>)</usg></cit>. 
+            <cit><quote>«Avoué desande, de t’écrirai n’âtra lettre»,</quote> <quote>samedi, je t’écrirai une autre l.</quote> <usg type="geo">(<quote>Carillon,</quote> 1875, 5)</usg></cit>. 
+            <cit><quote>«Vo me fari ... pliaisi en publiant cébeliet dian vutron no d’avoué desande»,</quote> <quote>... dans votre no de samedi</quote> 
+            <usg type="geo">(ib. 1873, 32)</usg></cit>. 
+         </sense>
+      </sense>
+      <sense level="4">4o <def>Précédé de de et d’un
+         verbe exprimant la séparation.</def> 
+         <cit><quote>Sé sonpartadzi d’aé li,</quote> <quote>ils se sont séparés de lui</quote> <usg type="geo">(Vd Blon.)</usg></cit>. 
+         <cit><quote>I m vœ tiriə d’èvō stə rèkèy,</quote> <quote>je veux me retirer de la compagnie de cette racaille</quote> 
+         <usg type="geo">(B Charm.)</usg></cit>. <note>Sans de.</note> <cit><quote>Il faut séparer les louis avec les francs</quote>
+            <usg type="geo">(<name type="sourceHumaine">B Pé.</name>)</usg></cit>. 
+      </sense>
+      <sense level="4">5o <gramGrp>Loc. adv.</gramGrp>
+            <def>Avec cela, cela étant, dans ces circonstances</def>; <xr>cf. l’ex. de V Isér. II
+         1o.</xr> <cit><quote>Y é plin ò bœu dè btyè a varnā; avisin, krai to kə y so dè tin a pḕrdrə?</quote> <quote>j’ai l’écurie pleine de bêtes à
+         «gouverner»; avec cela, crois‑tu que j’aie du temps à perdre?</quote> <usg type="geo">(V Lourt.)</usg></cit>; 
+         <note>par sa vivacité cet ex. marque la transition à l’emploi exclamatif.</note> 
+         <g>‖</g> <def>Suivi de que. Malgré
+         cela.</def> <cit><quote>Avé to sun k’on n’è pa su dè réusi,</quote> <quote>malgré tout cela, on n’est pas
+         sûr de r.</quote> <usg type="geo">(Vd Penth.)</usg></cit>. 
+         <g>‖</g> <def>Formule elliptique de protestation étonnée. Allons donc! il ne
+         manquerait plus que ça!</def> <xr>Cf. III 2o et <name type="sourceHumaine">Nyrop,</name>
+         <quote>Gramm. hist.</quote> VI, 6.</xr> <cit><quote>Vin tou avimè? — Avi sin! su pā fotu dè martsi,</quote> <quote>viens‑tu avec moi? Avec cela! je ne
+         suis pas fichu de marcher</quote> <usg type="geo">(Vd Const.)</usg></cit>. 
+         <cit><quote>«Croirais‑tu qu’i n’veut vendre à aucun prix? — Avec ça!»</quote> <quote>... que dites‑vous là!</quote> 
+         <usg type="geo">(<name type="sourceHumaine">N Pier.</name>)</usg></cit>.
+         <g>‖</g> <def>Avec ou en avec, exclamation qui sert à
+         affirmer fortement une chose. Oui, non, assurément</def> <usg type="geo">(Vd)</usg>. <note>S’emploie souvent après une
+         répétition pour lui donner plus de force.</note> 
+         <cit><quote>Tèḥi fran, tè ḥi fran, avé,</quote> <quote>tiens ce franc, ..., te dis‑je</quote> <usg type="geo">(Sav.)</usg></cit>. 
+         <cit><quote>La vu pa, la vu pa, avé!</quote> <quote>je ne la veux pas, ..., vous dis‑je</quote> <usg type="geo">(ib.)</usg></cit>. 
+         <cit><quote>Bogra dè machna, dè machna, n avé!</quote> <quote>bougre de m., oui certes!</quote> <usg type="geo">(Orm.)</usg></cit>. 
+         <cit><quote>«Ah! l’è ice que vo féde boutserî,... pandoure que vo z’îte! pandoure ein avoué!»</quote> <quote>ah! c’est ici que vous
+         «faites boucherie» ...</quote> <usg type="geo">(Cont. 1907, 6)</usg></cit>. 
+         <cit><quote>[Vous auriez dû l’entendre tempêter]</quote>
+            <quote>«Sacré martsau dau tounerro de la mètsancedau serpeint dau diabllio ein avoué!</quote> <usg type="geo">(Sav. Ib. 1919, 43)</usg></cit>. 
+         <cit><quote>«Si tout ce qu’on raconte est vrai, ces Allemands vont pis que des sauvages, avec!»</quote> <usg type="geo">(ib. 1914, 52)</usg></cit>.</sense>
+   </sense>
+   <sense level="1"> III. <gramGrp>Loc. conj.</gramGrp> <sense level="4">1o <def>Avec que, outre que</def> <usg type="geo">(V)</usg>.
+            <cit><quote>Avi kə l è rəts, l è déstra dznta,</quote> <quote>outre qu’elle est riche, elle est
+         très jolie</quote> <usg type="geo">(Praz‑de‑F.)</usg></cit>. 
+      <cit><quote>Fi trafrè pò parti, avi kə l i mó a‑n‑on pya,</quote> <quote>il fait trop froid pour partir,
+         outre que j’ai mal à un pied</quote> <usg type="geo">(Trient)</usg></cit>. </sense>
+      <sense level="4">2o <def>Avec cela que, outre que.</def> <cit><quote>Avès kə plyœu ti lé dzœu, sḥlyé ouna bizə kədzlé,</quote> 
+         <quote>outre qu’il pleut tous les jours, il souffle une bise glaciale</quote> <usg type="geo">(Vd Chenit)</usg></cit>. 
+         <def>Sans compter que.</def> 
+         <cit><quote>Yə su tru prò po alā a ḥlya fta, avé sin kənə lai tnyò pā,</quote> 
+         <quote>je suis trop pauvre pour aller à cette fête, sans compter que je n’y tiens pas</quote> <usg type="geo">(Vd Cors.)</usg></cit>.
+         <note>Élargi par de</note> <usg type="geo">(V Maréc.)</usg>. 
+         <cit><quote>Avé dè chinkə y a pa dè pléji chin pna,</quote> <quote>outre qu’il n’y a pas de plaisir sans peine.</quote></cit>
+         <g>‖</g> <def>Avec idée concessive</def> <usg type="geo">(Vd, F)</usg>. <cit><quote>Mé fṓ onko trasī a la Vla, avé sinkə y é mṓ u pī,</quote> 
+         <quote>il me faut encore «tracer» à Villeneuve, quand même j’ai mal au pied</quote> <usg type="geo">(Vd Nov.)</usg></cit>. 
+         <g>‖</g> <def>Introduit une exclamation ironique par laquelle on proteste vivement
+         contre une idée qu’on pourrait avoir. N’allez pas vous imaginer que</def>; <xr>cf. fr. romand <name
+            type="sourceHumaine">Pier.,</name> et <name type="sourceHumaine">Nyrop,</name>
+         Gramm.hist. VI, 6.</xr> 
+         <cit><quote>Lou rèjan a bò kria, avè s k’onl’ékouté!</quote> <quote>... on ne l’écoute pas</quote> <usg type="geo">(Vd Chenit)</usg></cit>. 
+         <cit><quote>Avi san kə tè vu balyi si galé kuti pò lə pèdrə,</quote> <quote>ne t’imagine pas que je vais te donner ce joli
+         couteau pour que tu le perdes</quote> <usg type="geo">(F Gr.‑de‑V.)</usg></cit>. 
+         <cit><quote>Aè s k’i f bon vivr aè lyi!</quote> <quote>impossible de vivre à côté de lui!</quote> <usg type="geo">(G Bern.)</usg></cit>. 
+      </sense>
+      <sense level="4">3o
+            <def>Avec quand</def> <usg type="geo">(V Daillon)</usg>. <sense level="5">1. <def>Au moment où, quand.</def> <xr>Cf. la
+               loc. prép. mfr. quand et «avec»</xr> <usg type="geo">(<name type="sourceHumaine">Nyrop,</name>
+            <quote>Gramm.hist.</quote> V, 26)</usg>. <cit><quote>È ju nì ai kan cheïn ju u Tsatèè,</quote> <quote>il a fait
+            nuit quand nous sommes arrivés au Châtelet.</quote></cit> </sense><sense level="5">2. <def>Jusqu’à ce que.</def>
+               <cit>
+                  <quote>T’a éji d’atndrè aikan tó ò t ari,</quote> <quote>tu as le temps d’attendre jusqu’à ce que tu l’aies
+            [l’argent]</quote>
+               </cit>.
+            </sense>
+      </sense>
+   </sense>
+        <etym>Du lat. ab hoc «à partir de là, immédiatement après», afr. avuec; REW 22; FEW, I, 5.</etym> <note>Ce
+   qui frappe, c’est la grande variabilité du mot. <quote>«Il est tout aussi fluide que avoir, dont il
+   partage la structure phonétique»</quote>, a dit <name type="sourceHumaine">Gauchat</name> <ref>(Festschr.
+   Morf, 200)</ref>.</note> <note>Dans certains villages plusieurs variantes ont été notées, notamment à V Nend., Lens,
+   F Gru., Charm., Villarg. On rencontre aussi des formes réduites. Ce caractère d’instabilité est
+   dû à la notion accessoire qu’exprime le mot et à la position le plus souvent protonique qu’il
+   occupe</note> <ref>(voir les ex. sous II 1o illustrant les formes liées souvent réduites; cf. <name
+      type="sourceHumaine">Cornu,</name> Rom. IV, 239).</ref><note>Les formes des cantons sud (I) paraissent
+   remonter à une base avuoi, avec la triphtongue postulée par <name type="sourceHumaine"
+      >Meyer‑L.</name> <ref>(Franz. Gramm. 59)</ref> pour les mots du groupe latin ŏ + pal. De là probablt les
+   anc. graphies awoi, avoi (Vd, G, F), de là aussi les nombreuses formes archaïques avei, ‑ai,
+   ‑e, ‑in (var. de ‑ei), ‑ei, ‑eïn, ‑in, etc. (Vd‑F), ainsi que anc. frib. aweiz. Comme dans
+   teita, de testa, et dans le suffixe ‑ei de ‑ellus, le groupe ei s’est scindé en e et en i, selon
+   la prédominance de l’un ou de l’autre élément de la diphtongue: de là avé, ‑è, ‑a d’un côté,
+   et de l’autre avi <ref>(cf. <name type="sourceHumaine">Gerster,</name> Montana, 107)</ref>, qu’on nous a
+   signalé plusieurs fois en frib. comme forme liée; cf. anc. frib. avique, probablt pour awique.</note> <pc>—</pc>
+  <note> Il est plus difficile d’expliquer le type avo, èvo des cantons nord, N et B, où aucun des mots
+   latins avec ŏ + pal. ne présente un o; cf. Tabl. §§ 63, 68. Avec se serait‑il croisé avec son
+   synon. afr., mfr. o de apud, inconnu dans N et B, mais qu’on peut reconnaître dans V Troist. ó
+   «avec», Aoste ó id., et qu’on retrouve dans plusieurs patois fr. (FEW, I, 114; ALF cartes avec)?
+   Quoi qu’il en soit, le type se détache nettement, en Suisse et en France, où il occupe à l’est un
+   vaste territoire, des résultats de ŏ + pal. Les formes bernoises sans , avāə, avù, se
+   rattachent au type avo; cf. B ko «cou», po «peu», tcho «chou», qui deviennent kè, pè, tchè à
+   Plagne, kou, pou, tchou à Orvin.</note> <pc>—</pc><note> Le type dèvo (III), composé de de et èvo et largement
+   répandu dans les patois limitrophes de la France, s’emploie aujourd’hui sans qu’on note de
+   différence sensible avec la signif. du mot simple. Pour sa formation, cf. les synon.: romand datò
+   (voir atò); Ardèche, Drômc dóbé, entouré de obé (ALF 345, etc.); norm. dó dans la région de ó. Au
+   point de vue sémantique, nos patois illustrent toutes les phases et les nuances principales que
+   présente en France cette intéressante préposition, depuis son emploi adverbial primitif (cf. To.)
+   jusqu’à ses ramifications plus modernes comme partie d’une exclamation où le sens du mot s’est
+   complètement effacé. <ref>Cf. <name type="sourceHumaine">Plattner,</name> Ausführl. Gramm. IV,
+   153‑160.</ref></note> <note>Aucun emploi ne paraît entièrement propre à la SR, sauf le composé avec quand (III 3o)
+   et peut‑être avec, en avec employé tout seul comme exclamation (II, 5), mais qu’on peut aussi
+   rapprocher de l’exclamation sav. â wê «certainement» ou de l’interjection afr. avoi (To.), qui en
+   est arrivée à marquer une protestation énergique <ref>(<name type="sourceHumaine">Barth,</name> Z. f.
+   franz. Spr. LII, 290)</ref>.</note> <note>La conjonction avec ça que est attestée en afr. <ref>(avoec ce que «outre que»
+   To. I, 784; <name type="sourceHumaine">Lerch,</name> Franz. Syntax, II, 377)</ref>, en fr. mod., style
+   familier <ref>(<name type="sourceHumaine">Nyrop,</name> Études de gramm. no 27; <name
+      type="sourceHumaine">Spitzer,</name> Z. f. französische Sprache, LIX, 335‑338)</ref> et en fr.
+   provincial (Anjou).</note> <pc>—</pc> <note>Les auteurs de dict. des provincialismes romands n’ont pas manqué de
+   signaler longuement les emplois de avec qui diffèrent du bon français et de les attribuer à
+   l’influence de l’allemand, où, en effet, l’emploi de mit correspond souvent à l’emploi romand de
+   avec, contre l’usage du fr. académique. Mais plusieurs de ces emplois sont usités en fr.
+   familier, populaire ou provincial, par ex.: il déjeune avec du chocolat, le mot s’écrit avec un
+   g, il est bon avec moi (<name type="sourceHumaine">Plattner</name>), il est fâché avec moi
+   (Anjou), etc. Ceux‑là ne viennent sûrement pas de l’all. Rappelons aussi que, dans certains cas,
+   le bon français hésite lui‑même entre deux tournures, ainsi: comparer à ou avec, être (re)couvert
+   de ou avec. Il faut donc s’attendre à des extensions analogiques comme: garnir, remplir avec.
+   L’influence allemande reste possible, mais le plus souvent indémontrable. Ici encore la SR n’a
+   guère innové et ne fait que suivre les tendances du fr. populaire;</note> <xr>comp. l’hist. de après. Cf.
+   les synon. ato, ó.</xr> <note><name type="redacteur">Tp.</name></note>
+     </entry>
+   </body>
+   </text>
+</TEI>
