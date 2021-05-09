@@ -10,7 +10,7 @@ namespace teix = "http://www.tei-c.org/ns/Examples"
 namespace xi = "http://www.w3.org/2001/XInclude"
 namespace xlink = "http://www.w3.org/1999/xlink"
 
-# Schema generated from ODD source 2021-05-06T13:39:28Z. .
+# Schema generated from ODD source 2021-05-09T07:52:39Z. .
 # TEI Edition: Version 4.1.0. Last updated on
 #	19th August 2020, revision b414ba550
 # TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
@@ -825,7 +825,7 @@ model.ptrLike = notAllowed
 model.lPart = notAllowed
 model.global.meta = notAllowed
 model.milestoneLike = notAllowed
-model.gLike = notAllowed
+model.gLike = g
 model.oddDecl = notAllowed
 model.oddDecl_alternation = notAllowed
 model.oddDecl_sequence = empty
@@ -877,7 +877,7 @@ model.stageLike_sequence = empty
 model.stageLike_sequenceOptional = empty
 model.stageLike_sequenceOptionalRepeatable = empty
 model.stageLike_sequenceRepeatable = notAllowed
-model.entryPart.top = entry | form | usg | lbl
+model.entryPart.top = entry | form | def | usg | lbl
 model.global.edit = notAllowed
 model.divPart = model.lLike | model.pLike
 model.placeNamePart = notAllowed
@@ -1513,10 +1513,50 @@ entry =
   
   ## (entrée) contient une entrée du Glossaire (un article). Une entrée est identifié par xml:id, et la valeur est construire ainsi : GPSR.tome.pageLigneEntrée [9.1. Dictionary Body and Overall Structure 9.2. The Structure of Dictionary Entries]
   element entry {
-    (pc | model.entryPart.top | model.global | model.ptrLike)+,
+    (sense | pc | model.entryPart.top | model.global | model.ptrLike)+,
     att.global.attribute.xmlid,
     att.global.analytic.attribute.ana,
     att.entryLike.attributes,
+    empty
+  }
+sense =
+  [
+    a:documentation [
+      "regroupe toutes les informations relatives à un des sens d’un mot dans une entrée de dictionnaire (définitions, exemples, équivalents linguistiques, etc.). Dans le GPSR, "
+      ns1:code [ "<sense>" ]
+      " sert à encoder le corps de l'article. Ce choix est motivé par la volonté de maintenir la structure hiérarchique du GPSR, qui se compose de cinq niveaux (on exclut ici ‖ ). L'attributs "
+      ns1:code [ "@level" ]
+      " peut contenir les chiffres 1,2,4,5,6, pour indiquer non pas la succession des sens, mais leur hiérarchie, dans la mesure où certains sens sont contenus à l'intérieur d'autres. Le chiffre 3 est exclu car il a été exclu dans un état d'encodage précédent en xml. [9.2. The Structure of Dictionary Entries]"
+    ]
+  ]
+  element sense {
+    (text
+     | model.gLike
+     | sense
+     | model.entryPart.top
+     | model.phrase
+     | model.global)*,
+    att.global.attributes,
+    att.lexicographic.attributes,
+    
+    ## gives the nesting depth of this sense.
+    attribute level {
+      
+      ##
+      "1"
+      | 
+        ##
+        "2"
+      | 
+        ##
+        "3"
+      | 
+        ##
+        "4"
+      | 
+        ##
+        "5"
+    }?,
     empty
   }
 form =
@@ -1569,6 +1609,9 @@ form =
       | 
         ##
         "français régional/ancien français"
+      | 
+        ##
+        "renvoi"
     }?,
     empty
   }
@@ -1623,6 +1666,22 @@ pron =
     att.notated.attributes,
     att.partials.attributes,
     att.typed.attributes,
+    empty
+  }
+def =
+  [
+    a:documentation [
+      "(définition) contient le texte de la définition dans une entrée de dictionnaire. Dans le GPSR, "
+      ns1:code [ "<def>" ]
+      " peut être associé à des localisations "
+      ns1:code [ "<usg>" ]
+      ", voire à des citations de définitions, avec relative traduction si nécessaire. [9.3.3.1. Definitions]"
+    ]
+  ]
+  element def {
+    macro.paraContent,
+    att.global.attributes,
+    att.lexicographic.attributes,
     empty
   }
 usg =
@@ -1783,6 +1842,23 @@ pc =
     
     ## indicates whether this punctuation mark precedes or follows the unit it delimits.
     attribute pre { xsd:boolean }?,
+    empty
+  }
+g =
+  [
+    a:documentation [
+      "(caractère ou glyphe) représente un glyphe, ou un caractère non standard. Dans le GPSR, la balise "
+      ns1:code [ "<g>" ]
+      " permet d'encoder ‖, qui sert à introduire le corps de l'article, ou des nuances à l'intérieur de la hiérarchie des sens. [5. Characters, Glyphs, and Writing Modes]"
+    ]
+  ]
+  element g {
+    text,
+    att.global.attributes,
+    att.typed.attributes,
+    
+    ## points to a description of the character or glyph intended.
+    attribute ref { xsd:anyURI }?,
     empty
   }
 start = TEI

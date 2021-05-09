@@ -97,12 +97,11 @@
               <specDesc key="entry"/>
               <specDesc key="form"/>
               <specDesc key="usg"/>
-              
-              <!--              
               <specDesc key="sense"/>
               <specDesc key="g"/>
-              <specDesc key="gramGrp"/>
               <specDesc key="def"/>
+              <!--               
+              <specDesc key="gramGrp"/>             
               <specDesc key="cit"/>
               <specDesc key="quote"/>
               <specDesc key="xr"/>
@@ -122,9 +121,9 @@
           <moduleRef key="core" include="p date title author publisher name bibl pubPlace note "/>
           <moduleRef key="tei" />
           <moduleRef key="textstructure" include="TEI text body div"/>
-          <moduleRef key="dictionaries"
-            include="entry form pron orth usg lbl"/>
+          <moduleRef key="dictionaries"  include="entry form pron orth usg lbl sense def"/>
           <moduleRef key="analysis" include="pc"/>
+          <moduleRef key="gaiji" include="g" />
           
           <elementSpec ident="entry" mode="change">
             <gloss>entrée</gloss>
@@ -183,6 +182,7 @@
                   <valItem ident="français"/>
                   <valItem ident="patois"/>
                   <valItem ident="français régional/ancien français"/>
+                  <valItem ident="renvoi"/>
                 </valList>
               </attDef>
               <!-- 
@@ -364,6 +364,54 @@
               <attDef ident="extent" mode="delete"/>
               <attDef ident="type" mode="delete"/>
               <attDef ident="subtype" mode="delete"/>
+            </attList>
+            -->
+          </elementSpec>
+          <elementSpec ident="sense" mode="change">
+            <desc> regroupe toutes les informations relatives à un des sens d’un mot 
+              dans une entrée de dictionnaire (définitions, exemples, équivalents linguistiques, etc.).
+              Dans le <title>GPSR</title>, <gi>sense</gi> sert à encoder le corps de l'article. Ce choix est motivé par 
+              la volonté de maintenir la structure hiérarchique du GPSR, qui se compose de cinq niveaux (on exclut ici ‖ ). 
+              L'attributs <att>level</att> peut contenir les chiffres 1,2,4,5,6, pour indiquer non pas la succession des sens, mais leur hiérarchie, 
+              dans la mesure où certains sens sont contenus à l'intérieur d'autres. Le chiffre 3 est exclu car il a été exclu dans un état
+              d'encodage précédent en xml. 
+            </desc>
+            
+            <attList>
+              <attDef ident="level" mode="change">
+                <valList mode="add" type="closed">
+                  <valItem ident="1"/>
+                  <valItem ident="2"/>
+                  <valItem ident="3"/>
+                  <valItem ident="4"/>
+                  <valItem ident="5"/>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <elementSpec ident="g" mode="change">
+            <gloss>caractère ou glyphe</gloss>
+            <desc>représente un glyphe, ou un caractère non standard.
+              Dans le <title>GPSR</title>, la balise <gi>g</gi> permet d'encoder ‖,
+              qui sert à introduire le corps de l'article, ou des nuances à l'intérieur de la hiérarchie des sens.
+            </desc>
+            <!--
+            <attList>
+              <attDef ident="ref" mode="delete"/>
+              <attDef ident="ana" mode="delete"/>
+              <attDef ident="type" mode="delete"/>
+            </attList>
+            -->
+          </elementSpec>
+          
+          <elementSpec ident="def" mode="change">
+            <gloss>définition</gloss>
+            <desc>contient le texte de la définition dans une entrée de dictionnaire. Dans le <title>GPSR</title>,
+              <gi>def</gi> peut être associé à des localisations <gi>usg</gi>, voire à des citations de définitions, avec relative 
+              traduction si nécessaire.</desc>
+            <!--
+            <attList>
+              <attDef ident="ana" mode="delete"/>
             </attList>
             -->
           </elementSpec>

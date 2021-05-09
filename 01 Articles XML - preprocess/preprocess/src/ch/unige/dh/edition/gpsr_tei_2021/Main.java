@@ -75,6 +75,9 @@ public class Main {
 
             xmlcontent = findReplace(xmlcontent,"<art","<art tome=\""+tomes.get(fileInPath.getName())+"\"");
 
+            xmlcontent = findReplace(xmlcontent,"<P>‖","<P><g>‖</g>");
+
+
             //Write into file
             try {
                 Path newXMLFile = new File(BASE_PATH_DEST+fileInPath.getName()).toPath();

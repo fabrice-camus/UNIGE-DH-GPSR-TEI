@@ -12,6 +12,11 @@ Version 1.1
     - distinction orth/pron 
 - Préprocessing par une application console java
 
+Version 2.0
+- Intégration dans XSL des différents types de lemmes
+- Corps de l'article
+    - Sens et leur niveau
+    - def
 
 Traités : 
 - article
@@ -20,13 +25,22 @@ Traités :
         - <bibl> au lieu de <name> pour N Bon., Pier. + 1 seule balise <bibl>
         - les occurrences multiples de variantes phonétiques pour un usage ne sont pas splittées (même niveau de "granularité" que les localisations 
     
+TODO
+In TEI Lex-0, <sense> has a mandatory xml:id. (https://dariah-eric.github.io/lexicalresources/pages/TEILex0/TEILex0.html#senses)
 
-
-Non-traités :
+Non-traités ou non-fonctionnel :
+- Article
+    - composés/composants/sous-article
+- lemmes : 
+    - signes entourant les lemmes reconstruits ( [ ] ) ou reproduisant la graphie de la source (« »)
 - Partie Variantes phonétiques :
     - <placeName> pour chaque code de localisations, cf certains articles de Jordan
-- Partie "corps" de l'article
+    - distinction orth / pron --> ok avec article AGRAFER, ko avec GABRIEL (il y a une "sous-structure cachée" avec les formes types)
+- Partie "corps" de l'article :
+    - il n'est pas possible de distinguer une citation patoise d'un simple mot ou une référence biblio ("chez nous", "agrafé"). "Chez nous" peut évt être détecté en preproc. On peut évt détecter une balise <i> avec plus d'un mot 
 - Partie "commentaire scientifique" de l'article
+
+
 
 
 Questions sur la modélisation TEI: 
