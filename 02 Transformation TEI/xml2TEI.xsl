@@ -164,29 +164,26 @@
 		</sense>
 	</xsl:template>
 	
-	<xsl:template name="def" >
-		<xsl:param name="nodeDef"/>
-		<def>	
-			<xsl:choose>
-				<!-- Beurk. A améliorer pour factoriser le traitement du foreach -->
-				<xsl:when test="count($nodeDef/child::i)>0">
-					<xsl:for-each select="$nodeDef/child::node()  intersect $nodeDef/child::i[1]/preceding-sibling::node()">
-						<xsl:choose>
-							<xsl:when test="self::c|self::bibl"><bibl><xsl:value-of select="."/></bibl></xsl:when>
-							<xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
-						</xsl:choose>
-					</xsl:for-each>
-				</xsl:when>
-				<xsl:otherwise>
-					<xsl:for-each select="$nodeDef/child::node()">
-						<xsl:choose>
-							<xsl:when test="self::c|self::bibl"><bibl><xsl:value-of select="."/></bibl></xsl:when>
-							<xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
-						</xsl:choose>
-					</xsl:for-each>			
-				</xsl:otherwise>
-			</xsl:choose>
-		</def>				
+	<xsl:template name="defS4" >
+		<xsl:param name="nodeDefS4"/>	
+		<def>
+			<xsl:value-of select="$nodeDefS4/text()[1]"/>
+		</def>
+		<xsl:if test="count($nodeDefS4/text()[1]/following-sibling::node())>0">
+			<cit>	
+				<xsl:for-each select="$nodeDefS4/text()[1]/following-sibling::node()">
+					<xsl:choose>							
+						<xsl:when test="self::c|self::bibl"><bibl><xsl:value-of select="."/></bibl></xsl:when>
+						<xsl:when test="self::refUsg"><usg type="geographic"><xsl:value-of select="."/></usg></xsl:when>
+						<xsl:when test="self::i"><quote><xsl:value-of select="."/></quote></xsl:when>
+						<xsl:when test="self::b"/>
+						<xsl:when test="self::sup"/>										
+						<xsl:when test="self::text()"><quote><xsl:value-of select="."/></quote></xsl:when>
+						<xsl:otherwise><ohter><xsl:value-of select="."/></ohter></xsl:otherwise>
+					</xsl:choose>							
+				</xsl:for-each>
+			</cit>
+		</xsl:if>
 	</xsl:template>
 	
 	
@@ -203,10 +200,13 @@
 	</xsl:template>
 	<xsl:template match="//s4">
 		<sense level="3">
-			<xsl:call-template name="def">
-				<xsl:with-param name="nodeDef" select = "." />
+			<xsl:value-of select="./b[1]/text()"/>
+			<xsl:value-of select="./sup[1]/text()"/>
+			
+			<xsl:call-template name="defS4">
+				<xsl:with-param name="nodeDefS4" select = "." />
 			</xsl:call-template>
-			<xsl:apply-templates/>
+			
 		</sense>
 	</xsl:template>
 	<xsl:template match="//s5">
@@ -235,7 +235,13 @@
 		<g><xsl:value-of select="."/></g>
 	</xsl:template>
 
+	<xsl:template match="//gramGrp">
+		<gramGrp><xsl:value-of select="."/></gramGrp>
+	</xsl:template>
+
 	<xsl:template match="//s4/text()"/>
+	<xsl:template match="//refUsg"/>
+	
 	<!-- A traiter. Pour l'instant exclu du résultat -->
 	
 	<xsl:template match="//hist"/>

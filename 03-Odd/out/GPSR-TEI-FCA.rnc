@@ -10,7 +10,7 @@ namespace teix = "http://www.tei-c.org/ns/Examples"
 namespace xi = "http://www.w3.org/2001/XInclude"
 namespace xlink = "http://www.w3.org/1999/xlink"
 
-# Schema generated from ODD source 2021-05-09T07:52:39Z. .
+# Schema generated from ODD source 2021-05-10T14:22:51Z. .
 # TEI Edition: Version 4.1.0. Last updated on
 #	19th August 2020, revision b414ba550
 # TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
@@ -877,7 +877,8 @@ model.stageLike_sequence = empty
 model.stageLike_sequenceOptional = empty
 model.stageLike_sequenceOptionalRepeatable = empty
 model.stageLike_sequenceRepeatable = notAllowed
-model.entryPart.top = entry | form | def | usg | lbl
+model.entryPart = sense | form | orth | pron | gramGrp | def | usg | lbl
+model.entryPart.top = cit | entry | form | gramGrp | def | usg | lbl
 model.global.edit = notAllowed
 model.divPart = model.lLike | model.pLike
 model.placeNamePart = notAllowed
@@ -899,12 +900,12 @@ model.publicationStmtPart.agency = publisher
 model.publicationStmtPart.detail =
   model.ptrLike | date | pubPlace | availability
 model.availabilityPart = licence
-model.quoteLike = notAllowed
-model.quoteLike_alternation = notAllowed
-model.quoteLike_sequence = empty
-model.quoteLike_sequenceOptional = empty
-model.quoteLike_sequenceOptionalRepeatable = empty
-model.quoteLike_sequenceRepeatable = notAllowed
+model.quoteLike = quote | cit
+model.quoteLike_alternation = quote | cit
+model.quoteLike_sequence = quote, cit
+model.quoteLike_sequenceOptional = quote?, cit?
+model.quoteLike_sequenceOptionalRepeatable = quote*, cit*
+model.quoteLike_sequenceRepeatable = quote+, cit+
 model.attributable = model.quoteLike
 model.attributable_alternation = model.quoteLike_alternation
 model.attributable_sequence = model.quoteLike_sequence
@@ -1084,6 +1085,65 @@ p =
     att.declaring.attributes,
     att.fragmentable.attributes,
     att.written.attributes,
+    empty
+  }
+quote =
+  
+  ## (citation) contient une expression ou un passage que le narrateur ou l'auteur attribue à une origine extérieure au texte. [3.3.3. Quotation 4.3.1. Grouped Texts]
+  element quote {
+    macro.specialPara,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.xmlbase,
+    att.global.attribute.xmlspace,
+    att.global.rendition.attribute.rend,
+    att.global.rendition.attribute.style,
+    att.global.rendition.attribute.rendition,
+    att.global.responsibility.attribute.cert,
+    att.global.responsibility.attribute.resp,
+    att.global.source.attribute.source,
+    att.typed.attribute.subtype,
+    att.notated.attributes,
+    empty
+  }
+cit =
+  [
+    a:documentation [
+      "(citation) citation provenant d'un autre document comprenant la référence bibliographique de sa source. Dans un dictionnaire il peut contenir un exemple avec au moins une occurrence du mot employé dans l’acception qui est décrite, ou une traduction du mot-clé, ou un exemple. Dans le GPSR, "
+      ns1:code [ "<cit>" ]
+      " est surtout utilisé pour encoder les exemples de sens dans le corps de l'article. Il contient à son intérieur deux balises "
+      ns1:code [ "<quote>" ]
+      ", et une balise "
+      ns1:code [ "<usg>" ]
+      ", éventuellement "
+      ns1:code [ "<ref>" ]
+      " ou "
+      ns1:code [ "<bibl>" ]
+      " lorsqu'il y a des références bibliographiques plus précises. [3.3.3. Quotation 4.3.1. Grouped Texts 9.3.5.1. Examples]"
+    ]
+  ]
+  element cit {
+    (model.biblLike
+     | model.egLike
+     | model.entryPart
+     | model.global
+     | model.graphicLike
+     | model.ptrLike
+     | model.attributable
+     | pc)+,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.xmlbase,
+    att.global.attribute.xmlspace,
+    att.global.rendition.attribute.rend,
+    att.global.rendition.attribute.style,
+    att.global.rendition.attribute.rendition,
+    att.global.responsibility.attribute.cert,
+    att.global.responsibility.attribute.resp,
+    att.global.source.attribute.source,
+    att.typed.attribute.subtype,
     empty
   }
 name =
@@ -1500,12 +1560,13 @@ model.morphLike_sequence = empty
 model.morphLike_sequenceOptional = empty
 model.morphLike_sequenceOptionalRepeatable = empty
 model.morphLike_sequenceRepeatable = notAllowed
-model.lexicalRefinement = usg | lbl
-model.lexicalRefinement_alternation = usg | lbl
-model.lexicalRefinement_sequence = usg, lbl
-model.lexicalRefinement_sequenceOptional = usg?, lbl?
-model.lexicalRefinement_sequenceOptionalRepeatable = usg*, lbl*
-model.lexicalRefinement_sequenceRepeatable = usg+, lbl+
+model.lexicalRefinement = gramGrp | usg | lbl
+model.lexicalRefinement_alternation = gramGrp | usg | lbl
+model.lexicalRefinement_sequence = gramGrp, usg, lbl
+model.lexicalRefinement_sequenceOptional = gramGrp?, usg?, lbl?
+model.lexicalRefinement_sequenceOptionalRepeatable =
+  gramGrp*, usg*, lbl*
+model.lexicalRefinement_sequenceRepeatable = gramGrp+, usg+, lbl+
 model.gramPart = model.morphLike | model.lexicalRefinement
 model.formPart = model.gramPart | form | orth | pron
 model.ptrLike.form = notAllowed
@@ -1665,6 +1726,44 @@ pron =
     att.lexicographic.attributes,
     att.notated.attributes,
     att.partials.attributes,
+    att.typed.attributes,
+    empty
+  }
+gramGrp =
+  [
+    a:documentation [
+      "(groupe d'informations grammaticales) regroupe des informations morphosyntaxiques sur un item lexical, par exemple Partie du discours "
+      ns1:code [ "<pos>" ]
+      ", Genre "
+      ns1:code [ "<gen>" ]
+      ", Nombre "
+      ns1:code [ "<number>" ]
+      ", Cas "
+      ns1:code [ "<case>" ]
+      ", ou Classe flexionnelle "
+      ns1:code [ "<iType>" ]
+      ". Dans le GPSR, "
+      ns1:code [ "<pos>" ]
+      ", "
+      ns1:code [ "<gen>" ]
+      ", "
+      ns1:code [ "<number>" ]
+      ", "
+      ns1:code [ "<case>" ]
+      ", "
+      ns1:code [ "<iType>" ]
+      ", ne sont pas encore inclus. Par conséquent, ils ne sont pas validés par le ODD et le schéma correspondant. [9.3.2. Grammatical Information]"
+    ]
+  ]
+  element gramGrp {
+    (text
+     | model.gLike
+     | model.phrase
+     | model.inter
+     | model.gramPart
+     | model.global)*,
+    att.global.attributes,
+    att.lexicographic.attributes,
     att.typed.attributes,
     empty
   }

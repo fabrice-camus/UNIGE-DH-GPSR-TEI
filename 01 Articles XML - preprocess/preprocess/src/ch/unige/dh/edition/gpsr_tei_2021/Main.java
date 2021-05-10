@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -28,7 +30,26 @@ public class Main {
 
         return updatedSrc;
     }
+    private static List<String> executeRegex(List<String> source, String regex, String replaceBy) {
+        Pattern pattern = Pattern.compile(regex);
+        int countTotal = 0;
+        int count;
+        List<String> sourceModifiee = new ArrayList<>();
+        for (String ligne : source) {
+            Matcher matcher = pattern.matcher(ligne);
+            //int from = 0;
+            count = 0;
+            while (matcher.find()) {
+                //while (matcher.find(from)) {
+                count++;
+                //from = matcher.start() + 1;
+            }
 
+            sourceModifiee.add(ligne.replaceAll(regex, replaceBy));
+            countTotal = countTotal + count;
+        }
+        return sourceModifiee;
+    }
     private static void initTomesNumber(){
         tomes = new HashMap<>();
         tomes.put("AGRAFER.xml",1);
@@ -66,7 +87,10 @@ public class Main {
 
 
             //Find-Replace
+            //Spécifique AGRAFER
             xmlcontent = findReplace(xmlcontent,"<b><i>agraf\uEC50</i></b>","<i><b>agraf\uEC50</b></i>");
+
+            //Communs
             xmlcontent = findReplace(xmlcontent,"<i>Dict.</i>","<bibl>Dict.</bibl>");
             xmlcontent = findReplace(xmlcontent,"<i>Suppl.</i>","<bibl>Suppl.</bibl>");
             xmlcontent = findReplace(xmlcontent,"<c>V</c> <c>Ba.,</c>","<c>V Ba.,</c>");
@@ -77,6 +101,11 @@ public class Main {
 
             xmlcontent = findReplace(xmlcontent,"<P>‖","<P><g>‖</g>");
 
+            //Etendre pour les autres cas
+            xmlcontent = findReplace(xmlcontent,"V. tr.","<gramGrp>V. tr.</gramGrp>");
+
+            //Marquer les références utilisées comme usg type=geo des citations
+            xmlcontent = executeRegex(xmlcontent,"(\\([A-Z<]+.+?\\))\\.","<refUsg>$1</refUsg>.");
 
             //Write into file
             try {

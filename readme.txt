@@ -17,6 +17,9 @@ Version 2.0
 - Corps de l'article
     - Sens et leur niveau
     - def
+    - <cit> : Créé globalement pour permettre d'inclure <usg>. Devrait normalement être défini pour chaque citation patoise (difficulté technique pour le faire; piste --> en postproc, remplacer </usg> par </usg><cit> ? autre piste, piloter xsl par <usg> et récupérer les noeuds précédents (mais avant le précédent usg))  
+    - quote
+    - usg : identification des références (par une regex balisage en préproc)
 
 Traités : 
 - article
@@ -26,7 +29,7 @@ Traités :
         - les occurrences multiples de variantes phonétiques pour un usage ne sont pas splittées (même niveau de "granularité" que les localisations 
     
 TODO
-In TEI Lex-0, <sense> has a mandatory xml:id. (https://dariah-eric.github.io/lexicalresources/pages/TEILex0/TEILex0.html#senses)
+    In TEI Lex-0, <sense> has a mandatory xml:id. (https://dariah-eric.github.io/lexicalresources/pages/TEILex0/TEILex0.html#senses)
 
 Non-traités ou non-fonctionnel :
 - Article
@@ -37,7 +40,8 @@ Non-traités ou non-fonctionnel :
     - <placeName> pour chaque code de localisations, cf certains articles de Jordan
     - distinction orth / pron --> ok avec article AGRAFER, ko avec GABRIEL (il y a une "sous-structure cachée" avec les formes types)
 - Partie "corps" de l'article :
-    - il n'est pas possible de distinguer une citation patoise d'un simple mot ou une référence biblio ("chez nous", "agrafé"). "Chez nous" peut évt être détecté en preproc. On peut évt détecter une balise <i> avec plus d'un mot 
+    - il n'est pas possible de distinguer une citation patoise d'un simple mot ou une référence biblio ("chez nous", "agrafé"). "Chez nous" peut évt être détecté en preproc. On peut évt détecter une balise <i> avec plus d'un mot
+    - Une citation patoise (en italique) peut être "décomposée" en plusieurs séquences <i>. Il faudrait merger les éléments <i> qui sont consécutifs
 - Partie "commentaire scientifique" de l'article
 
 

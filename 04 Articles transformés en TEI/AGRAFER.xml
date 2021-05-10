@@ -42,8 +42,7 @@
             </form>
             <form type="variant">
                <pron> ‑, ‑ò</pron>
-               <usg type="geographic"> Vd Broye, 80, <bibl>V Ba.,</bibl> 8, F 1, 51, N 1, 4, 5,
-                    </usg>
+               <usg type="geographic"> Vd Broye, 80, <bibl>V Ba.,</bibl> 8, F 1, 51, N 1, 4, 5, </usg>
             </form>
             <form type="variant">
                <pron>‑é</pron>
@@ -55,9 +54,7 @@
             </form>
             <form type="variant">
                <pron>ègrèfè</pron>
-               <usg type="geographic"> 60
-                var.; 
-                </usg>
+               <usg type="geographic"> 60 var.;  </usg>
             </form>
             <pc>—</pc>
             <form type="typePatois">
@@ -74,17 +71,55 @@
                   <bibl>Dict.</bibl> et <bibl>Suppl.</bibl>
                </usg>
             </form>
-            <sense> 
-               <g>‖</g> V. tr. <sense level="3">
-                  <def>1o Saisir vivement, agripper, arracher de
-                    force. </def>1Agrafā ana motch, ana rta,Lə m’a agraffro di man kəmin on modzon kə ly è,Stu frār a tòtagrafā,Larta s’agraf ó mur,agrafésBaillods,Chez nous,Pier.</sense>
-               <sense level="3">
-                  <def>2o Dérober avec
-                    adresse, filouter (V, N). «Ces pouettes [vilaines] gens venaient bien nous
-                        </def>2agraferN Pier.agraféN Bon.</sense>
-               <sense level="3">
-                  <def>3o Attacher au
-                    moyen d’une agrafe.</def>3</sense>
+            <sense>
+               <g>‖</g>
+               <gramGrp>V. tr.</gramGrp>
+               <sense level="3">1o<def> Saisir vivement, agripper, arracher de force. </def>
+                  <cit>
+                     <quote>Agrafā ana motch, ana rta,</quote>
+                     <quote> attraper une mouche, une souris </quote>
+                     <usg type="geographic">(N Brév.)</usg>
+                     <quote>. </quote>
+                     <quote>Lə m’a agraf</quote>
+                     <quote> </quote>
+                     <quote>fro di man kəmin on modzon kə ly è,</quote>
+                     <quote> il me l’a arraché «hors» des mains, comme un rustre [litt. grand veau] qu’il est </quote>
+                     <usg type="geographic">(F Crés.)</usg>
+                     <quote>. </quote>
+                     <quote>Stu frār a tòt</quote>
+                     <quote> </quote>
+                     <quote>agrafā,</quote>
+                     <quote> ce frère a accaparé tout l’héritage </quote>
+                     <usg type="geographic">(N Sav.; sens voisin de 2o)</usg>
+                     <quote>. Réfl. S’accrocher. </quote>
+                     <quote>La</quote>
+                     <quote> </quote>
+                     <quote>rta s’agraf ó mur,</quote>
+                     <quote> la souris s’accroche au mur </quote>
+                     <usg type="geographic">(N Brév.)</usg>
+                     <quote>. En venir aux mains. «Ils se sont </quote>
+                     <quote>agrafés</quote>
+                     <quote>» </quote>
+                     <usg type="geographic">(Baillods, Chez nous, 66. Pier.)</usg>
+                     <quote>. </quote>
+                  </cit>
+               </sense>
+               <sense level="3">2o<def> Dérober avec adresse, filouter </def>
+                  <cit>
+                     <usg type="geographic">(V, N)</usg>
+                     <quote>. «Ces pouettes [vilaines] gens venaient bien nous </quote>
+                     <quote>agrafer</quote>
+                     <quote> des pommes au travers de la barrière» </quote>
+                     <usg type="geographic">(N Pier.)</usg>
+                     <quote>. Acheter qch. bien au‑dessous de son prix. «Il lui a </quote>
+                     <quote>agrafé</quote>
+                     <quote> sa montre en or pour vingt francs» </quote>
+                     <usg type="geographic">(N Bon.)</usg>
+                     <quote>. </quote>
+                  </cit>
+               </sense>
+               <sense level="3">3o<def> Attacher au moyen d’une agrafe.</def>
+               </sense>
             </sense>
          </entry>
       </body>
