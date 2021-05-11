@@ -21,31 +21,27 @@ Version 2.0
     - quote
     - usg : identification des références (par une regex balisage en préproc)
 
-Traités : 
-- article
-- Variantes phonétiques 
-    - Delta : 
-        - <bibl> au lieu de <name> pour N Bon., Pier. + 1 seule balise <bibl>
-        - les occurrences multiples de variantes phonétiques pour un usage ne sont pas splittées (même niveau de "granularité" que les localisations 
-    
+Version 2.1
+- Article GABRIEL --> non valide ODD
+    - Je n'arrive pas à traiter correctement la forme type gabri(y)ta
+- Article GRAND-MAMAN
+    - Je n'arrive pas à traiter correctement la forme type gran mam (même problème que pour GABRIEL),  mais les autres ok....
+- Partie "commentaire scientifique" : 
+    - pour l'instant dans un seul bloc <etym>
+    - <xr> pour la référence au FEW (article GRAND-MAMAN)
+
+
+  
+        
 TODO
-    In TEI Lex-0, <sense> has a mandatory xml:id. (https://dariah-eric.github.io/lexicalresources/pages/TEILex0/TEILex0.html#senses)
+    - In TEI Lex-0, <sense> has a mandatory xml:id. (https://dariah-eric.github.io/lexicalresources/pages/TEILex0/TEILex0.html#senses)
+    - identifier les sources humaines et papier ?
+  
 
-Non-traités ou non-fonctionnel :
-- Article
-    - composés/composants/sous-article
-- lemmes : 
-    - signes entourant les lemmes reconstruits ( [ ] ) ou reproduisant la graphie de la source (« »)
-- Partie Variantes phonétiques :
-    - <placeName> pour chaque code de localisations, cf certains articles de Jordan
-    - distinction orth / pron --> ok avec article AGRAFER, ko avec GABRIEL (il y a une "sous-structure cachée" avec les formes types)
-- Partie "corps" de l'article :
-    - il n'est pas possible de distinguer une citation patoise d'un simple mot ou une référence biblio ("chez nous", "agrafé"). "Chez nous" peut évt être détecté en preproc. On peut évt détecter une balise <i> avec plus d'un mot
-    - Une citation patoise (en italique) peut être "décomposée" en plusieurs séquences <i>. Il faudrait merger les éléments <i> qui sont consécutifs
-- Partie "commentaire scientifique" de l'article
-
-
-
+Remarques : 
+     - les articles de Jordan ne sont pas homogènes dans la modélisation (ex : entre agrafer et gabriel, dans les varpho, il y a l'utilisation de placename)
+     - Les choix technologiques ne sont clairement pas suffisant pour envisager de transformer des articles au format TEI. Une analyse plus approfondie du texte doit être faite --> intelligence artificielle, arbre syntaxique, ???
+     - La qualité et le type de rétrodigitalisation effectuée ne favorise pas une automatisation de la transformation...
 
 Questions sur la modélisation TEI: 
 - Pourquoi n'y-a-t-il pas, dans la modélisation de J.Irrera, d'élément <pron> englobant le lemme ? C'est une forme en tant que telle non ?

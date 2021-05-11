@@ -160,8 +160,48 @@
 	<!-- Partie Corps de l'article -->
 	<xsl:template match="//semx">
 		<sense>
-			<xsl:apply-templates/>
+			<xsl:choose>
+				<xsl:when test="count(.//s1)+count(.//s2)+count(.//s4)+count(.//s5)+count(.//s6)>0"><xsl:apply-templates/></xsl:when>
+				<xsl:otherwise>
+					<xsl:call-template name="noSx">
+						<xsl:with-param name="nodeNoSX" select = "./P" />
+					</xsl:call-template>					
+				</xsl:otherwise>
+			</xsl:choose>
+
 		</sense>
+	</xsl:template>
+	
+	<xsl:template name="noSx" >
+		<xsl:param name="nodeNoSX"/>	
+		<def>
+			<xsl:value-of select="$nodeNoSX/text()[1]"/>
+		</def>
+		<xsl:if test="count($nodeNoSX/text()[1]/following-sibling::node())>0">
+			<cit>	
+				<xsl:for-each select="$nodeNoSX/text()[1]/following-sibling::node()">
+					<xsl:choose>							
+						<xsl:when test="self::c|self::bibl"><bibl><xsl:value-of select="."/></bibl></xsl:when>
+						<xsl:when test="self::refUsg"><usg type="geographic"><xsl:value-of select="."/></usg></xsl:when>
+						<xsl:when test="self::i"><quote><xsl:value-of select="."/></quote></xsl:when>
+						<xsl:when test="self::b"/>
+						<xsl:when test="self::sup"/>
+						<xsl:when test="self::g"/>
+						<xsl:when test="self::gramGrp"/>
+						<xsl:when test="self::text()">
+							<xsl:choose>
+								<xsl:when test="matches(substring(.,1,3),'\. [A-Z]')">
+									<def><xsl:value-of select="."/></def>
+								</xsl:when>
+								<xsl:otherwise><quote><xsl:value-of select="."/></quote></xsl:otherwise>
+							</xsl:choose>
+						</xsl:when>
+						<xsl:when test="self::s5"><xsl:apply-templates select="."/></xsl:when>
+						<xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
+					</xsl:choose>							
+				</xsl:for-each>
+			</cit>
+		</xsl:if>
 	</xsl:template>
 	
 	<xsl:template name="defS4" >
@@ -178,14 +218,51 @@
 						<xsl:when test="self::i"><quote><xsl:value-of select="."/></quote></xsl:when>
 						<xsl:when test="self::b"/>
 						<xsl:when test="self::sup"/>										
-						<xsl:when test="self::text()"><quote><xsl:value-of select="."/></quote></xsl:when>
-						<xsl:otherwise><ohter><xsl:value-of select="."/></ohter></xsl:otherwise>
+						<xsl:when test="self::text()">
+							<xsl:choose>
+								<xsl:when test="matches(substring(.,1,3),'\. [A-Z]')">
+									<def><xsl:value-of select="."/></def>
+								</xsl:when>
+								<xsl:otherwise><quote><xsl:value-of select="."/></quote></xsl:otherwise>
+							</xsl:choose>
+						</xsl:when>
+						<xsl:when test="self::s5"><xsl:apply-templates select="."/></xsl:when>
+						<xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
 					</xsl:choose>							
 				</xsl:for-each>
 			</cit>
 		</xsl:if>
 	</xsl:template>
 	
+	<xsl:template name="defS5" >
+		<xsl:param name="nodeDefS5"/>	
+		<def>
+			<xsl:value-of select="$nodeDefS5/text()[1]"/>
+		</def>
+		<xsl:if test="count($nodeDefS5/text()[1]/following-sibling::node())>0">
+			<cit>	
+				<xsl:for-each select="$nodeDefS5/text()[1]/following-sibling::node()">
+					<xsl:choose>							
+						<xsl:when test="self::c|self::bibl"><bibl><xsl:value-of select="."/></bibl></xsl:when>
+						<xsl:when test="self::refUsg"><usg type="geographic"><xsl:value-of select="."/></usg></xsl:when>
+						<xsl:when test="self::i"><quote><xsl:value-of select="."/></quote></xsl:when>
+						<xsl:when test="self::b"/>
+						<xsl:when test="self::sup"/>										
+						<xsl:when test="self::text()">
+							<xsl:choose>
+								<xsl:when test="matches(substring(.,1,3),'\. [A-Z]')">
+									<def><xsl:value-of select="."/></def>
+								</xsl:when>
+								<xsl:otherwise><quote><xsl:value-of select="."/></quote></xsl:otherwise>
+							</xsl:choose>
+						</xsl:when>
+						<xsl:when test="self::s6"><xsl:apply-templates select="s6"/></xsl:when>
+						<xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
+					</xsl:choose>							
+				</xsl:for-each>
+			</cit>
+		</xsl:if>
+	</xsl:template>
 	
 	<!-- Chaque niveau de sens -->
 	<xsl:template match="//s1">
@@ -211,7 +288,11 @@
 	</xsl:template>
 	<xsl:template match="//s5">
 		<sense level="4">
-			<xsl:apply-templates/>
+			<xsl:value-of select="./b[1]/text()"/>
+			
+			<xsl:call-template name="defS5">
+				<xsl:with-param name="nodeDefS5" select = "." />
+			</xsl:call-template>
 		</sense>
 	</xsl:template>
 	<xsl:template match="//s6">
@@ -242,8 +323,19 @@
 	<xsl:template match="//s4/text()"/>
 	<xsl:template match="//refUsg"/>
 	
-	<!-- A traiter. Pour l'instant exclu du résultat -->
+	<xsl:template match="//R">
+		<name type="redacteur"><xsl:value-of select="."/></name>
+	</xsl:template>
 	
-	<xsl:template match="//hist"/>
+	<xsl:template match="//hist">
+		<etym>
+			<xsl:apply-templates/>
+		</etym>
+	</xsl:template>
+	
+	<xsl:template match="//lecteurFEW">
+		<xr type="FEW"><xsl:value-of select="."/></xr>
+	</xsl:template>	
+	
 	<xsl:template match="//sup"/>
 </xsl:stylesheet>

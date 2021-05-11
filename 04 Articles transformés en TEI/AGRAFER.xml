@@ -72,7 +72,7 @@
                </usg>
             </form>
             <sense>
-               <g>‖</g>
+               <g>‖ </g>
                <gramGrp>V. tr.</gramGrp>
                <sense level="3">1o<def> Saisir vivement, agripper, arracher de force. </def>
                   <cit>
@@ -91,17 +91,21 @@
                      <quote>agrafā,</quote>
                      <quote> ce frère a accaparé tout l’héritage </quote>
                      <usg type="geographic">(N Sav.; sens voisin de 2o)</usg>
-                     <quote>. Réfl. S’accrocher. </quote>
+                     <def>. Réfl. S’accrocher. </def>
                      <quote>La</quote>
                      <quote> </quote>
                      <quote>rta s’agraf ó mur,</quote>
                      <quote> la souris s’accroche au mur </quote>
                      <usg type="geographic">(N Brév.)</usg>
-                     <quote>. En venir aux mains. «Ils se sont </quote>
+                     <def>. En venir aux mains. «Ils se sont </def>
                      <quote>agrafés</quote>
-                     <quote>» </quote>
-                     <usg type="geographic">(Baillods, Chez nous, 66. Pier.)</usg>
-                     <quote>. </quote>
+                     <quote>» (</quote>
+                     <bibl>Baillods,</bibl>
+                     <quote> </quote>
+                     <quote>Chez nous,</quote>
+                     <quote> 66. </quote>
+                     <bibl>Pier.</bibl>
+                     <quote>). </quote>
                   </cit>
                </sense>
                <sense level="3">2o<def> Dérober avec adresse, filouter </def>
@@ -109,18 +113,20 @@
                      <usg type="geographic">(V, N)</usg>
                      <quote>. «Ces pouettes [vilaines] gens venaient bien nous </quote>
                      <quote>agrafer</quote>
-                     <quote> des pommes au travers de la barrière» </quote>
-                     <usg type="geographic">(N Pier.)</usg>
-                     <quote>. Acheter qch. bien au‑dessous de son prix. «Il lui a </quote>
+                     <quote> des pommes au travers de la barrière» (</quote>
+                     <bibl>N Pier.</bibl>
+                     <quote>). Acheter qch. bien au‑dessous de son prix. «Il lui a </quote>
                      <quote>agrafé</quote>
-                     <quote> sa montre en or pour vingt francs» </quote>
-                     <usg type="geographic">(N Bon.)</usg>
-                     <quote>. </quote>
+                     <quote> sa montre en or pour vingt francs» (</quote>
+                     <bibl>N Bon.</bibl>
+                     <quote>). </quote>
                   </cit>
                </sense>
                <sense level="3">3o<def> Attacher au moyen d’une agrafe.</def>
                </sense>
             </sense>
+            <etym>Dans les sens 1 et 2, connus aussi en France, agrafa appartient au fonds gallo‑roman ancien; cf. God. Compl., agrafer et Mistral agrafa. Dans le sens 3, très peu attesté, le mot est un emprunt récent au fr. B Charm. distingue les deux couches du mot par la forme: ègrèfè, sens anc. et mod., et agrafè, sens mod. exclusivt. Pour la variante vaud. en ‑i, cf. les doublets agrəpa et agrèpi «agripper»; adzòka et èdjòki; agrəfa et agrəfi «agriffer»; agrapi, arapi «grimper». <name type="redacteur">Tp.</name>
+            </etym>
          </entry>
       </body>
    </text>

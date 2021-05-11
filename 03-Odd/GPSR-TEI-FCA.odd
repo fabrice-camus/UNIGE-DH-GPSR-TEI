@@ -58,7 +58,7 @@
         </div2>
         <div2>
           <head>Pré-traitement</head>
-          <p>Manuel</p>
+          <p>Manuel; extrait(s) - Tous les traitements sont dans le dossier 01 Articles XML/preprocess</p>
           <list>
             <item>Ajout de l'attribut @tome dans chaque article source</item>
             <item>&lt;b&gt;&lt;i&gt;agraf&lt;/i&gt;&lt;/b&gt; remplacé par &lt;i&gt;&lt;b&gt;agraf&lt;/b&gt;&lt;/i&gt; : Il faut pouvoir identifier correctement les variantes phonétiques, grâce à la balise &lt;i&gt; </item>
@@ -67,20 +67,11 @@
             <item>Le tiret cadratin — est balisé &lt;pc&gt;—&lt;/pc&gt; : facilite les traitements XSL</item>
             <item>Mo. est remplacé par &lt;c&gt;Mo.&lt;/c&gt; : Erreur de balisage dans la source, balisage absent</item>            
           </list>            
-          <p>Les traitements sont implémentés dans un programme Java (dossier 01 Articles XML - Preprocess / preprocess</p>
         </div2>
         <div2>
           <head>Transformation XSL</head>
           <p>Une feuille de style XSL est utilisé pour transformer les articles XML en articles TEI. Cette transformation n'est pas suffisante, des post-traitements sont nécessaires.</p>          
-        </div2>
-        <div2>
-          <head>Pré-traitement</head>
-          <p>TODO : Implémenté dans un programme java</p>          
-          <list>
-            <item>to be continued...</item>
-          </list>
-        </div2>
-        
+        </div2>        
       </div1>
       <div1>
         <head>Principes d'encodage des articles</head>
@@ -88,8 +79,37 @@
         <list>
           <item>Elément <gi>entry</gi> : ajout de l'attribut @xml:id</item>
           <item>Elément <gi>form</gi> : ajout de l'attribut @subtype pour indiquer le type du lemme </item>
-          <item>Odd créé manuellement dans Oxygen Editor, puis génération du rnc correspondant</item>
+          <item>Odd créé manuellement dans Oxygen Editor, puis génération du rnc correspondant</item>         
         </list>
+        <div2>
+          <head>Eléments non-traités, pas optimisés ou différences entre mes fichiers générés et les fichiers "références</head>
+          <p>Article</p>
+          <list>
+            <item>Composés/Composants non-traités</item>
+          </list>
+          <p>Lemmes</p>
+          <list>
+            <item>signes entourant les lemmes reconstruits ( [ ] ) ou reproduisant la graphie de la source (« ») non-traités</item>
+          </list>          
+          <p>Partie Variantes phonétiques</p>
+          <list>
+            <item>Elément &lt;placeName&gt; pour chaque code de localisations non-intégrés (cf certains articles références)</item>
+            <item>Distinction orth / pron : ok avec article AGRAFER, ko avec GABRIEL (il y a une "sous-structure cachée" avec les formes types)</item>
+            <item>Elément &lt;bibl&gt; au lieu de &lt;name&gt; pour N Bon., Pier. + 1 seule balise &lt;bibl&gt;</item>
+            <item>Les occurrences multiples de variantes phonétiques pour un usage ne sont pas splittées (même niveau de "granularité" que les localisations</item>
+          </list>          
+          <p>Partie Corps</p>
+          <list>
+            <item>Les citations patoises sont en italique (balise &lt;name&gt;) tout comme certaines références bibliographiques. La distinction n'est pas toujours faite, il faudrait définir un référentiel interne de toutes les sources.</item>
+            <item>La rétrodigitalisation ayant été faite selon le point de vue typographique et "au kilomètre", certaines citations sont composées de plusieurs noeuds (au sens xml). De ce fait, dans le résultat final, cela se traduit par plusieurs balises consécutives qu'il faudrait merger.</item>            
+            <item>Imbrication des niveaux de sens --> enlever &lt;name&gt; entre 2 niveaux de sens</item>            
+          </list>
+          <p>Partie Corps</p>
+          <list>
+            <item>Il n'est pas possible de distinguer, dans un paragraphe, la partie &lt;etym&gt; de ce qui serait une note. --> le paragraphe dans son entier a été balisé &lt;etym&gt;</item>
+            <item>Balisage du FEW : balisage déjà existant dans la source retravaillé par mes soins, ce qui fait que le texte "FEW" n'est pas intégré dans l'élément &lt;xr&gt;. Par conséquent, ajout de l'attribut @type="FEW"</item>                        
+          </list>
+        </div2>
         <div2>
           <head>Encodage général des articles</head>
           <p>Les articles sont encodés avec les éléments suivants :
@@ -103,14 +123,12 @@
               <specDesc key="gramGrp"/>
               <specDesc key="cit"/>
               <specDesc key="quote"/>
-              <!--               
-                           
-
-              <specDesc key="xr"/>
               <specDesc key="etym"/>
-              <specDesc key="note"/>
-              <specDesc key="dictScrap"/>
+              <specDesc key="xr"/>
               <specDesc key="name"/>
+              <!--                             
+              <specDesc key="note"/>
+              <specDesc key="dictScrap"/>              
               -->
             </specList>
           </p>
@@ -123,7 +141,7 @@
           <moduleRef key="core" include="p date title author publisher name bibl pubPlace note cit quote"/>
           <moduleRef key="tei" />
           <moduleRef key="textstructure" include="TEI text body div"/>
-          <moduleRef key="dictionaries"  include="entry form pron orth usg lbl sense def gramGrp"/>
+          <moduleRef key="dictionaries"  include="entry form pron orth usg lbl sense def gramGrp etym xr"/>
           <moduleRef key="analysis" include="pc"/>
           <moduleRef key="gaiji" include="g" />
           
@@ -450,6 +468,48 @@
             <attList>
               <attDef ident="ana" mode="delete"/>
               <attDef ident="type" mode="delete"/>
+            </attList>
+          </elementSpec>
+          <elementSpec ident="name" mode="change">
+            <gloss>nom, nom propre</gloss>
+            <desc> contient un nom propre ou un syntagme nominal. Dans le <title>GPSR</title>, <gi>name</gi> est utilisé
+              pour encoder en particulier les sigles des rédacteurs qui apparaissent à la fin de chaque article, avec l'attribut
+              <att>type</att>="rédacteur" et les noms des sources humaines (en petites capitales), avec l'attribut <att>type</att>="sourceHumaine".
+            </desc>
+            <attList>
+              <attDef ident="ana" mode="delete"/>
+              <attDef ident="full" mode="change">
+                <valList mode="add" type="closed">
+                  <valItem ident="yes"/>
+                </valList>
+              </attDef>
+              <attDef ident="type" mode="change">
+                <valList mode="add" type="closed">
+                  <valItem ident="redacteur"/>
+                  <valItem ident="sourceHumaine"/>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <elementSpec ident="etym" mode="change">
+            <gloss>étymologie</gloss>
+            <desc>contient les informations sur l'étymologie de l'entrée. Dans le <title>GPSR</title>,
+              l'étymologie et les informations relatives sont souvent tirés du <title>FEW</title>.</desc>
+            <attList>
+              <attDef ident="ana" mode="delete"/>
+              <attDef ident="type" mode="delete"/>
+            </attList>
+          </elementSpec>
+          <elementSpec ident="xr" mode="change">
+            <gloss>renvoi</gloss>
+            <desc>contient une expression, une phrase ou une icône qui invite le lecteur à se référer à un autre endroit, dans le même texte ou dans un autre texte.</desc>
+            <attList>
+              <attDef ident="type" mode="change">
+                <valList mode="add" type="closed">
+                  <valItem ident="FEW"/>
+                </valList>
+              </attDef>
+              
             </attList>
           </elementSpec>
         </schemaSpec>

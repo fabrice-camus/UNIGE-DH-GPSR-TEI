@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../03-Odd/out/GPSR-TEI-FCA.rnc" 
+       	type="application/relax-ng-compact-syntax"
+		?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Projet Unige-DH-Edition-GPSR-TEI : Encodage des articles du Glossaire</title>
+            <author xml:id="FCA">
+               <name>Fabrice Camus</name>
+            </author>
+            <author xml:id="JIR">
+               <name>Jordan Irrera</name>
+            </author>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Université de Genève</publisher>
+            <availability status="restricted" n="cc-by">
+               <licence target="https://creativecommons.org/licenses/by/4.0"/>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note>Projet dans le cadre du cours Edition numérique DH-UniGe 2021</note>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>
+               <author>Glossaire des patois de la Suisse Romande</author>
+               <title>Glossaire des patois de la Suisse Romande</title>
+               <pubPlace>Genève</pubPlace>
+               <publisher>Librairie Droz</publisher>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <entry xml:id="GPSR.8.00627024E8">
+            <form type="lemma" subtype="français">GRAND‑MAMAN,</form>
+            <form type="typePatois">
+               <pron>gran mamn</pron>
+               <usg type="geographic"> V 31, 32, 3 Saxon (</usg>
+            </form>
+            <form type="variant">
+               <pron>‑in</pron>
+               <usg type="geographic">).  </usg>
+            </form>
+            <lbl>Fr.</lbl>
+            <form type="variant">
+               <orth>grand‑manman</orth>
+               <usg type="geographic"> B 3 <bibl>Nsl.,</bibl> J 6 <bibl>Fl.;</bibl>  V 51 <bibl>Jj.</bibl> mod., 54, 5 Vétroz, Conth. <bibl>Ber.,</bibl> 75 <bibl>Chvr.,</bibl>
+               </usg>
+            </form>gran mam<pc>—</pc>
+            <form type="variant">
+               <orth>mma</orth>
+               <usg type="geographic"> 31 var., 36, 3 Riddes.  </usg>
+            </form>
+            <lbl>Anc.</lbl>
+            <form type="variant">
+               <orth>gran mama</orth>
+               <usg type="geographic"> N 1707.  </usg>
+            </form>
+            <lbl>Fr.</lbl>
+            <form type="variant">
+               <orth>grand’mama</orth>
+               <usg type="geographic">
+                  <bibl>N Pier.,</bibl>
+               </usg>
+            </form>
+            <form type="variant">
+               <orth>grand‑mama</orth>
+               <usg type="geographic"> V rare <bibl>DSR;</bibl>
+               </usg>
+            </form>
+            <pc>—</pc>
+            <form type="typePatois">
+               <orth>mma gran</orth>
+               <usg type="geographic"> V 21, 31 var., 47, 50.  </usg>
+            </form>
+            <lbl>Fr.</lbl>
+            <form type="variant">
+               <orth>mama grand</orth>
+               <usg type="geographic"> V 47.  <bibl>Dietrich,</bibl> mat. ms.; <bibl>Pier.</bibl> 290 (localisation SR trop large), 706; <bibl>DSR</bibl>2, 432.</usg>
+            </form>
+            <pc>—</pc>
+            <sense>
+               <def> Grand‑mère, mère du père ou de la mère; synon. sous </def>
+               <cit>
+                  <quote>grand‑mère</quote>
+                  <quote> 1</quote>
+                  <quote>; t. enfantin à V Lourt. «La </quote>
+                  <quote>gran mama</quote>
+                  <quote> d’origine Picard | et son cousin le marquis Auvergnat | tous deux pourront se mettre à l’écart» </quote>
+                  <usg type="geographic">(N 1707. Musée neuch. 1925, 62)</usg>
+                  <quote>. </quote>
+                  <quote>I</quote>
+                  <quote> [la] </quote>
+                  <quote>gran mma </quote>
+                  <quote> </quote>
+                  <quote>a pru yu dè tré kyé m’ir aréva ón sakyè,</quote>
+                  <quote> ma gr. a bien vu tout de suite qu’il m’était arrivé quelque chose </quote>
+                  <usg type="geographic">(V Isér.)</usg>
+                  <quote>. </quote>
+                  <quote>Y’mo bin, mé, ma mma gran, psè</quote>
+                  <quote> </quote>
+                  <quote>kə mé blyè tró sè kə vè,</quote>
+                  <quote> j’aime bien ma gr., moi, car elle me donne tout ce que je veux </quote>
+                  <usg type="geographic">(V Véross.)</usg>
+                  <quote>. «C’est une bonne </quote>
+                  <quote>grand’mama»</quote>
+                  <quote> (fr. rég. </quote>
+                  <bibl>N Pier.</bibl>
+                  <quote>). «Ma grand‑mère maternelle, que l’on appelait </quote>
+                  <quote>grand‑mama,</quote>
+                  <quote> est morte quand j’avais 16 ou 17 ans» (fr. rég. V: </quote>
+                  <bibl>G. Clavien,</bibl>
+                  <quote> dans </quote>
+                  <bibl>DSR</bibl>
+                  <quote>). Autres ex. fr. rég. dans </quote>
+                  <quote>DSR.</quote>
+               </cit>
+            </sense>
+            <etym>Le premier type est un emprunt, le deuxième type est adapté aux formes locales de maman (voir les var. phon. de ce mot); FEW, <xr type="FEW">IV, 222 a</xr>. Leur diffusion a sans doute été favorisée par la préexistence, dans V, du troisième type et par la vitalité de grand‑maman en fr. de SR, plus grande qu’en fr. de France et égale à celle de grand‑papa. Le troisième type se retrouve en V. d’Aoste (Chenal‑Vautherin). Notre attest. de N 1707 antidate Lengert, Regionalfranzösisch, 226 (source non indiquée) et DSR (1762, exemple cité ci‑dessus) pour la SR. <pc>—</pc> À V Nend. et Conth. sup., gran mam supplante grcha (sous gros). <pc>—</pc> Cf. le suiv., grand‑papa. <name type="redacteur">Mtr.</name>
+            </etym>
+         </entry>
+      </body>
+   </text>
+</TEI>

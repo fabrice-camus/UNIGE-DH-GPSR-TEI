@@ -10,7 +10,7 @@ namespace teix = "http://www.tei-c.org/ns/Examples"
 namespace xi = "http://www.w3.org/2001/XInclude"
 namespace xlink = "http://www.w3.org/1999/xlink"
 
-# Schema generated from ODD source 2021-05-10T14:22:51Z. .
+# Schema generated from ODD source 2021-05-11T12:19:08Z. .
 # TEI Edition: Version 4.1.0. Last updated on
 #	19th August 2020, revision b414ba550
 # TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
@@ -877,8 +877,10 @@ model.stageLike_sequence = empty
 model.stageLike_sequenceOptional = empty
 model.stageLike_sequenceOptionalRepeatable = empty
 model.stageLike_sequenceRepeatable = notAllowed
-model.entryPart = sense | form | orth | pron | gramGrp | def | usg | lbl
-model.entryPart.top = cit | entry | form | gramGrp | def | usg | lbl
+model.entryPart =
+  sense | form | orth | pron | gramGrp | def | etym | usg | lbl | xr
+model.entryPart.top =
+  cit | entry | form | gramGrp | def | etym | usg | lbl | xr
 model.global.edit = notAllowed
 model.divPart = model.lLike | model.pLike
 model.placeNamePart = notAllowed
@@ -1011,25 +1013,6 @@ att.partials.attribute.extent =
     | xsd:token { pattern = "[^\p{C}\p{Z}]+" }
   }?
 model.resource = \text
-att.personal.attributes =
-  att.naming.attributes,
-  att.personal.attribute.full,
-  att.personal.attribute.sort
-att.personal.attribute.full =
-  
-  ## indicates whether the name component is given in full, as an abbreviation or simply as an initial.
-  [ a:defaultValue = "yes" ]
-  attribute full {
-    
-    ## the name component is spelled out in full.
-    "yes"
-    | 
-      ## (abbreviated) the name component is given in an abbreviated form.
-      "abb"
-    | 
-      ## (initial letter) the name component is indicated only by one initial.
-      "init"
-  }?
 att.personal.attribute.sort =
   
   ## specifies the sort order of the name component in relation to others within the name.
@@ -1147,15 +1130,56 @@ cit =
     empty
   }
 name =
-  
-  ## (name, proper noun) contains a proper noun or noun phrase. [3.5.1. Referring Strings]
+  [
+    a:documentation [
+      "(nom, nom propre) contient un nom propre ou un syntagme nominal. Dans le GPSR, "
+      ns1:code [ "<name>" ]
+      " est utilisé pour encoder en particulier les sigles des rédacteurs qui apparaissent à la fin de chaque article, avec l'attribut "
+      ns1:code [ "@type" ]
+      """="rédacteur" et les noms des sources humaines (en petites capitales), avec l'attribut """
+      ns1:code [ "@type" ]
+      '="sourceHumaine". [3.5.1. Referring Strings]'
+    ]
+  ]
   element name {
     macro.phraseSeq,
-    att.global.attributes,
-    att.personal.attributes,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.xmlbase,
+    att.global.attribute.xmlspace,
+    att.global.rendition.attribute.rend,
+    att.global.rendition.attribute.style,
+    att.global.rendition.attribute.rendition,
+    att.global.responsibility.attribute.cert,
+    att.global.responsibility.attribute.resp,
+    att.global.source.attribute.source,
+    att.personal.attribute.sort,
+    att.naming.attribute.role,
+    att.naming.attribute.nymRef,
+    att.canonical.attribute.key,
+    att.canonical.attribute.ref,
     att.datable.attributes,
     att.editLike.attributes,
-    att.typed.attributes,
+    att.typed.attribute.subtype,
+    
+    ## indicates whether the name component is given in full, as an abbreviation or simply as an initial.
+    [ a:defaultValue = "yes" ]
+    attribute full {
+      
+      ##
+      "yes"
+    }?,
+    
+    ## characterizes the element in some sense, using any convenient classification scheme or typology.
+    attribute type {
+      
+      ##
+      "redacteur"
+      | 
+        ##
+        "sourceHumaine"
+    }?,
     empty
   }
 date =
@@ -1783,6 +1807,36 @@ def =
     att.lexicographic.attributes,
     empty
   }
+etym =
+  
+  ## (étymologie) contient les informations sur l'étymologie de l'entrée. Dans le GPSR, l'étymologie et les informations relatives sont souvent tirés du FEW. [9.3.4. Etymological Information]
+  element etym {
+    (text
+     | model.gLike
+     | model.global
+     | model.inter
+     | model.phrase
+     | def
+     | etym
+     | gramGrp
+     | lbl
+     | usg
+     | xr)*,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.xmlbase,
+    att.global.attribute.xmlspace,
+    att.global.rendition.attribute.rend,
+    att.global.rendition.attribute.style,
+    att.global.rendition.attribute.rendition,
+    att.global.responsibility.attribute.cert,
+    att.global.responsibility.attribute.resp,
+    att.global.source.attribute.source,
+    att.typed.attribute.subtype,
+    att.lexicographic.attributes,
+    empty
+  }
 usg =
   [
     a:documentation [
@@ -1826,6 +1880,27 @@ lbl =
     att.lexicographic.attributes,
     
     ## classifies the label using any convenient typology.
+    attribute type {
+      xsd:token { pattern = "[^\p{C}\p{Z}]+" }
+    }?,
+    empty
+  }
+xr =
+  
+  ## (renvoi) contient une expression, une phrase ou une icône qui invite le lecteur à se référer à un autre endroit, dans le même texte ou dans un autre texte. [9.3.5.3. Cross-References to Other Entries]
+  element xr {
+    (text
+     | model.gLike
+     | model.phrase
+     | model.inter
+     | usg
+     | lbl
+     | model.global)*,
+    att.global.attributes,
+    att.typed.attribute.subtype,
+    att.lexicographic.attributes,
+    
+    ## indicates the type of cross reference, using any convenient typology.
     attribute type {
       xsd:token { pattern = "[^\p{C}\p{Z}]+" }
     }?,
