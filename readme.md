@@ -49,6 +49,9 @@ Les règles rédactionnelles du Glossaire et le fait que les fichiers sources XM
 
 Les données du GPSR sont propriétés exclusives du Glossaire des patois de la Suisse romande et ne peuvent être exploitées de quelconque manière.
 
+## Crédits
+Les articles de référence ont été encodés par Jordan Irrera.
+
 ## Citer ce repository
 Fabrice Camus,  _UNIGE-DH-GPSR-TEI: transformation des article du GPSR au format TEI_, Genève: Université de Genève, 2020, [https://github.com/fabrice-camus/UNIGE-DH-GPSR-TEI](https://github.com/fabrice-camus/UNIGE-DH-GPSR-TEI).
 
