@@ -19,7 +19,7 @@
         </availability>
       </publicationStmt>
       <notesStmt>
-        <note>Projet sommatif dans le cadre du cours Edition numérique DH-UniGe 2021</note>
+        <note>Projet dans le cadre du cours Edition numérique DH-UniGe 2021</note>
       </notesStmt>
       <sourceDesc>
         <p>Created <date when="2021-04-25">25.04.2021</date> by <name ref="#FCA">F. Camus</name></p>
@@ -47,7 +47,7 @@
         <div2>
           <head>Projet GPSR - TEI - 2021</head>
           <p>Le projet GPSR - TEI a pour ambition d'évaluer la faisabilité de transformation des articles du Glossaire au format TEI. Plusieurs travaux exploratoires ont déjà été entrepris: 1. Travail de Bachelor de G. Durand en 2018 à la Haute école de gestion Arc et 2. Travail de stage de <name ref="#JIR">J. Irrera</name> en 2020.</p>      
-          <p>Ce présent travail s'inscrit dans la continuité des travaux précédents. Il s'intéresse plus particulièrement à l'automatisation de la transformation des articles au format TEI. Les articles de références sont ceux retenus par <name ref="#JIR">J. Irrera</name>. Il n'y a pas la volonté dans ce travail d'élargir à l'ensemble des articles, la complexité du travail et et la variété rédactionnelle et structure des quelques 40'000 articles ne le permet pas. Les articles sources sont les articles au format XML, qui ont été transformés par mes soins afin de gommer les imperfections issues du processus de numérisation que nous n'évoquerons pas ici. Le processus de transformation se déroule en 3 étapes consécutives : une pré-traitement des articles, la transformation XSL, un traitement post-transformation..</p>
+          <p>Ce présent travail s'inscrit dans la continuité des travaux précédents. Il s'intéresse plus particulièrement à l'automatisation de la transformation des articles au format TEI. Les articles de références sont ceux retenus par <name ref="#JIR">J. Irrera</name>. Il n'y a pas la volonté dans ce travail d'élargir à l'ensemble des articles, la complexité du travail et et la variété rédactionnelle et structure des quelques 40'000 articles ne le permet pas. Les articles sources sont les articles au format XML, qui ont été transformés par mes soins afin de gommer les imperfections issues du processus de numérisation que nous n'évoquerons pas ici. Le processus de transformation se déroule en 2 étapes consécutives : une pré-traitement des articles, la transformation XSL. Une étape de post-traitement est tout à fait envisageable pour nettoyer/finaliser les articles.</p>
         </div2>
       </div1>
       <div1>
@@ -58,7 +58,7 @@
         </div2>
         <div2>
           <head>Pré-traitement</head>
-          <p>Manuel; extrait(s) - Tous les traitements sont dans le dossier 01 Articles XML/preprocess</p>
+          <p>Tous les traitements sont implémentés dans la classe main.java (dossier 01 Articles XML/preprocess/...)</p>
           <list>
             <item>Ajout de l'attribut @tome dans chaque article source</item>
             <item>&lt;b&gt;&lt;i&gt;agraf&lt;/i&gt;&lt;/b&gt; remplacé par &lt;i&gt;&lt;b&gt;agraf&lt;/b&gt;&lt;/i&gt; : Il faut pouvoir identifier correctement les variantes phonétiques, grâce à la balise &lt;i&gt; </item>
@@ -70,14 +70,14 @@
         </div2>
         <div2>
           <head>Transformation XSL</head>
-          <p>Une feuille de style XSL est utilisé pour transformer les articles XML en articles TEI. Cette transformation n'est pas suffisante, des post-traitements sont nécessaires.</p>          
+          <p>Une feuille de style XSL est utilisé pour transformer les articles XML en articles TEI. Cette transformation n'est pas suffisante, des post-traitements seront nécessaires.</p>          
         </div2>        
       </div1>
       <div1>
         <head>Principes d'encodage des articles</head>
         <p>L'encodage retenu pour les articles du Glossaire a été défini par <name ref="#JIR">J. Irrera</name>. Nous y avons apporté les modifications suivantes : </p>
         <list>
-          <item>Elément <gi>entry</gi> : ajout de l'attribut @xml:id</item>
+          <item>Elément <gi>entry</gi> : ajout de l'attribut @xml:id (recommendation Lex0 <ref target="https://dariah-eric.github.io/lexicalresources/pages/TEILex0/TEILex0.html#entries">entries</ref>)</item>
           <item>Elément <gi>form</gi> : ajout de l'attribut @subtype pour indiquer le type du lemme </item>
           <item>Odd créé manuellement dans Oxygen Editor, puis génération du rnc correspondant</item>         
         </list>
@@ -89,22 +89,22 @@
           </list>
           <p>Lemmes</p>
           <list>
-            <item>signes entourant les lemmes reconstruits ( [ ] ) ou reproduisant la graphie de la source (« ») non-traités</item>
+            <item>Lemmes reconstruits ( entourés avec [ ] ) ou reproduisant la graphie de la source (« ») non-traités</item>
           </list>          
           <p>Partie Variantes phonétiques</p>
           <list>
             <item>Elément &lt;placeName&gt; pour chaque code de localisations non-intégrés (cf certains articles références)</item>
             <item>Distinction orth / pron : ok avec article AGRAFER, ko avec GABRIEL (il y a une "sous-structure cachée" avec les formes types)</item>
-            <item>Elément &lt;bibl&gt; au lieu de &lt;name&gt; pour N Bon., Pier. + 1 seule balise &lt;bibl&gt;</item>
+            <item>Elément &lt;bibl&gt; au lieu de &lt;name&gt; pour N Bon., Pier. + 1 seule balise &lt;bibl&gt;. Les références aux sources humaines, bibliographiques ne sont pas claires</item>
             <item>Les occurrences multiples de variantes phonétiques pour un usage ne sont pas splittées (même niveau de "granularité" que les localisations</item>
           </list>          
           <p>Partie Corps</p>
           <list>
-            <item>Les citations patoises sont en italique (balise &lt;name&gt;) tout comme certaines références bibliographiques. La distinction n'est pas toujours faite, il faudrait définir un référentiel interne de toutes les sources.</item>
+            <item>Les citations patoises sont en italique (balise &lt;name&gt;) tout comme certaines références bibliographiques. La distinction n'est pas toujours faite, il faudrait définir un référentiel interne de toutes les sources (les abréviations du Glossaire sont documentées dans leur document "Guide et compléments" sur plus de 100 pages...)</item>
             <item>La rétrodigitalisation ayant été faite selon le point de vue typographique et "au kilomètre", certaines citations sont composées de plusieurs noeuds (au sens xml). De ce fait, dans le résultat final, cela se traduit par plusieurs balises consécutives qu'il faudrait merger.</item>            
             <item>Imbrication des niveaux de sens --> enlever &lt;name&gt; entre 2 niveaux de sens</item>            
           </list>
-          <p>Partie Corps</p>
+          <p>Partie Commentaires scientifiques</p>
           <list>
             <item>Il n'est pas possible de distinguer, dans un paragraphe, la partie &lt;etym&gt; de ce qui serait une note. --> le paragraphe dans son entier a été balisé &lt;etym&gt;</item>
             <item>Balisage du FEW : balisage déjà existant dans la source retravaillé par mes soins, ce qui fait que le texte "FEW" n'est pas intégré dans l'élément &lt;xr&gt;. Par conséquent, ajout de l'attribut @type="FEW"</item>                        

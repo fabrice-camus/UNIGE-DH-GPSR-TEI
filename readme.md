@@ -12,6 +12,7 @@ Projet réalisé dans le cadre du cours Unige-DH-Edition-2021
 * Voir le document ODD : contient toutes les explications et détails du travail réalisé
 
 
+
 ## Historique des versions
 * Version 1.0
 	* Mise en place du projet gitHub, de l'arborescence et des fichiers de travail
@@ -43,6 +44,12 @@ Projet réalisé dans le cadre du cours Unige-DH-Edition-2021
 
 Ce projet démontre la difficulté de réaliser une transformation automatisée depuis les fichiers sources XML reçu de Trèves. Les mécanismes techniques mis en oeuvre dans ce projet se révèlent être insuffisants pour réaliser ce travail avec comme attente une qualité de transformation sur les 30'000 articles. La prise en charge avec ces technologies d'une transformation plus complète rendra la chaine d'ingénierie très difficile à maintenir et faire évoluer.
 Les règles rédactionnelles du Glossaire (telles que la mise en facteur ou les abréviations) et le fait que les fichiers sources XML de Trèves sont encodés avec une approche principalement typographique rendent l'automatisation de transformation également difficile et imprécise.
+
+## Ingénierie
+* le projet est entièrement téléchargeable avec l'arborescence actuelle.
+* Oxygen XML Editor 23.0 a été utilisé comme environnement de travail : projet "gpsr-tei.xpr", rédaction de l'ODD & génération du rnc correspondant, transformation xsl
+* Le projet Java console a été développé en utilisant IntelliJ IDEA 2020.1.2. La classe Main.java est totalement compilable avec n'importe quel jdk. Aucune librairie autre que le JDK11 n'a été utilisée.
+
 
 ## Licences
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Mes fichiers sources sont sous licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International Licence</a>.

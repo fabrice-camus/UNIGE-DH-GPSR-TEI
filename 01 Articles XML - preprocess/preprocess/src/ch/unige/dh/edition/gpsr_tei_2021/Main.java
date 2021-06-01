@@ -114,7 +114,8 @@ public class Main {
             xmlcontent = findReplace(xmlcontent,"<c>V</c> <c>Ba.,</c>","<c>V Ba.,</c>");
             xmlcontent = findReplace(xmlcontent,"—","<pc>—</pc>");
             xmlcontent = findReplace(xmlcontent,"Mo.","<c>Mo.</c>");
-
+            
+            //Ajout du tome
             xmlcontent = findReplace(xmlcontent,"<art","<art tome=\""+tomes.get(fileInPath.getName())+"\"");
 
             xmlcontent = findReplace(xmlcontent,"<P>‖ ","<P><g>‖ </g>");
