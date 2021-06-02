@@ -49,6 +49,7 @@ Les règles rédactionnelles du Glossaire (telles que la mise en facteur ou les 
 
 ## Remarques
 * Les articles de références ne sont pas homogènes dans leur modélisation TEI. Par exemple, dans les variantes phonétiques, l'article GABRIEL utilise &lt;placeName&gt;	tandis qu'AGRAFER non.
+
  
 
 ## Ingénierie

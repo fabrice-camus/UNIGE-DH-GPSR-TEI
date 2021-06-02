@@ -82,7 +82,7 @@
           <item>Odd créé manuellement dans Oxygen Editor, puis génération du rnc correspondant</item>         
         </list>
         <div2>
-          <head>Eléments non-traités, pas optimisés ou différences entre mes fichiers générés et les fichiers "références</head>
+          <head>Eléments non-traités, pas optimisés ou différences entre mes fichiers générés et les fichiers "références"</head>
           <p>Article</p>
           <list>
             <item>Composés/Composants non-traités</item>
@@ -95,8 +95,8 @@
           <list>
             <item>Elément &lt;placeName&gt; pour chaque code de localisations non-intégrés (cf certains articles références)</item>
             <item>Distinction orth / pron : ok avec article AGRAFER, ko avec GABRIEL (il y a une "sous-structure cachée" avec les formes types)</item>
-            <item>Elément &lt;bibl&gt; au lieu de &lt;name&gt; pour N Bon., Pier. + 1 seule balise &lt;bibl&gt;. Les références aux sources humaines, bibliographiques ne sont pas claires</item>
-            <item>Les occurrences multiples de variantes phonétiques pour un usage ne sont pas splittées (même niveau de "granularité" que les localisations</item>
+            <item>Elément &lt;bibl&gt; au lieu de &lt;name&gt; pour N Bon., Pier. + 1 seule balise &lt;bibl&gt;. Les références aux sources humaines, bibliographiques ne sont pas claires. Un travail plus approfondi doit être fait sur les sources humaines/papiers et les abréviations.</item>
+            <item>Les occurrences multiples de variantes phonétiques pour un usage ne sont pas splittées (même niveau de "granularité" que les localisations)</item>
           </list>          
           <p>Partie Corps</p>
           <list>
