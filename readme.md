@@ -20,7 +20,7 @@ Projet réalisé dans le cadre du cours Unige-DH-Edition-2021
 
 * Version 1.1
 	* Finalisation de la partie variantes phonétique de l'article AGRAFER
-		* Balise <usg> et son contenu
+		* Balise &lt;usg&gt; et son contenu
 		* distinction orth/pron 
 	* Préprocessing par une application console java
 
@@ -29,9 +29,9 @@ Projet réalisé dans le cadre du cours Unige-DH-Edition-2021
 	* Corps de l'article
 		* Sens et leur niveau
 		* traitement des niveaux S4 et S5 de la hiérarchie des sens
-		* &lt;cit&gt; : Créé globalement pour permettre d'inclure <usg>. Devrait normalement être défini pour chaque citation patoise (difficulté technique pour le faire; piste --> en postproc, remplacer &lt;/usg&gt; par &lt;/usg&gt;&lt;cit&gt; ? autre piste, piloter xsl par <usg> et récupérer les noeuds précédents (mais avant le précédent usg))  
-		* quote
-		* usg : identification des références (par une regex balisage en préproc)
+		* &lt;cit&gt; : Créé globalement pour permettre d'inclure &lt;usg&gt;. Devrait normalement être défini pour chaque citation patoise (difficulté technique pour le faire; piste --> en postproc, remplacer &lt;/usg&gt; par &lt;/usg&gt;&lt;cit&gt; ? autre piste, piloter xsl par &lt;usg&gt; et récupérer les noeuds précédents (mais avant le précédent usg))  
+		* &lt;quote&gt;
+		* &lt;usg&gt; : identification des références (par une regex balisage en préproc)
 
 * Version 2.1
 	* Article GABRIEL --> non valide ODD
@@ -39,8 +39,8 @@ Projet réalisé dans le cadre du cours Unige-DH-Edition-2021
 	* Article GRAND-MAMAN
 		* Je n'arrive pas à traiter correctement la forme type gran mam (même problème que pour GABRIEL),  mais les autres ok...
 	* Partie "commentaire scientifique" : 
-		* pour l'instant dans un seul bloc <etym>
-		* <xr> pour la référence au FEW (article GRAND-MAMAN)
+		* pour l'instant dans un seul bloc &lt;etym&gt;
+		* &lt;xr&gt; pour la référence au FEW (article GRAND-MAMAN)
 
 Ce projet démontre la difficulté de réaliser une transformation automatisée depuis les fichiers sources XML reçu de Trèves. Les mécanismes techniques mis en oeuvre dans ce projet se révèlent être insuffisants pour réaliser ce travail avec comme attente une qualité de transformation sur les 30'000 articles. La prise en charge avec ces technologies d'une transformation plus complète rendra la chaine d'ingénierie très difficile à maintenir et faire évoluer.
 Les règles rédactionnelles du Glossaire (telles que la mise en facteur ou les abréviations) et le fait que les fichiers sources XML de Trèves sont encodés avec une approche principalement typographique rendent l'automatisation de transformation également difficile et imprécise.
