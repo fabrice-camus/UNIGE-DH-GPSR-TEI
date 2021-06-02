@@ -29,7 +29,7 @@ Projet réalisé dans le cadre du cours Unige-DH-Edition-2021
 	* Corps de l'article
 		* Sens et leur niveau
 		* traitement des niveaux S4 et S5 de la hiérarchie des sens
-		* <cit> : Créé globalement pour permettre d'inclure <usg>. Devrait normalement être défini pour chaque citation patoise (difficulté technique pour le faire; piste --> en postproc, remplacer </usg> par </usg><cit> ? autre piste, piloter xsl par <usg> et récupérer les noeuds précédents (mais avant le précédent usg))  
+		* &lt;cit&gt; : Créé globalement pour permettre d'inclure <usg>. Devrait normalement être défini pour chaque citation patoise (difficulté technique pour le faire; piste --> en postproc, remplacer &lt;/usg&gt; par &lt;/usg&gt;&lt;cit&gt; ? autre piste, piloter xsl par <usg> et récupérer les noeuds précédents (mais avant le précédent usg))  
 		* quote
 		* usg : identification des références (par une regex balisage en préproc)
 
